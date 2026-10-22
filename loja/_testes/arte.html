@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="/shared/njr.css">
+<style>body{display:flex;flex-wrap:wrap;gap:8px;padding:8px;background:#f7fafb}.c{width:200px;height:240px;background:radial-gradient(circle at 50% 35%,#fff,#e3e7ea)}.c svg{width:100%;height:100%}</style></head><body>
+<script type="module">
+import { art } from "../art.js";
+const d = await (await fetch("../loja.json")).json();
+for (const p of d.produtos) {
+  const cores = p.cores || [null]; const capas = p.capas || [null];
+  for (const capa of capas) for (const [vi] of p.vistas.entries()) for (const cor of (vi===0?cores:[cores[0]])) {
+    const c = document.createElement("div"); c.className="c"; c.innerHTML = art(p,{cor,capa,view:vi}); document.body.append(c);
+  }
+}
+await document.fonts.ready; document.title="ok";
+</script></body></html>

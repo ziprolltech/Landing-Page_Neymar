@@ -1,0 +1,50 @@
+{
+  "atualizado": "2026-10-22",
+  "selecaoPorAno": [
+    { "ano": 2010, "jogos": 2, "gols": 1 },
+    { "ano": 2011, "jogos": 13, "gols": 7 },
+    { "ano": 2012, "jogos": 12, "gols": 9 },
+    { "ano": 2013, "jogos": 19, "gols": 10 },
+    { "ano": 2014, "jogos": 14, "gols": 15 },
+    { "ano": 2015, "jogos": 9, "gols": 4 },
+    { "ano": 2016, "jogos": 6, "gols": 4 },
+    { "ano": 2017, "jogos": 8, "gols": 3 },
+    { "ano": 2018, "jogos": 13, "gols": 7 },
+    { "ano": 2019, "jogos": 5, "gols": 1 },
+    { "ano": 2020, "jogos": 2, "gols": 3 },
+    { "ano": 2021, "jogos": 13, "gols": 6 },
+    { "ano": 2022, "jogos": 8, "gols": 7 },
+    { "ano": 2023, "jogos": 4, "gols": 2 },
+    { "ano": 2024, "jogos": 0, "gols": 0 },
+    { "ano": 2025, "jogos": 0, "gols": 0 },
+    { "ano": 2026, "jogos": 2, "gols": 1 }
+  ],
+  "selecaoMarcos": {
+    "2010": "Estreia com gol contra os Estados Unidos, em agosto.",
+    "2013": "Campeão da Copa das Confederações.",
+    "2014": "O melhor ano em gols: 15. A Copa em casa termina com a fratura na vértebra.",
+    "2016": "Ouro olímpico no Maracanã.",
+    "2019": "Lesão no tornozelo o tira da Copa América.",
+    "2022": "Gol contra a Croácia, na Copa: iguala os 77 de Pelé.",
+    "2023": "Dois gols contra a Bolívia: maior artilheiro da Seleção.",
+    "2024": "Nenhum jogo pela Seleção: recuperação do joelho esquerdo.",
+    "2026": "Gol na quarta Copa. Despedida com 80 gols."
+  },
+  "fontes": [
+    { "nome": "Wikipedia (en), Neymar: estatísticas por clube e por ano na Seleção, até 18/10/2026", "url": "https://en.wikipedia.org/wiki/Neymar" },
+    { "nome": "Wikipedia (pt), Neymar: nome, nascimento e naturalidade", "url": "https://pt.wikipedia.org/wiki/Neymar" },
+    { "nome": "Olympics.com, histórico completo e estatísticas", "url": "https://www.olympics.com/pt/noticias/neymar-historico-completo-estatisticas-clubes-selecao" },
+    { "nome": "FIFA, Brasil 1 x 2 Noruega, oitavas da Copa de 2026", "url": "https://www.fifa.com/pt/articles/brasil-noruega-resumo-melhores-momentos-oitavas" },
+    { "nome": "ESPN, Neymar renova com o Santos até o fim de 2026", "url": "https://www.espn.com.br/futebol/santos/artigo/_/id/16135471/neymar-renova-contrato-com-o-santos-ate-o-final-de-2026-veja-os-detalhes" }
+  ],
+  "imagens": [
+    { "uso": "Retrato da abertura e do perfil", "autor": "Foto oficial de estúdio usada no início do site (recorte)", "licenca": "mesma do retrato da página inicial", "url": "/" },
+    { "uso": "Libertadores 2011", "autor": "Jimmy Baikovicius", "licenca": "CC BY-SA 2.0", "url": "https://commons.wikimedia.org/wiki/File:Neymar_-_Copa_Libertadores_de_America_2011_-_Pe%C3%B1arol_-_Santos_-_110616-6925-jikatu.jpg" },
+    { "uso": "Copa das Confederações 2013", "autor": "Tânia Rêgo/Agência Brasil", "licenca": "CC BY 3.0 BR", "url": "https://commons.wikimedia.org/wiki/File:ConfedCup2013Champions6.jpg" },
+    { "uso": "Barcelona, 2015", "autor": "Alex Fau", "licenca": "CC BY 2.0", "url": "https://commons.wikimedia.org/wiki/File:Neymar_(16245492137).jpg" },
+    { "uso": "Ouro olímpico 2016", "autor": "Fernando Frazão/Agência Brasil", "licenca": "CC BY 3.0 BR", "url": "https://commons.wikimedia.org/wiki/File:Brasil_conquista_primeiro_ouro_ol%C3%ADmpico_nos_penaltis_1039248-20082016-_mg_0015.jpg" },
+    { "uso": "Barcelona 6 x 1 PSG, 2017", "autor": "Hugo Pérez Marsol", "licenca": "CC BY 2.0", "url": "https://commons.wikimedia.org/wiki/File:Bar%C3%A7a_6_-_PSG_1;_Dimecres_8_de_mar%C3%A7_de_2017_-_33340360535_(cropped).jpg" },
+    { "uso": "Apresentação no PSG, 2017", "autor": "Antoine Dellenbach", "licenca": "CC BY-SA 2.0", "url": "https://commons.wikimedia.org/wiki/File:Neymar_Jr_presentation_-_Press_conference_for_PSG_001_(cropped).jpg" },
+    { "uso": "Copa do Mundo de 2026", "autor": "YantsImages", "licenca": "CC BY-SA 4.0", "url": "https://commons.wikimedia.org/wiki/File:Neymar_at_2026_FIFA_World_Cup_by_YantsImages.jpg" }
+  ]
+}

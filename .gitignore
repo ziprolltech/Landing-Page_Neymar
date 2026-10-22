@@ -1,0 +1,24 @@
+# quadros e testes do render do Vestiário (regeneráveis com vestiario/render/cena.py)
+vestiario/render/quadros/
+vestiario/render/testes/
+vestiario/render/entrada/renders/
+*.blend1
+
+# renders brutos de vídeo (a versão para a web fica em assets/)
+videos/neymar-trailer/renders/
+videos/neymar-trailer/snapshots/
+
+# capturas dos testes automatizados
+**/_testes/shots/
+**/_testes/*.jpg
+**/_testes/*.png
+
+node_modules/
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# caches locais do HyperFrames e logs
+**/.hyperframes/
+**/.media/
+vestiario/render/render_log.txt

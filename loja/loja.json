@@ -1,0 +1,135 @@
+{
+  "aviso": "Vitrine demonstrativa — nenhum produto está à venda",
+  "preco": "Preço a definir",
+  "disponibilidade": "Indisponível — vitrine demonstrativa",
+  "categorias": [
+    { "id": "todos", "nome": "Todos" },
+    { "id": "vestuario", "nome": "Vestuário" },
+    { "id": "posteres", "nome": "Pôsteres" },
+    { "id": "acessorios", "nome": "Acessórios" }
+  ],
+  "cores": {
+    "tinta": { "nome": "Tinta", "hex": "#17191f" },
+    "gelo": { "nome": "Gelo", "hex": "#eceff1" },
+    "amarelo": { "nome": "Amarelo", "hex": "#fedd00" },
+    "verde": { "nome": "Verde", "hex": "#0b8a3a" }
+  },
+  "produtos": [
+    {
+      "id": "moletom-ousadia",
+      "nome": "Moletom Ousadia e Alegria",
+      "categoria": "vestuario",
+      "tipo": "moletom",
+      "destaque": true,
+      "resumo": "Capuz, bolso canguru e a frase do rodapé do site no peito.",
+      "descricao": "A frase que fecha a página inicial, em Oswald, no peito. Nas costas, NJR em tamanho grande. Peça conceitual desenhada para esta vitrine.",
+      "detalhes": ["Frente: OUSADIA E ALEGRIA, com o ponto amarelo da casa", "Costas: NJR em corpo grande", "Material, modelagem e fabricante: a definir"],
+      "cores": ["tinta", "verde", "gelo"],
+      "tamanhos": ["P", "M", "G", "GG"],
+      "vistas": ["Frente", "Costas", "Detalhe"],
+      "zoom": "150 170 300 360"
+    },
+    {
+      "id": "camiseta-10",
+      "nome": "Camiseta NJR 10",
+      "categoria": "vestuario",
+      "tipo": "camiseta",
+      "arte": "dez",
+      "destaque": true,
+      "resumo": "O 10 em Oswald, grande e sem enfeites, no peito.",
+      "descricao": "O número 10 ocupa o peito; NJR em corpo pequeno logo acima. Nas costas, o nome. Peça conceitual desenhada para esta vitrine.",
+      "detalhes": ["Frente: NJR e o número 10", "Costas: NEYMAR JR e o número 10", "Material, modelagem e fabricante: a definir"],
+      "cores": ["tinta", "gelo", "amarelo"],
+      "tamanhos": ["P", "M", "G", "GG"],
+      "vistas": ["Frente", "Costas", "Detalhe"],
+      "zoom": "165 175 270 324"
+    },
+    {
+      "id": "camiseta-vila",
+      "nome": "Camiseta Da Vila ao Mundo",
+      "categoria": "vestuario",
+      "tipo": "camiseta",
+      "arte": "vila",
+      "resumo": "A frase da linha do tempo da página inicial, com o ponto amarelo.",
+      "descricao": "DA VILA AO MUNDO, alinhado à esquerda, como nos títulos do site. Nas costas, uma linha com o ano de chegada a cada clube: 2009, 2013, 2017, 2023 e 2025.",
+      "detalhes": ["Frente: DA VILA AO MUNDO.", "Costas: linha do tempo 2009 · 2013 · 2017 · 2023 · 2025", "Material, modelagem e fabricante: a definir"],
+      "cores": ["gelo", "tinta", "verde"],
+      "tamanhos": ["P", "M", "G", "GG"],
+      "vistas": ["Frente", "Costas", "Detalhe"],
+      "zoom": "150 200 270 324"
+    },
+    {
+      "id": "poster-abas",
+      "nome": "Pôster Capas das Abas",
+      "categoria": "posteres",
+      "tipo": "poster",
+      "destaque": true,
+      "resumo": "As capas das abas do site como pôsteres tipográficos.",
+      "descricao": "Cada aba do site virou uma capa: Jogador, Carreira, Títulos, Santos e Vestiário. Escolha a capa e o formato. Arte criada para esta vitrine.",
+      "detalhes": ["Cinco capas, uma por aba do site", "Tipografia Oswald 700 com o ponto amarelo", "Papel, impressão e acabamento: a definir"],
+      "capas": ["jogador", "carreira", "titulos", "santos", "vestiario"],
+      "tamanhos": ["A3", "A2"],
+      "vistas": ["Pôster", "Detalhe", "Na parede"],
+      "zoom": "100 250 400 480"
+    },
+    {
+      "id": "poster-trajetoria",
+      "nome": "Pôster Trajetória",
+      "categoria": "posteres",
+      "tipo": "trajetoria",
+      "resumo": "Uma linha, cinco capítulos, do Santos ao Santos.",
+      "descricao": "Santos (2009), Barcelona (2013), Paris Saint-Germain (2017), Al-Hilal (2023) e o retorno ao Santos (2025): o ano de chegada a cada clube numa linha só.",
+      "detalhes": ["Anos de chegada conferidos com os capítulos do Vestiário", "Sem escudos nem marcas: só nomes e anos", "Papel, impressão e acabamento: a definir"],
+      "cores": ["tinta", "gelo", "amarelo"],
+      "tamanhos": ["A3", "A2"],
+      "vistas": ["Pôster", "Detalhe", "Na parede"],
+      "zoom": "110 70 380 456"
+    },
+    {
+      "id": "bone-njr",
+      "nome": "Boné NJR",
+      "categoria": "acessorios",
+      "tipo": "bone",
+      "resumo": "Seis gomos, aba curva e NJR na frente. Atrás, o 10.",
+      "descricao": "Boné de aba curva com NJR na frente e o 10 atrás, acima do regulador. Peça conceitual desenhada para esta vitrine.",
+      "detalhes": ["Frente: NJR", "Atrás: 10", "Material e fabricante: a definir"],
+      "cores": ["tinta", "gelo", "amarelo", "verde"],
+      "tamanhos": ["Único"],
+      "vistas": ["Frente", "Costas", "Detalhe"],
+      "zoom": "175 230 250 300"
+    },
+    {
+      "id": "caneca-10",
+      "nome": "Caneca Camisa 10",
+      "categoria": "acessorios",
+      "tipo": "caneca",
+      "resumo": "De um lado, o 10. Do outro, ousadia e alegria.",
+      "descricao": "Caneca reta com o 10 de um lado e OUSADIA E ALEGRIA do outro. Peça conceitual desenhada para esta vitrine.",
+      "detalhes": ["Frente: NJR e o número 10", "Verso: OUSADIA E ALEGRIA.", "Material, capacidade e fabricante: a definir"],
+      "cores": ["gelo", "tinta"],
+      "tamanhos": ["Único"],
+      "vistas": ["Frente", "Verso", "Detalhe"],
+      "zoom": "175 250 250 300"
+    },
+    {
+      "id": "ecobag-njr",
+      "nome": "Ecobag NJR",
+      "categoria": "acessorios",
+      "tipo": "ecobag",
+      "resumo": "Alça longa, NJR grande e a linha da assinatura do site.",
+      "descricao": "Sacola de alça longa com NJR em corpo grande e a linha SANTOS · BRASIL · 10, a mesma da assinatura do site. Peça conceitual desenhada para esta vitrine.",
+      "detalhes": ["Frente: NJR e SANTOS · BRASIL · 10", "Verso liso", "Material e fabricante: a definir"],
+      "cores": ["gelo", "tinta"],
+      "tamanhos": ["Único"],
+      "vistas": ["Frente", "Detalhe"],
+      "zoom": "160 330 280 336"
+    }
+  ],
+  "capas": {
+    "jogador": { "nome": "Jogador" },
+    "carreira": { "nome": "Carreira" },
+    "titulos": { "nome": "Títulos" },
+    "santos": { "nome": "Santos" },
+    "vestiario": { "nome": "Vestiário" }
+  }
+}

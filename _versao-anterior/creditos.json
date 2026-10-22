@@ -1,0 +1,15 @@
+{
+  "_como_preencher": "Para cada ano: salve a foto em assets/timeline/<ano>.webp, preencha autor, licença (ex.: CC BY-SA 4.0) e a URL da página do arquivo no Wikimedia Commons. Enquanto 'arquivo' estiver vazio, o card mostra o ano em halftone.",
+  "hero": { "autor": "", "licenca": "" },
+  "timeline": {
+    "2003": { "arquivo": "", "autor": "", "licenca": "", "url": "" },
+    "2011": { "arquivo": "", "autor": "", "licenca": "", "url": "" },
+    "2013": { "arquivo": "", "autor": "", "licenca": "", "url": "" },
+    "2015": { "arquivo": "", "autor": "", "licenca": "", "url": "" },
+    "2016": { "arquivo": "", "autor": "", "licenca": "", "url": "" },
+    "2017": { "arquivo": "", "autor": "", "licenca": "", "url": "" },
+    "2023": { "arquivo": "", "autor": "", "licenca": "", "url": "" },
+    "2025": { "arquivo": "", "autor": "", "licenca": "", "url": "" },
+    "2026": { "arquivo": "", "autor": "", "licenca": "", "url": "" }
+  }
+}

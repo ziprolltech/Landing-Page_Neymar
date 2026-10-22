@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Space Grotesk";
+        src: url("assets/fonts/space-grotesk-latin.woff2") format("woff2");
+        font-weight: 300 700;
+        font-style: normal;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #090a0b;
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #090a0b;
+        color: #f7fafb;
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      /* ---------- cenas ---------- */
+      .scene {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        background: #090a0b;
+        opacity: 0;
+      }
+      #s-intro {
+        opacity: 1;
+      }
+
+      /* ---------- abertura ---------- */
+      #s-intro .glow {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1500px;
+        height: 1500px;
+        margin: -750px 0 0 -750px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(254, 221, 0, 0.26) 0%, rgba(254, 221, 0, 0.08) 38%, rgba(254, 221, 0, 0) 68%);
+      }
+      #s-intro .ghost {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 1000px;
+        height: 1120px;
+        margin-top: -560px;
+      }
+      #s-intro .ghost text {
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        font-size: 1120px;
+        letter-spacing: -0.04em;
+        fill: rgba(254, 221, 0, 0.12);
+      }
+      #s-intro .stack {
+        position: absolute;
+        left: 140px;
+        right: 140px;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 18px;
+      }
+      #s-intro .kicker {
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        color: #fedd00;
+      }
+      #s-intro .line {
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 0.86;
+        letter-spacing: -0.02em;
+      }
+      #s-intro .l1 {
+        font-size: 260px;
+        color: #f7fafb;
+      }
+      #s-intro .l2 {
+        font-size: 196px;
+        color: #fedd00;
+      }
+      #s-intro .rule {
+        display: block;
+        width: 640px;
+        height: 4px;
+        background: #009c3b;
+        transform-origin: 0 50%;
+      }
+
+      /* ---------- fotos da carreira ---------- */
+      .photo .ph {
+        position: absolute;
+        inset: 0;
+      }
+      .photo .ph img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .photo .shade {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(ellipse 85% 95% at 0% 100%, rgba(9, 10, 11, 0.94) 0%, rgba(9, 10, 11, 0.7) 42%, rgba(9, 10, 11, 0) 74%),
+          radial-gradient(ellipse 140% 120% at 50% 50%, rgba(9, 10, 11, 0) 55%, rgba(9, 10, 11, 0.55) 100%);
+      }
+      .photo .cap {
+        position: absolute;
+        left: 120px;
+        bottom: 140px;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .photo .yr {
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        font-size: 230px;
+        line-height: 0.82;
+        letter-spacing: -0.03em;
+        color: #fedd00;
+      }
+      .photo .tag {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: #f7fafb;
+      }
+      .photo .tag i {
+        display: block;
+        width: 120px;
+        height: 4px;
+        background: #009c3b;
+        transform-origin: 0 50%;
+      }
+      .photo .ttl {
+        font-size: 74px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.03em;
+      }
+      .photo .sub {
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #dfe5e9;
+        max-width: 900px;
+      }
+
+      /* ---------- Coringa ---------- */
+      #s-coringa .ph {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1920px;
+        height: 2407px;
+      }
+      #s-coringa .ph img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      #s-coringa .shade {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(ellipse 70% 90% at 0% 100%, rgba(9, 10, 11, 0.92) 0%, rgba(9, 10, 11, 0.55) 45%, rgba(9, 10, 11, 0) 75%),
+          radial-gradient(ellipse 120% 110% at 50% 45%, rgba(9, 10, 11, 0) 50%, rgba(9, 10, 11, 0.7) 100%);
+      }
+      #s-coringa .words {
+        position: absolute;
+        left: 120px;
+        bottom: 130px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      #s-coringa .w1,
+      #s-coringa .w2 {
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 0.85;
+        letter-spacing: -0.02em;
+      }
+      #s-coringa .w1 {
+        font-size: 250px;
+        color: #fedd00;
+      }
+      #s-coringa .w2 {
+        font-size: 120px;
+        color: #f7fafb;
+      }
+
+      /* ---------- final ---------- */
+      #s-final .glow {
+        position: absolute;
+        left: 50%;
+        top: 62%;
+        width: 1600px;
+        height: 1600px;
+        margin: -800px 0 0 -800px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(254, 221, 0, 0.3) 0%, rgba(0, 156, 59, 0.12) 40%, rgba(0, 156, 59, 0) 68%);
+      }
+      #s-final .name {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        font-size: 340px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+      }
+      #s-final .name .n1 {
+        display: block;
+        color: #f7fafb;
+      }
+      #s-final .name .n2 {
+        display: block;
+        color: #fedd00;
+      }
+      #s-final .fig {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 980px;
+        height: 1010px;
+        margin-left: -490px;
+      }
+      #s-final .fig img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: 50% 100%;
+      }
+      #s-final .stats {
+        position: absolute;
+        left: 120px;
+        bottom: 140px;
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+      }
+      #s-final .stat b {
+        display: block;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 0.9;
+        color: #fedd00;
+        font-variant-numeric: tabular-nums;
+      }
+      #s-final .stat span {
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+      }
+      #s-final .sign {
+        position: absolute;
+        right: 120px;
+        bottom: 140px;
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 14px;
+        text-align: right;
+      }
+      #s-final .sign .k {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: #fedd00;
+      }
+      #s-final .sign .t {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.1;
+      }
+      #s-final .sign i {
+        display: block;
+        width: 200px;
+        height: 4px;
+        background: #009c3b;
+        transform-origin: 100% 50%;
+      }
+      #s-final .black {
+        position: absolute;
+        inset: 0;
+        background: #090a0b;
+        opacity: 0;
+      }
+
+      /* ---------- camadas de cima ---------- */
+      .bar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 70px;
+        background: #050506;
+        z-index: 95;
+      }
+      #bar-top {
+        top: 0;
+        transform-origin: 50% 0;
+      }
+      #bar-bot {
+        bottom: 0;
+        transform-origin: 50% 100%;
+      }
+      .glitch {
+        position: absolute;
+        inset: 0;
+        z-index: 90;
+        opacity: 0;
+        pointer-events: none;
+      }
+      #glitch-r {
+        background: rgba(255, 40, 60, 0.35);
+      }
+      #glitch-g {
+        background: rgba(0, 156, 59, 0.35);
+      }
+      #glitch-b {
+        background: rgba(40, 90, 255, 0.35);
+      }
+      #flash {
+        position: absolute;
+        inset: 0;
+        z-index: 91;
+        background: #fffbe6;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-i657" id="root" data-composition-id="main" data-start="0" data-duration="45" data-width="1920" data-height="1080">
+      <audio data-hf-id="hf-a9jv" id="score" src="assets/audio/score.wav" data-start="0" data-duration="44.92" data-track-index="9" data-volume="1"></audio>
+
+      <!-- 0–5 abertura -->
+      <div data-hf-id="hf-8sf8" id="s-intro" class="scene">
+        <div data-hf-id="hf-5mei" class="glow" data-layout-allow-overflow=""></div>
+        <svg data-hf-id="hf-mr6m" class="ghost" data-layout-ignore="" viewBox="0 0 1000 1120" aria-hidden="true"><text data-hf-id="hf-t22q" x="1000" y="960" text-anchor="end">10</text></svg>
+        <div data-hf-id="hf-psdl" class="stack" data-layout-allow-overflow="">
+          <div data-hf-id="hf-d20p" class="kicker">Neymar Jr · 2009 — 2026</div>
+          <div data-hf-id="hf-fceq" class="line l1">Da Vila</div>
+          <div data-hf-id="hf-ld98" class="line l2">para o mundo.</div>
+          <i data-hf-id="hf-05s6" class="rule"></i>
+        </div>
+      </div>
+
+      <!-- 5–33 carreira -->
+      <div data-hf-id="hf-4ssu" id="s-2011" class="scene photo">
+        <div data-hf-id="hf-i8mw" class="ph"><img data-hf-id="hf-chac" src="assets/img/2011.webp" alt="" style="object-position: 40% 45%"></div>
+        <div data-hf-id="hf-q0n7" class="shade"></div>
+        <div data-hf-id="hf-2mgg" class="cap">
+          <div data-hf-id="hf-cpst" class="yr">2011</div>
+          <div data-hf-id="hf-elzi" class="tag"><i data-hf-id="hf-wt6k"></i>Santos · 01 / 07</div>
+          <div data-hf-id="hf-u4te" class="ttl">O menino da Vila.</div>
+          <div data-hf-id="hf-hi7n" class="sub">Campeão da Libertadores aos 19 anos.</div>
+        </div>
+      </div>
+      <div data-hf-id="hf-0310" id="s-2013" class="scene photo">
+        <div data-hf-id="hf-3axc" class="ph"><img data-hf-id="hf-s6fw" src="assets/img/2013.webp" alt="" style="object-position: 50% 40%"></div>
+        <div data-hf-id="hf-iber" class="shade"></div>
+        <div data-hf-id="hf-xclk" class="cap">
+          <div data-hf-id="hf-diev" class="yr">2013</div>
+          <div data-hf-id="hf-jcjz" class="tag"><i data-hf-id="hf-zeb8"></i>Seleção · 02 / 07</div>
+          <div data-hf-id="hf-nr1s" class="ttl">Bola de Ouro.</div>
+          <div data-hf-id="hf-d4ho" class="sub">Melhor jogador da Copa das Confederações.</div>
+        </div>
+      </div>
+      <div data-hf-id="hf-jmei" id="s-2015" class="scene photo">
+        <div data-hf-id="hf-2409" class="ph"><img data-hf-id="hf-zl06" src="assets/img/2015.webp" alt="" style="object-position: 60% 30%"></div>
+        <div data-hf-id="hf-hx3q" class="shade"></div>
+        <div data-hf-id="hf-w5oh" class="cap">
+          <div data-hf-id="hf-eb0x" class="yr">2015</div>
+          <div data-hf-id="hf-4ue9" class="tag"><i data-hf-id="hf-y7e5"></i>Barcelona · 03 / 07</div>
+          <div data-hf-id="hf-zor1" class="ttl">A tríplice coroa.</div>
+          <div data-hf-id="hf-q13d" class="sub">Champions, La Liga e Copa do Rei.</div>
+        </div>
+      </div>
+      <div data-hf-id="hf-dgop" id="s-2016" class="scene photo">
+        <div data-hf-id="hf-2iba" class="ph"><img data-hf-id="hf-zs9n" src="assets/img/2016.webp" alt="" style="object-position: 60% 25%"></div>
+        <div data-hf-id="hf-hisp" class="shade"></div>
+        <div data-hf-id="hf-wjzi" class="cap">
+          <div data-hf-id="hf-fhy0" class="yr">2016</div>
+          <div data-hf-id="hf-l6a6" class="tag"><i data-hf-id="hf-ylp6"></i>Rio de Janeiro · 04 / 07</div>
+          <div data-hf-id="hf-uvoq" class="ttl">O ouro olímpico.</div>
+          <div data-hf-id="hf-qxvw" class="sub">O pênalti decisivo no Maracanã.</div>
+        </div>
+      </div>
+      <div data-hf-id="hf-cp0w" id="s-2017" class="scene photo">
+        <div data-hf-id="hf-1be7" class="ph"><img data-hf-id="hf-o111" src="assets/img/2017.webp" alt="" style="object-position: 35% 40%"></div>
+        <div data-hf-id="hf-h4ho" class="shade"></div>
+        <div data-hf-id="hf-vd2f" class="cap">
+          <div data-hf-id="hf-f3mz" class="yr">2017</div>
+          <div data-hf-id="hf-vu6h" class="tag"><i data-hf-id="hf-0l8b"></i>Paris · 05 / 07</div>
+          <div data-hf-id="hf-zew3" class="ttl">A maior transferência da história.</div>
+          <div data-hf-id="hf-1fu4" class="sub">222 milhões de euros.</div>
+        </div>
+      </div>
+      <div data-hf-id="hf-snux" id="s-2023" class="scene photo">
+        <div data-hf-id="hf-1pp8" class="ph"><img data-hf-id="hf-f4u1" src="assets/img/2023.webp" alt="" style="object-position: 50% 35%"></div>
+        <div data-hf-id="hf-gq6n" class="shade"></div>
+        <div data-hf-id="hf-vrdg" class="cap">
+          <div data-hf-id="hf-djd4" class="yr">2023</div>
+          <div data-hf-id="hf-zs1f" class="tag"><i data-hf-id="hf-0zjc"></i>Seleção · 06 / 07</div>
+          <div data-hf-id="hf-wv6w" class="ttl">Maior artilheiro da Seleção.</div>
+          <div data-hf-id="hf-6hvd" class="sub">Passou Pelé.</div>
+        </div>
+      </div>
+      <div data-hf-id="hf-d2lg" id="s-2026" class="scene photo">
+        <div data-hf-id="hf-0is5" class="ph"><img data-hf-id="hf-f6ui" src="assets/img/2026.webp" alt="" style="object-position: 70% 40%"></div>
+        <div data-hf-id="hf-gbvm" class="shade"></div>
+        <div data-hf-id="hf-ukgd" class="cap">
+          <div data-hf-id="hf-bjtz" class="yr">2026</div>
+          <div data-hf-id="hf-we2b" class="tag"><i data-hf-id="hf-zsm9"></i>Copa do Mundo · 07 / 07</div>
+          <div data-hf-id="hf-6hki" class="ttl">A quarta Copa.</div>
+          <div data-hf-id="hf-8j5i" class="sub">E segue no Santos, onde tudo começou.</div>
+        </div>
+      </div>
+
+      <!-- 33–39 Coringa -->
+      <div data-hf-id="hf-ku4n" id="s-coringa" class="scene">
+        <div data-hf-id="hf-84ll" class="ph" data-layout-allow-overflow=""><img data-hf-id="hf-bt4q" src="assets/img/coringa.png" alt=""></div>
+        <div data-hf-id="hf-fxkl" class="shade"></div>
+        <div data-hf-id="hf-m60b" class="words">
+          <div data-hf-id="hf-0v4u" class="w1">Ousadia</div>
+          <div data-hf-id="hf-8wl5" class="w2">e alegria.</div>
+        </div>
+      </div>
+
+      <!-- 39–45 final -->
+      <div data-hf-id="hf-kje2" id="s-final" class="scene">
+        <div data-hf-id="hf-a2y6" class="glow" data-layout-allow-overflow=""></div>
+        <div data-hf-id="hf-8rmb" class="name" data-layout-allow-occlusion=""><span data-hf-id="hf-meve" class="n1" data-layout-allow-occlusion="">Neymar</span><span data-hf-id="hf-g0cb" class="n2" data-layout-allow-occlusion="">Jr</span></div>
+        <div data-hf-id="hf-yef2" class="fig"><img data-hf-id="hf-736h" src="assets/img/hero-cut.webp" alt=""></div>
+        <div data-hf-id="hf-rhep" class="stats">
+          <div data-hf-id="hf-xa0m" class="stat"><b data-hf-id="hf-vrg9" data-to="80">0</b><span data-hf-id="hf-toxy">gols</span></div>
+          <div data-hf-id="hf-tx7e" class="stat"><b data-hf-id="hf-16wb" data-to="130">0</b><span data-hf-id="hf-u7wx">jogos</span></div>
+        </div>
+        <div data-hf-id="hf-59ur" class="sign">
+          <div data-hf-id="hf-ij3y" class="k">Camisa 10</div>
+          <div data-hf-id="hf-39s6" class="t">Maior artilheiro da história da Seleção.</div>
+          <i data-hf-id="hf-06xa"></i>
+        </div>
+        <div data-hf-id="hf-ge2x" class="black"></div>
+      </div>
+
+      <!-- vazamento de luz na entrada da carreira -->
+      <div data-hf-id="hf-9ib0" id="leak" class="clip" data-composition-id="organic-light-leak-overlay" data-composition-src="compositions/organic-light-leak-overlay.html" data-start="4.2" data-duration="2.2" data-track-index="5" data-width="1920" data-height="1080" style="position: absolute; inset: 0; z-index: 80; pointer-events: none"></div>
+
+      <div data-hf-id="hf-uzvf" id="glitch-r" class="glitch"></div>
+      <div data-hf-id="hf-v3cu" id="glitch-g" class="glitch"></div>
+      <div data-hf-id="hf-dv2j" id="glitch-b" class="glitch"></div>
+      <div data-hf-id="hf-hmg5" id="flash"></div>
+      <div data-hf-id="hf-ebam" id="bar-top" class="bar"></div>
+      <div data-hf-id="hf-y5dc" id="bar-bot" class="bar"></div>
+
+      <!-- grão de filme (registry: grain-overlay) -->
+      <div data-hf-id="hf-dpxz" id="grain-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 100">
+        <div data-hf-id="hf-0qtj" class="grain-texture"></div>
+      </div>
+      <style>
+        @keyframes hf-grain-noise {
+          0%,
+          100% {
+            transform: translate(0, 0);
+          }
+          10% {
+            transform: translate(-5%, -5%);
+          }
+          20% {
+            transform: translate(-10%, 5%);
+          }
+          30% {
+            transform: translate(5%, -10%);
+          }
+          40% {
+            transform: translate(-5%, 15%);
+          }
+          50% {
+            transform: translate(-10%, 5%);
+          }
+          60% {
+            transform: translate(15%, 0);
+          }
+          70% {
+            transform: translate(0, 10%);
+          }
+          80% {
+            transform: translate(-15%, 0);
+          }
+          90% {
+            transform: translate(10%, 5%);
+          }
+        }
+        #grain-overlay .grain-texture {
+          position: absolute;
+          top: -50%;
+          left: -50%;
+          width: 200%;
+          height: 200%;
+          background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+          opacity: 0.14;
+          animation: hf-grain-noise 0.5s steps(1) infinite;
+        }
+      </style>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      /* barras de cinema entram na abertura */
+      tl.fromTo(["#bar-top", "#bar-bot"], { scaleY: 0 }, { scaleY: 1, duration: 1.2, ease: "power3.out" }, 0.1);
+
+      /* ---------- 0–5 abertura ---------- */
+      tl.fromTo("#s-intro .glow", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 2.4, ease: "sine.out" }, 0);
+      tl.fromTo("#s-intro .glow", { scale: 1 }, { scale: 1.12, duration: 2.6, ease: "sine.inOut", immediateRender: false }, 2.4);
+      tl.fromTo("#s-intro .ghost", { x: 80, opacity: 0 }, { x: -60, opacity: 1, duration: 5, ease: "none" }, 0);
+      tl.fromTo("#s-intro .kicker", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 0.3);
+      tl.fromTo("#s-intro .l1", { scale: 1.35, opacity: 0, filter: "blur(10px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out", transformOrigin: "0% 50%" }, 1.0);
+      tl.fromTo("#s-intro .l2", { yPercent: 60, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.55, ease: "power4.out" }, 2.5);
+      tl.fromTo("#s-intro .rule", { scaleX: 0 }, { scaleX: 1, duration: 0.9, ease: "expo.inOut" }, 3.0);
+      tl.fromTo("#s-intro .stack", { scale: 1 }, { scale: 1.05, duration: 5, ease: "none", transformOrigin: "20% 50%" }, 0);
+
+      /* abertura → 2011: crossfade dentro do vazamento de luz */
+      tl.to("#s-intro", { opacity: 0, duration: 0.5, ease: "sine.in" }, 4.6);
+      tl.fromTo("#s-2011", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 4.75);
+
+      /* ---------- 5–33 carreira ---------- */
+      const YEARS = ["2011", "2013", "2015", "2016", "2017", "2023", "2026"];
+      const DRIFT = [
+        { o: "40% 45%", x: -30 },
+        { o: "50% 40%", x: 25 },
+        { o: "60% 30%", x: -20 },
+        { o: "60% 25%", x: 30 },
+        { o: "35% 40%", x: -25 },
+        { o: "50% 35%", x: 20 },
+        { o: "70% 40%", x: -30 },
+      ];
+      YEARS.forEach((y, i) => {
+        const S = 5 + i * 4;
+        const sc = "#s-" + y;
+        // Ken Burns: push no foco da foto
+        tl.fromTo(sc + " .ph img", { scale: 1.05, x: 0 }, { scale: 1.18, x: DRIFT[i].x, duration: 4.6, ease: "none", transformOrigin: DRIFT[i].o }, S - 0.3);
+        // legenda em cascata
+        tl.fromTo(sc + " .yr", { yPercent: 45, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.5, ease: "power4.out" }, S + 0.1);
+        tl.fromTo(sc + " .tag", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, S + 0.3);
+        tl.fromTo(sc + " .tag i", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "expo.out" }, S + 0.35);
+        tl.fromTo(sc + " .ttl", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, S + 0.5);
+        tl.fromTo(sc + " .sub", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "sine.out" }, S + 0.75);
+        // zoom-through para a próxima foto
+        if (i < YEARS.length - 1) {
+          const T = S + 4;
+          const nx = "#s-" + YEARS[i + 1];
+          tl.to(sc, { scale: 1.35, opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power3.in" }, T - 0.2);
+          tl.fromTo(nx, { scale: 0.86, opacity: 0, filter: "blur(8px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.35, ease: "power3.out" }, T - 0.08);
+        }
+      });
+
+      /* ---------- 33: glitch para o Coringa ---------- */
+      const G = 33.0;
+      const JIT = [
+        [42, -8, -34, 12, 18, -22, -16],
+        [-38, 14, 30, -10, -24, 20, 22],
+        [26, -18, -48, 6, 34, -14, -10],
+        [-50, 10, 22, -16, -12, 24, 28],
+        [34, -6, -26, 18, 40, -20, -18],
+        [-22, 16, 44, -8, -30, 12, 14],
+      ];
+      JIT.forEach((j, k) => {
+        const t = G - 0.12 + k * 0.035;
+        tl.set("#glitch-r", { opacity: 1, x: j[0], y: j[1] }, t);
+        tl.set("#glitch-g", { opacity: 1, x: j[2], y: j[3] }, t);
+        tl.set("#glitch-b", { opacity: 1, x: j[4], y: j[5] }, t);
+        tl.set(k < 3 ? "#s-2026" : "#s-coringa", { x: j[6] }, t);
+      });
+      tl.set("#s-2026", { opacity: 0, x: 0 }, G - 0.12 + 3 * 0.035);
+      tl.set("#s-coringa", { opacity: 1 }, G - 0.12 + 3 * 0.035);
+      tl.set(["#glitch-r", "#glitch-g", "#glitch-b"], { opacity: 0, x: 0, y: 0 }, G + 0.1);
+      tl.set("#s-coringa", { x: 0 }, G + 0.1);
+
+      /* ---------- 33–39 Coringa ---------- */
+      tl.fromTo("#s-coringa .ph", { y: -300, scale: 1.08 }, { y: -560, scale: 1.0, duration: 6.2, ease: "sine.inOut", transformOrigin: "50% 40%" }, G - 0.1);
+      tl.fromTo("#s-coringa .w1", { scale: 1.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "expo.out", transformOrigin: "0% 100%" }, 34.0);
+      tl.fromTo("#s-coringa .w2", { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: "back.out(1.6)" }, 35.5);
+
+      /* ---------- 39: estouro de luz ---------- */
+      const F = 39.0;
+      tl.to("#s-coringa", { filter: "brightness(1.6)", scale: 1.03, duration: 0.25, ease: "power1.in" }, F - 0.5);
+      tl.to("#s-coringa", { filter: "brightness(3)", scale: 1.06, duration: 0.25, ease: "power2.in" }, F - 0.25);
+      tl.to("#flash", { opacity: 0.6, duration: 0.25, ease: "power1.in" }, F - 0.35);
+      tl.to("#flash", { opacity: 1, duration: 0.1, ease: "power2.in" }, F - 0.1);
+      tl.set("#s-coringa", { opacity: 0 }, F);
+      tl.set("#s-final", { opacity: 1 }, F);
+      tl.to("#flash", { opacity: 0, duration: 0.6, ease: "power2.out" }, F);
+
+      /* ---------- 39–45 final ---------- */
+      tl.fromTo("#s-final .glow", { scale: 0.7, opacity: 0.4 }, { scale: 1.08, opacity: 1, duration: 6, ease: "sine.out" }, F);
+      tl.fromTo("#s-final .n1", { yPercent: 30, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.6, ease: "power4.out" }, F + 0.1);
+      tl.fromTo("#s-final .n2", { yPercent: 30, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.6, ease: "power4.out" }, F + 0.22);
+      tl.fromTo("#s-final .fig", { y: 120, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.9, ease: "power3.out", transformOrigin: "50% 100%" }, F + 0.15);
+      tl.fromTo("#s-final .fig", { scale: 1 }, { scale: 1.04, duration: 4.8, ease: "none", immediateRender: false, transformOrigin: "50% 100%" }, F + 1.05);
+      document.querySelectorAll("#s-final .stat").forEach((el, i) => {
+        const b = el.querySelector("b");
+        const to = Number(b.dataset.to);
+        const proxy = { v: 0 };
+        tl.fromTo(el, { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, F + 0.8 + i * 0.25);
+        tl.fromTo(proxy, { v: 0 }, { v: to, duration: 1.6, ease: "power2.out", onUpdate: () => (b.textContent = Math.round(proxy.v)) }, F + 0.8 + i * 0.25);
+      });
+      tl.fromTo("#s-final .sign .k", { x: 40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, F + 1.2);
+      tl.fromTo("#s-final .sign .t", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, F + 1.4);
+      tl.fromTo("#s-final .sign i", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "expo.out" }, F + 1.6);
+      /* última cena: fecha no preto */
+      tl.to("#s-final .black", { opacity: 1, duration: 1.2, ease: "sine.in" }, 43.6);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

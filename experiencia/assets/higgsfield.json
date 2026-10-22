@@ -1,0 +1,9 @@
+{
+  "_leia": "Artes da Higgsfield para Neymar: The Experience. Mude 'pronto' para true SÓ depois de salvar o arquivo no caminho indicado. Prompts e regras em /experiencia/HIGGSFIELD.md.",
+  "artes": [
+    { "id": "entrada-fundo", "arquivo": "assets/higgsfield/entrada-fundo.webp", "uso": "fundo do palco nos atos I e II", "tamanho": "3840x2160", "pronto": false },
+    { "id": "talento", "arquivo": "assets/higgsfield/talento.webp", "uso": "cena Talento (substitui a foto do Mundial de 2011)", "tamanho": "3840x2160", "legenda": "Talento. Arte digital.", "pronto": false },
+    { "id": "garra", "arquivo": "assets/higgsfield/garra.webp", "uso": "cena Competitividade (substitui a foto do Camp Nou)", "tamanho": "3840x2160", "legenda": "Competitividade. Arte digital.", "pronto": false },
+    { "id": "legado-fundo", "arquivo": "assets/higgsfield/legado-fundo.webp", "uso": "fundo do palco no ato IV", "tamanho": "3840x2160", "pronto": false }
+  ]
+}

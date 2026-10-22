@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vestiário · Neymar Jr</title>
+<meta name="description" content="O vestiário de Neymar Jr: troque os uniformes e reviva cada capítulo da carreira, do Santos à Seleção.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/retratos/_silhueta.webp">
+<link rel="stylesheet" href="vestiario.css">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+</head>
+<body>
+
+<!-- portas que fecham/abrem a entrada e a saída -->
+<div class="shutters is-closed" id="shutters" aria-hidden="true">
+  <i></i><i></i><i></i><i></i><i></i><i></i>
+</div>
+
+<div class="vt" id="vt">
+  <!-- ambiente -->
+  <div class="room" aria-hidden="true">
+    <div class="wall"></div>
+    <div class="lockers" id="lockers"></div>
+    <div class="wash" data-layer="a"></div>
+    <div class="wash" data-layer="b"></div>
+    <div class="bigname"><span id="bigname"></span></div>
+    <div class="floor"><i class="bench"></i></div>
+    <div class="spot"></div>
+    <div class="dim"></div>
+    <div class="veil"></div>
+    <div class="grain"></div>
+  </div>
+
+  <header class="top">
+    <a class="back" href="../" id="back"><span aria-hidden="true">[ ← </span>Início<span aria-hidden="true"> ]</span></a>
+    <p class="brand"><b>NJR</b> · Vestiário</p>
+    <p class="count" aria-live="polite"><span id="count-now">01</span> / <span id="count-all">06</span></p>
+  </header>
+
+  <main class="stage">
+    <figure class="fig" id="fig" aria-live="polite">
+      <div class="fig-layer" data-slot="0"></div>
+      <div class="fig-layer" data-slot="1"></div>
+      <figcaption class="fig-pending" id="fig-pending">Retrato em produção · Higgsfield</figcaption>
+      <i class="fig-scan" aria-hidden="true"></i>
+    </figure>
+
+    <section class="info" id="info" aria-labelledby="ch-name">
+      <p class="eyebrow rv"><span id="ch-index">Capítulo 01</span> · <span id="ch-type">Clube</span></p>
+      <h1 class="name rv" id="ch-name"></h1>
+      <p class="sub rv" id="ch-sub"></p>
+      <div class="meta rv">
+        <span class="period" id="ch-period"></span>
+        <span class="shirt" id="ch-shirt-wrap"><small>camisa</small><b id="ch-shirt"></b></span>
+      </div>
+      <p class="lead rv" id="ch-lead"></p>
+      <p class="text rv" id="ch-text"></p>
+      <button class="explore rv" id="explore" type="button" aria-haspopup="dialog">
+        <span>Explorar capítulo</span>
+        <svg viewBox="0 0 14 10" aria-hidden="true"><path d="M0 5h12M8 1l4 4-4 4"/></svg>
+      </button>
+    </section>
+
+    <aside class="facts" id="facts" aria-label="Números e conquistas"></aside>
+
+    <button class="arrow prev" id="prev" type="button" aria-label="Uniforme anterior">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <button class="arrow next" id="next" type="button" aria-label="Próximo uniforme">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </main>
+
+  <nav class="chapters" aria-label="Capítulos da carreira">
+    <ol id="chapters"></ol>
+    <i class="chapters-bar" id="chapters-bar" aria-hidden="true"></i>
+  </nav>
+</div>
+
+<!-- painel histórico -->
+<div class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="panel-name" hidden>
+  <div class="panel-scrim" data-close></div>
+  <article class="panel-sheet" id="panel-sheet" tabindex="-1">
+    <header class="panel-head">
+      <div>
+        <p class="eyebrow" id="panel-eyebrow"></p>
+        <h2 id="panel-name"></h2>
+        <p class="panel-period" id="panel-period"></p>
+      </div>
+      <button class="panel-close" type="button" data-close aria-label="Fechar painel">Fechar ✕</button>
+    </header>
+    <div class="panel-body" id="panel-body"></div>
+  </article>
+</div>
+
+<noscript><p class="nojs">O vestiário precisa de JavaScript. <a href="../">Voltar ao início</a>.</p></noscript>
+<script type="module" src="vestiario.js"></script>
+</body>
+</html>

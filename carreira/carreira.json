@@ -1,0 +1,286 @@
+{
+  "_como_editar": "Fonte única da aba Carreira. Depois de editar, rode `python carreira/tools/gerar.py` na raiz do site para regenerar o index.html (o HTML é estático para funcionar sem JavaScript). Os números e momentos seguem vestiario/capitulos.json; o que foi acrescentado aqui tem fonte própria em 'fontes'.",
+  "atualizado": "2026-10-22",
+  "escala": { "inicio": 2009, "fim": 2027 },
+  "capitulos": [
+    {
+      "id": "santos-origem",
+      "tipo": "Clube",
+      "nome": "Santos",
+      "rotulo": "Santos I",
+      "subtitulo": "A origem",
+      "periodo": "2009 — 2013",
+      "inicio": 2009.18,
+      "fim": 2013.42,
+      "cor": "#f7fafb",
+      "efeito": "iris",
+      "ano": { "de": 1992, "para": 2009, "nota": "Mogi das Cruzes, 1992 → Pacaembu, 2009" },
+      "abertura": "Antes do mundo, a Vila.",
+      "contexto": "Revelado na base do Santos, Neymar estreou no profissional em 7 de março de 2009, aos 17 anos, contra o Oeste, no Pacaembu. O moicano, os dribles e a ousadia viraram a cara de um time que voltou a encher a Vila Belmiro e levou o clube de volta ao topo da América.",
+      "momentos": [
+        { "quando": "Mar 2009", "texto": "Estreia no time profissional, aos 17 anos, contra o Oeste." },
+        { "quando": "2010", "texto": "Campeão paulista e da Copa do Brasil: o primeiro ano completo já termina com dois títulos." },
+        { "quando": "Jun 2011", "texto": "Gol na final contra o Peñarol e o tri da Libertadores para o Santos." },
+        { "quando": "Jul 2011", "texto": "O gol contra o Flamengo que valeu o Prêmio Puskás da FIFA." },
+        { "quando": "Dez 2011", "texto": "Final do Mundial de Clubes, em Yokohama, contra o Barcelona de Messi." },
+        { "quando": "Mai 2013", "texto": "Despedida da Vila rumo ao Barcelona." }
+      ],
+      "conquistas": [
+        { "titulo": "Copa Libertadores", "anos": "2011" },
+        { "titulo": "Copa do Brasil", "anos": "2010" },
+        { "titulo": "Campeonato Paulista", "anos": "2010 · 2011 · 2012" },
+        { "titulo": "Recopa Sul-Americana", "anos": "2012" }
+      ],
+      "numeros": [
+        { "valor": 225, "rotulo": "jogos" },
+        { "valor": 136, "rotulo": "gols" },
+        { "valor": 63, "rotulo": "assistências" }
+      ],
+      "numerosNota": "Todas as competições, 2009–2013, segundo a Wikipédia e o Flashscore. Outras fontes registram entre 135 e 138 gols.",
+      "numerosFonte": { "nome": "Olympics.com", "url": "https://www.olympics.com/pt/noticias/neymar-historico-completo-estatisticas-clubes-selecao" },
+      "paralelo": [
+        { "quando": "Ago 2010", "texto": "Estreia na Seleção com gol, contra os Estados Unidos, em Nova Jersey." }
+      ],
+      "fotos": {
+        "abertura": { "arquivo": "/vestiario/assets/historia/santos1-mundial-2011.webp", "w": 1420, "h": 1016, "legenda": "Final do Mundial de Clubes, em Yokohama, 2011.", "alt": "Neymar de moicano, de perfil, com a camisa do Santos", "autor": "Christopher Johnson", "licenca": "CC BY-SA 2.0", "licencaUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "url": "https://commons.wikimedia.org/wiki/File:Neymar_2011_FIFA_Club_World_Cup_Final.jpg" },
+        "corpo": [
+          { "arquivo": "/vestiario/assets/historia/santos1-libertadores-2011.webp", "w": 1400, "h": 1186, "legenda": "Aquecimento antes da primeira final da Libertadores, contra o Peñarol, em Montevidéu, 2011.", "alt": "Neymar aquece no gramado do estádio Centenário antes da final da Libertadores", "autor": "Jimmy Baikovicius", "licenca": "CC BY-SA 2.0", "licencaUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "url": "https://commons.wikimedia.org/wiki/File:Neymar_-_Copa_Libertadores_de_America_2011_-_Pe%C3%B1arol_-_Santos_-_110616-6925-jikatu.jpg" },
+          { "arquivo": "/carreira/assets/santos1-messi-2011.webp", "w": 1600, "h": 1520, "legenda": "Com Messi, depois da final do Mundial de Clubes, Yokohama, 18 de dezembro de 2011.", "alt": "Messi, com a camisa do Barcelona, cumprimenta Neymar, de costas com a camisa 11 do Santos", "autor": "Christopher Johnson", "licenca": "CC BY-SA 2.0", "licencaUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "url": "https://commons.wikimedia.org/wiki/File:Messi_with_Neymar_Junior_the_Future_of_Brazil.jpg" }
+        ]
+      }
+    },
+    {
+      "id": "barcelona",
+      "tipo": "Clube",
+      "nome": "Barcelona",
+      "rotulo": "Barcelona",
+      "subtitulo": "O auge europeu",
+      "periodo": "2013 — 2017",
+      "inicio": 2013.42,
+      "fim": 2017.59,
+      "cor": "#a50044",
+      "efeito": "slide",
+      "ano": { "de": 2009, "para": 2013, "nota": "Da Vila Belmiro ao Camp Nou" },
+      "abertura": "O talento brasileiro no centro da Europa.",
+      "contexto": "Apresentado no Camp Nou em junho de 2013, Neymar aprendeu o ritmo do futebol europeu ao lado de Messi e, a partir de 2014, de Luis Suárez. O trio MSN marcou 122 gols na temporada 2014–15 e levou o clube à tríplice coroa: Liga dos Campeões, La Liga e Copa do Rei.",
+      "momentos": [
+        { "quando": "Jun 2013", "texto": "Apresentado no Camp Nou, com a camisa 11." },
+        { "quando": "2014–15", "texto": "Nasce o trio MSN, com Messi e Suárez: 122 gols na temporada." },
+        { "quando": "Jun 2015", "texto": "Fecha a final da Champions em Berlim: 3 a 1 sobre a Juventus, com gol dele no fim." },
+        { "quando": "Mar 2017", "texto": "A virada histórica: 6 a 1 no PSG, com dois gols e a assistência do sexto." },
+        { "quando": "Ago 2017", "texto": "Deixa o clube rumo a Paris." }
+      ],
+      "conquistas": [
+        { "titulo": "Liga dos Campeões", "anos": "2014–15" },
+        { "titulo": "Mundial de Clubes", "anos": "2015" },
+        { "titulo": "La Liga", "anos": "2014–15 · 2015–16" },
+        { "titulo": "Copa do Rei", "anos": "2015 · 2016 · 2017" },
+        { "titulo": "Supercopa da Espanha", "anos": "2013" }
+      ],
+      "numeros": [
+        { "valor": 186, "rotulo": "jogos" },
+        { "valor": 105, "rotulo": "gols" },
+        { "valor": 62, "rotulo": "assistências" }
+      ],
+      "numerosNota": "Todas as competições, 2013–2017.",
+      "numerosFonte": { "nome": "Olympics.com", "url": "https://www.olympics.com/pt/noticias/neymar-historico-completo-estatisticas-clubes-selecao" },
+      "paralelo": [
+        { "quando": "Jun 2013", "texto": "Campeão da Copa das Confederações e eleito o melhor jogador do torneio." },
+        { "quando": "Jul 2014", "texto": "Fratura na vértebra contra a Colômbia tira o 10 da Copa em casa." },
+        { "quando": "Ago 2016", "texto": "O pênalti do primeiro ouro olímpico do futebol masculino, no Maracanã." }
+      ],
+      "fotos": {
+        "saida": "santos-origem:1",
+        "abertura": { "arquivo": "/carreira/assets/barca-apresentacao-2013.webp", "w": 1500, "h": 1159, "legenda": "Apresentação no Camp Nou, 3 de junho de 2013.", "alt": "Neymar com o uniforme do Barcelona caminha no gramado do Camp Nou", "autor": "Basc català", "licenca": "CC BY-SA 3.0", "licencaUrl": "https://creativecommons.org/licenses/by-sa/3.0/", "url": "https://commons.wikimedia.org/wiki/File:Neymar_Barcelona_presentation_2.jpg" },
+        "corpo": [
+          { "arquivo": "/vestiario/assets/historia/barca-2015.webp", "w": 1420, "h": 1016, "legenda": "Com a camisa do Barcelona, 2015.", "alt": "Neymar com a camisa do Barcelona durante uma partida", "autor": "Alex Fau", "licenca": "CC BY 2.0", "licencaUrl": "https://creativecommons.org/licenses/by/2.0/", "url": "https://commons.wikimedia.org/wiki/File:Neymar_(16245492137).jpg" },
+          { "arquivo": "/vestiario/assets/historia/barca-remontada-2017.webp", "w": 1240, "h": 883, "legenda": "Barcelona 6 x 1 PSG, Camp Nou, 8 de março de 2017.", "alt": "Jogadores do Barcelona comemoram no gramado do Camp Nou diante da torcida", "autor": "Hugo Pérez Marsol", "licenca": "CC BY 2.0", "licencaUrl": "https://creativecommons.org/licenses/by/2.0/", "url": "https://commons.wikimedia.org/wiki/File:Bar%C3%A7a_6_-_PSG_1;_Dimecres_8_de_mar%C3%A7_de_2017_-_33340360535_(cropped).jpg" }
+        ]
+      }
+    },
+    {
+      "id": "psg",
+      "tipo": "Clube",
+      "nome": "Paris Saint-Germain",
+      "rotulo": "PSG",
+      "subtitulo": "A era parisiense",
+      "periodo": "2017 — 2023",
+      "inicio": 2017.59,
+      "fim": 2023.62,
+      "cor": "#da291c",
+      "efeito": "zoom",
+      "ano": { "de": 2013, "para": 2017, "nota": "222 milhões de euros: a transferência mais cara da história" },
+      "abertura": "A maior aposta da história do futebol.",
+      "contexto": "Em agosto de 2017, o PSG pagou a multa rescisória de 222 milhões de euros, a transferência mais cara de todos os tempos. Em Paris, vestiu a 10, dividiu o ataque com Mbappé e depois com Messi, empilhou títulos franceses e levou o clube à sua primeira final de Champions, em 2020. Lesões no pé direito, em 2018 e 2019, cortaram temporadas decisivas.",
+      "momentos": [
+        { "quando": "Ago 2017", "texto": "Transferência recorde: 222 milhões de euros." },
+        { "quando": "Fev 2018", "texto": "Fratura no pé direito tira o camisa 10 da reta final da temporada." },
+        { "quando": "Ago 2020", "texto": "Primeira final de Champions do PSG, em Lisboa: derrota por 1 a 0 para o Bayern." },
+        { "quando": "Ago 2023", "texto": "Deixa Paris rumo à Arábia Saudita." }
+      ],
+      "conquistas": [
+        { "titulo": "Campeonato Francês", "anos": "2018 · 2019 · 2020 · 2022 · 2023" },
+        { "titulo": "Copa da França", "anos": "2018 · 2020 · 2021" },
+        { "titulo": "Copa da Liga Francesa", "anos": "2018 · 2020" },
+        { "titulo": "Supercopa da França", "anos": "2018 · 2020 · 2022" }
+      ],
+      "numeros": [
+        { "valor": 173, "rotulo": "jogos" },
+        { "valor": 118, "rotulo": "gols" },
+        { "valor": 70, "rotulo": "assistências" }
+      ],
+      "numerosNota": "Todas as competições, 2017–2023.",
+      "numerosFonte": { "nome": "Olympics.com", "url": "https://www.olympics.com/pt/noticias/neymar-historico-completo-estatisticas-clubes-selecao" },
+      "paralelo": [
+        { "quando": "2018 · 2022", "texto": "Marca nas Copas da Rússia e do Catar." },
+        { "quando": "Dez 2022", "texto": "Gol contra a Croácia iguala os 77 de Pelé." }
+      ],
+      "fotos": {
+        "saida": "barcelona:1",
+        "abertura": { "arquivo": "/vestiario/assets/historia/psg-apresentacao-2017.webp", "w": 1047, "h": 1311, "legenda": "Apresentação no Parque dos Príncipes, 4 de agosto de 2017.", "alt": "Neymar sorri com a camisa do PSG na entrevista de apresentação", "autor": "Antoine Dellenbach", "licenca": "CC BY-SA 2.0", "licencaUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "url": "https://commons.wikimedia.org/wiki/File:Neymar_Jr_presentation_-_Press_conference_for_PSG_001_(cropped).jpg" },
+        "corpo": [
+          { "arquivo": "/vestiario/assets/historia/psg-aquecimento-2018.webp", "w": 1420, "h": 1016, "legenda": "Aquecimento pelo PSG, 2018.", "alt": "Neymar de agasalho vermelho no aquecimento do PSG", "autor": "Balkan Photos", "licenca": "CC BY-SA 2.0", "licencaUrl": "https://creativecommons.org/licenses/by-sa/2.0/", "url": "https://commons.wikimedia.org/wiki/File:Neymar_2018.jpg" }
+        ]
+      }
+    },
+    {
+      "id": "al-hilal",
+      "tipo": "Clube",
+      "nome": "Al-Hilal",
+      "rotulo": "Al-Hilal",
+      "subtitulo": "Um novo desafio",
+      "periodo": "2023 — 2025",
+      "inicio": 2023.62,
+      "fim": 2025.07,
+      "cor": "#2f7fd6",
+      "efeito": "slats",
+      "ano": { "de": 2017, "para": 2023, "nota": "De Paris a Riade" },
+      "abertura": "Um mapa novo, um caminho interrompido.",
+      "contexto": "O acordo com o Al-Hilal foi anunciado em 15 de agosto de 2023, na leva de estrelas contratadas pelo futebol saudita. Dois meses depois, Neymar rompeu o ligamento cruzado anterior e o menisco do joelho esquerdo defendendo a Seleção, contra o Uruguai. A lesão definiu a passagem: foram sete jogos pelo clube em pouco mais de um ano.",
+      "momentos": [
+        { "quando": "Ago 2023", "texto": "Apresentado em Riade com a camisa 10." },
+        { "quando": "Set 2023", "texto": "Estreia na vitória por 6 a 1 sobre o Al-Riyadh, saindo do banco." },
+        { "quando": "Out 2023", "texto": "Lesão grave no joelho esquerdo, pela Seleção, em Montevidéu." },
+        { "quando": "Out 2024", "texto": "Volta a jogar um ano depois, contra o Al Ain; semanas mais tarde, nova lesão muscular." },
+        { "quando": "Jan 2025", "texto": "Rescisão de contrato em comum acordo." }
+      ],
+      "conquistas": [
+        { "titulo": "Campeonato Saudita", "anos": "2023–24", "nota": "Fez parte do elenco; jogou pouco por causa da lesão." }
+      ],
+      "numeros": [
+        { "valor": 7, "rotulo": "jogos" },
+        { "valor": 1, "rotulo": "gol" },
+        { "valor": 2, "rotulo": "assistências" }
+      ],
+      "numerosNota": "Todas as competições, ago 2023 – jan 2025. A lesão de outubro de 2023 o afastou por quase um ano.",
+      "numerosFonte": { "nome": "Wikipédia (pt)", "url": "https://pt.wikipedia.org/wiki/Neymar" },
+      "paralelo": [
+        { "quando": "Set 2023", "texto": "Dois gols contra a Bolívia, em Belém: maior artilheiro da história da Seleção." },
+        { "quando": "Out 2023", "texto": "A lesão que o tira do Al-Hilal acontece com a camisa amarela, contra o Uruguai." }
+      ],
+      "fotos": {
+        "saida": "psg:0",
+        "abertura": { "arquivo": "/vestiario/assets/historia/hilal-2023-a.webp", "w": 1420, "h": 1016, "legenda": "Comemoração pelo Al-Hilal, 3 de outubro de 2023.", "alt": "Neymar de braços abertos com o uniforme azul do Al-Hilal", "autor": "Meghdad Madadi", "licenca": "CC BY 4.0", "licencaUrl": "https://creativecommons.org/licenses/by/4.0/", "url": "https://commons.wikimedia.org/wiki/File:Neymar_Jr._with_Al_Hilal,_3_October_2023_-_08.jpg" },
+        "corpo": [
+          { "arquivo": "/vestiario/assets/historia/hilal-2023-b.webp", "w": 800, "h": 800, "legenda": "Aquecimento pelo Al-Hilal, 3 de outubro de 2023.", "alt": "Neymar chuta a bola no aquecimento do Al-Hilal", "autor": "Meghdad Madadi", "licenca": "CC BY 4.0", "licencaUrl": "https://creativecommons.org/licenses/by/4.0/", "url": "https://commons.wikimedia.org/wiki/File:Neymar_Jr._with_Al_Hilal,_3_October_2023_-_01.jpg" }
+        ]
+      }
+    },
+    {
+      "id": "santos-retorno",
+      "tipo": "Clube",
+      "nome": "Santos",
+      "rotulo": "Santos II",
+      "subtitulo": "O retorno",
+      "periodo": "2025 — hoje",
+      "inicio": 2025.07,
+      "fim": 2026.81,
+      "cor": "#f7fafb",
+      "efeito": "memoria",
+      "ano": { "de": 2023, "para": 2025, "nota": "Dezesseis anos depois da estreia" },
+      "abertura": "A volta para onde tudo começou.",
+      "contexto": "O retorno foi anunciado em 31 de janeiro de 2025, quatro dias depois da rescisão com o Al-Hilal. O Santos, recém-promovido à Série A, recebeu de volta o seu menino, agora com a camisa 10. Entre lesões, ele foi decisivo na reta final do Brasileirão, quando o time escapou do rebaixamento. Operou o menisco do joelho esquerdo ao fim da temporada e renovou o contrato até o fim de 2026.",
+      "momentos": [
+        { "quando": "Jan 2025", "texto": "Volta anunciada: a Vila recebe de novo o seu menino, agora camisa 10." },
+        { "quando": "Fev 2025", "texto": "Reestreia na Vila Belmiro, no empate por 1 a 1 com o Botafogo-SP." },
+        { "quando": "Dez 2025", "texto": "Santos termina o Brasileirão em 12º, longe do rebaixamento e com vaga na Sul-Americana." },
+        { "quando": "Dez 2025", "texto": "Cirurgia no menisco do joelho esquerdo." },
+        { "quando": "Jan 2026", "texto": "Renovação de contrato até dezembro de 2026." },
+        { "quando": "Fev 2026", "texto": "Dois gols na vitória por 2 a 1 sobre o Vasco." }
+      ],
+      "conquistas": [],
+      "conquistasVazio": "Nenhum título nesta passagem até 22 de outubro de 2026. O capítulo segue aberto.",
+      "numeros": [
+        { "valor": 11, "rotulo": "gols em 2025" },
+        { "valor": 4, "rotulo": "assistências em 2025" }
+      ],
+      "numerosNota": "Temporada 2025, segundo a ESPN. As fontes divergem no número de jogos, por isso ele não aparece aqui.",
+      "numerosFonte": { "nome": "ESPN", "url": "https://www.espn.com.br/futebol/santos/artigo/_/id/16135471/neymar-renova-contrato-com-o-santos-ate-o-final-de-2026-veja-os-detalhes" },
+      "paralelo": [
+        { "quando": "Jul 2026", "texto": "Na Copa de 2026, gol de pênalti contra a Noruega, nas oitavas, e a despedida da Seleção." }
+      ],
+      "fotos": {
+        "saida": "santos-origem:abertura",
+        "abertura": { "arquivo": "/vestiario/assets/historia/santos2-fortaleza-2025.webp", "w": 512, "h": 702, "legenda": "Santos x Fortaleza, 2 de novembro de 2025.", "alt": "Neymar com o uniforme branco do Santos em campo", "autor": "BrazilianDude70", "licenca": "CC0", "licencaUrl": "https://creativecommons.org/publicdomain/zero/1.0/", "url": "https://commons.wikimedia.org/wiki/File:Santos_x_Fortaleza_-_02-11-2025_24_-_Neymar.jpg" },
+        "corpo": [
+          { "arquivo": "/carreira/assets/santos2-juventude-2025.webp", "w": 600, "h": 800, "legenda": "Santos x Juventude, agosto de 2025 (recorte).", "alt": "Neymar, com o terceiro uniforme do Santos, junto à bandeira de escanteio", "autor": "BrazilianDude70", "licenca": "CC0", "licencaUrl": "https://creativecommons.org/publicdomain/zero/1.0/", "url": "https://commons.wikimedia.org/wiki/File:Neymar_-_Santos_vs_Juventude_-_04-08-2025.jpg" }
+        ]
+      }
+    },
+    {
+      "id": "selecao",
+      "tipo": "Seleção",
+      "nome": "Seleção Brasileira",
+      "rotulo": "Seleção",
+      "subtitulo": "A linha paralela",
+      "periodo": "2010 — 2026",
+      "inicio": 2010.61,
+      "fim": 2026.51,
+      "cor": "#fedd00",
+      "efeito": "bandeira",
+      "ano": { "de": 2025, "para": 2010, "nota": "Enquanto os clubes mudavam, a camisa amarela seguia junto" },
+      "abertura": "Dezesseis anos de camisa amarela.",
+      "contexto": "Correndo em paralelo a todos os clubes, a Seleção começou em agosto de 2010, com gol contra os Estados Unidos, em Nova Jersey. Vieram a Copa das Confederações, o primeiro ouro olímpico do futebol masculino e, em setembro de 2023, o recorde de Pelé como maior artilheiro da Seleção em jogos reconhecidos pela FIFA. Marcou em quatro Copas do Mundo e se despediu na de 2026, no mesmo estádio em que tinha estreado.",
+      "momentos": [
+        { "quando": "Ago 2010", "texto": "Estreia com gol contra os Estados Unidos, em Nova Jersey: 2 a 0." },
+        { "quando": "Jun 2013", "texto": "Campeão da Copa das Confederações, eleito o melhor jogador do torneio." },
+        { "quando": "Jul 2014", "texto": "Fratura na vértebra contra a Colômbia, nas quartas, tira o 10 da Copa em casa." },
+        { "quando": "Ago 2016", "texto": "O pênalti do ouro olímpico, no Maracanã." },
+        { "quando": "Dez 2022", "texto": "Gol contra a Croácia iguala os 77 de Pelé." },
+        { "quando": "Set 2023", "texto": "Dois gols contra a Bolívia, em Belém: maior artilheiro da Seleção." },
+        { "quando": "Out 2023", "texto": "Rompe o ligamento do joelho esquerdo contra o Uruguai, em Montevidéu." },
+        { "quando": "Jul 2026", "texto": "Gol de pênalti contra a Noruega, nas oitavas da Copa, na derrota por 2 a 1. No mesmo dia, anuncia o fim da trajetória na Seleção." }
+      ],
+      "conquistas": [
+        { "titulo": "Copa das Confederações", "anos": "2013", "nota": "Eleito o melhor jogador do torneio." },
+        { "titulo": "Ouro olímpico", "anos": "Rio 2016", "nota": "Converteu o pênalti decisivo no Maracanã." }
+      ],
+      "recordes": [
+        { "titulo": "Maior artilheiro da história da Seleção", "texto": "80 gols. Pelé tem 77 em jogos reconhecidos pela FIFA." },
+        { "titulo": "Gols em quatro Copas", "texto": "2014, 2018, 2022 e 2026." }
+      ],
+      "numeros": [
+        { "valor": 130, "rotulo": "jogos" },
+        { "valor": 80, "rotulo": "gols" }
+      ],
+      "numerosNota": "Jogos reconhecidos pela FIFA, de agosto de 2010 a julho de 2026 (despedida após a Copa).",
+      "numerosFonte": { "nome": "Wikipédia (en)", "url": "https://en.wikipedia.org/wiki/Neymar" },
+      "paralelo": [],
+      "fotos": {
+        "abertura": { "arquivo": "/vestiario/assets/historia/selecao-ouro-2016.webp", "w": 1420, "h": 1016, "legenda": "Depois do ouro olímpico, Maracanã, 2016.", "alt": "Neymar com a medalha de ouro olímpica e a faixa 100% Jesus na cabeça", "autor": "Fernando Frazão/Agência Brasil", "licenca": "CC BY 3.0 BR", "licencaUrl": "https://creativecommons.org/licenses/by/3.0/br/", "url": "https://commons.wikimedia.org/wiki/File:Brasil_conquista_primeiro_ouro_ol%C3%ADmpico_nos_penaltis_1039248-20082016-_mg_0015.jpg" },
+        "corpo": [
+          { "arquivo": "/vestiario/assets/historia/selecao-confederacoes-2013.webp", "w": 1420, "h": 1016, "legenda": "Bola de Ouro da Copa das Confederações, Maracanã, 2013.", "alt": "Neymar com o troféu de melhor jogador da Copa das Confederações, ao lado de Paulinho e Iniesta", "autor": "Tânia Rêgo/Agência Brasil", "licenca": "CC BY 3.0 BR", "licencaUrl": "https://creativecommons.org/licenses/by/3.0/br/", "url": "https://commons.wikimedia.org/wiki/File:ConfedCup2013Champions6.jpg" },
+          { "arquivo": "/vestiario/assets/historia/selecao-copa-2026.webp", "w": 1420, "h": 1016, "legenda": "Na Copa do Mundo de 2026.", "alt": "Neymar com roupa de aquecimento da Seleção à beira do campo, cercado de fotógrafos", "autor": "YantsImages", "licenca": "CC BY-SA 4.0", "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "url": "https://commons.wikimedia.org/wiki/File:Neymar_at_2026_FIFA_World_Cup_by_YantsImages.jpg" }
+        ]
+      }
+    }
+  ],
+  "fontes": [
+    { "nome": "Olympics.com — histórico completo e estatísticas de Neymar", "url": "https://www.olympics.com/pt/noticias/neymar-historico-completo-estatisticas-clubes-selecao" },
+    { "nome": "Wikipédia (pt) — Neymar: estreia, Al-Hilal, retorno ao Santos, Copa de 2026 e despedida da Seleção", "url": "https://pt.wikipedia.org/wiki/Neymar" },
+    { "nome": "Wikipedia (en) — Neymar: jogos e gols pela Seleção", "url": "https://en.wikipedia.org/wiki/Neymar" },
+    { "nome": "FIFA — Brasil 1 x 2 Noruega, oitavas da Copa de 2026", "url": "https://www.fifa.com/pt/articles/brasil-noruega-resumo-melhores-momentos-oitavas" },
+    { "nome": "ESPN — Neymar renova com o Santos até o fim de 2026", "url": "https://www.espn.com.br/futebol/santos/artigo/_/id/16135471/neymar-renova-contrato-com-o-santos-ate-o-final-de-2026-veja-os-detalhes" },
+    { "nome": "CNN Brasil — Al-Hilal rescinde contrato de Neymar", "url": "https://www.cnnbrasil.com.br/esportes/futebol/santos/al-hilal-rescinde-contrato-de-neymar-e-abre-caminho-para-o-santos/" }
+  ]
+}

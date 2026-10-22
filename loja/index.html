@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Loja · Neymar Jr</title>
+<meta name="description" content="Vitrine demonstrativa NJR: camisetas, moletom, pôsteres e acessórios conceituais desenhados com a identidade do site. Nenhum produto está à venda.">
+<link rel="icon" href="/assets/ui/njr-logo.png">
+<script>try{if(sessionStorage.getItem("njr-plate"))document.documentElement.classList.add("njr-arriving")}catch(e){}</script>
+<link rel="stylesheet" href="/shared/njr.css">
+<link rel="stylesheet" href="loja.css">
+</head>
+<body>
+<div class="njr-plate" aria-hidden="true"><i></i><b></b></div>
+
+<main id="main">
+  <!-- ============ ABERTURA ============ -->
+  <section class="hero" id="topo" aria-labelledby="hero-h">
+    <div class="hero-word" aria-hidden="true"><span data-depth="0.12">LOJA</span></div>
+    <div class="hero-copy">
+      <p class="hero-eyebrow" id="hero-eyebrow"><span>NJR · Loja</span><span>Coleção conceito 01</span></p>
+      <h1 class="hero-h display" id="hero-h" data-lines="vitrine|njr">Vitrine NJR.</h1>
+      <p class="hero-lead" id="hero-lead">Camisetas, moletom, pôsteres e acessórios desenhados com a identidade deste site. Escolha cor e tamanho, compare e monte a sua lista.</p>
+      <p class="seal" id="hero-seal" role="note"><i aria-hidden="true"></i><span><b>Vitrine demonstrativa</b> — nenhum produto está à venda.</span></p>
+      <a class="cta" id="hero-cta" href="#vitrine">
+        <svg class="frame" viewBox="0 0 220 50" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0.5 0.5H219.5V42L212 49.5H0.5Z" class="base"/>
+          <path d="M0.5 0.5H219.5V42L212 49.5H0.5Z" class="flood"/>
+          <path d="M0.5 0.5H219.5V42L212 49.5H0.5Z" class="line" vector-effect="non-scaling-stroke"/>
+        </svg>
+        <span class="cta-label">Ver a vitrine</span>
+        <svg class="cta-arrow" viewBox="0 0 13.7071 10.7071" aria-hidden="true"><path d="M0 5.35H13M8 10.35L13 5.35L8 0.35"/></svg>
+      </a>
+    </div>
+
+    <div class="hero-stage" id="hero-stage">
+      <div class="hero-light" aria-hidden="true"></div>
+      <span class="bk tl" aria-hidden="true"></span><span class="bk tr" aria-hidden="true"></span><span class="bk bl" aria-hidden="true"></span><span class="bk br" aria-hidden="true"></span>
+      <button class="hero-hit" id="hero-hit" type="button" aria-describedby="hero-name">
+        <span class="sr-only">Ver detalhes do produto em destaque</span>
+        <span class="hero-art" id="hero-art" data-depth="0.45"></span>
+      </button>
+      <div class="hero-cap">
+        <p class="hero-idx mono-num" id="hero-idx" aria-hidden="true">01 / 03</p>
+        <p class="hero-name display" id="hero-name">Moletom Ousadia e Alegria</p>
+        <p class="hero-price">Preço a definir</p>
+      </div>
+      <div class="hero-ctrl" role="group" aria-label="Produtos em destaque">
+        <button type="button" class="hero-arrow" id="hero-prev" aria-label="Destaque anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <ol class="hero-dots" id="hero-dots"></ol>
+        <button type="button" class="hero-arrow" id="hero-next" aria-label="Próximo destaque"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        <button type="button" class="hero-pause" id="hero-pause" aria-pressed="false">Pausar</button>
+      </div>
+      <i class="hero-meter" aria-hidden="true"><i id="hero-meter"></i></i>
+    </div>
+  </section>
+
+  <div class="ribbon" aria-hidden="true"><div class="ribbon-track" id="ribbon"></div></div>
+
+  <!-- ============ FOCO: A CÂMERA PERCORRE UMA PEÇA ============ -->
+  <section class="focus" id="foco" aria-labelledby="foco-h">
+    <div class="focus-pin">
+      <div class="focus-stage" id="focus-stage" aria-hidden="true">
+        <div class="focus-light"></div>
+        <div class="focus-art" id="focus-front"></div>
+        <div class="focus-art back" id="focus-back"></div>
+        <p class="focus-lens mono-num" id="focus-lens">Lente 1:1</p>
+      </div>
+      <div class="focus-copy">
+        <h2 class="focus-h display" id="foco-h" data-lines="peça|em foco" data-reveal="heading">Peça em foco.</h2>
+        <ol class="focus-steps" id="focus-steps">
+          <li class="is-on"><span class="mono-num">01</span><div><b>A peça</b><p>Moletom Ousadia e Alegria: capuz, bolso canguru e a frase que fecha a página inicial.</p></div></li>
+          <li><span class="mono-num">02</span><div><b>Tipografia</b><p>Oswald 700, em maiúsculas, a mesma letra de todos os títulos do site.</p></div></li>
+          <li><span class="mono-num">03</span><div><b>O ponto amarelo</b><p>O amarelo #FEDD00 do ponto final dos títulos volta nos cordões e no fim da frase.</p></div></li>
+          <li><span class="mono-num">04</span><div><b>As costas</b><p>NJR em corpo grande. Role para trás e a câmera faz o caminho de volta.</p></div></li>
+        </ol>
+        <button class="link-btn" type="button" id="focus-open">Ver o moletom na vitrine <span aria-hidden="true">→</span></button>
+      </div>
+      <i class="focus-meter" aria-hidden="true"><i id="focus-meter"></i></i>
+    </div>
+  </section>
+
+  <!-- ============ VITRINE ============ -->
+  <section class="shop" id="vitrine" aria-labelledby="shop-h">
+    <header class="shop-head">
+      <h2 class="shop-h display" id="shop-h" data-lines="a|vitrine" data-reveal="heading">A vitrine.</h2>
+      <p class="shop-intro" data-reveal="up">Oito peças conceituais, todas desenhadas em código para este site. Toque em uma para ver de perto.</p>
+    </header>
+
+    <div class="filters" id="filters" data-reveal="up" data-delay="120">
+      <div class="cats" role="group" aria-label="Categorias" id="cats"><i class="cats-ink" id="cats-ink" aria-hidden="true"></i></div>
+      <div class="colors" role="group" aria-label="Filtrar por cor" id="colors"><span class="colors-label">Cor</span></div>
+      <p class="count mono-num" id="count" aria-live="polite"></p>
+    </div>
+
+    <ul class="grid" id="grid">
+      <!-- conteúdo sem JavaScript: a lista é trocada pela galeria interativa -->
+      <li class="nojs-item"><b>Moletom Ousadia e Alegria</b> · Vestuário · Preço a definir · Indisponível — vitrine demonstrativa</li>
+      <li class="nojs-item"><b>Camiseta NJR 10</b> · Vestuário · Preço a definir · Indisponível — vitrine demonstrativa</li>
+      <li class="nojs-item"><b>Camiseta Da Vila ao Mundo</b> · Vestuário · Preço a definir · Indisponível — vitrine demonstrativa</li>
+      <li class="nojs-item"><b>Pôster Capas das Abas</b> · Pôsteres · Preço a definir · Indisponível — vitrine demonstrativa</li>
+      <li class="nojs-item"><b>Pôster Trajetória</b> · Pôsteres · Preço a definir · Indisponível — vitrine demonstrativa</li>
+      <li class="nojs-item"><b>Boné NJR</b> · Acessórios · Preço a definir · Indisponível — vitrine demonstrativa</li>
+      <li class="nojs-item"><b>Caneca Camisa 10</b> · Acessórios · Preço a definir · Indisponível — vitrine demonstrativa</li>
+      <li class="nojs-item"><b>Ecobag NJR</b> · Acessórios · Preço a definir · Indisponível — vitrine demonstrativa</li>
+    </ul>
+    <div class="empty" id="empty" hidden>
+      <p>Nenhuma peça nessa combinação de categoria e cor.</p>
+      <button class="link-btn" type="button" id="empty-reset">Limpar filtros <span aria-hidden="true">→</span></button>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE A VITRINE ============ -->
+  <section class="about" id="sobre" aria-labelledby="about-h" data-theme="dark">
+    <h2 class="about-h display" id="about-h" data-lines="vitrine,|não loja" data-reveal="heading">Vitrine, não loja.</h2>
+    <ol class="about-list" id="about-list">
+      <li><i class="about-rule" aria-hidden="true"></i><span class="about-n display mono-num">01</span><b>Nada está à venda</b><p>As peças são conceitos desenhados para este site. Não há preço, estoque, pagamento nem entrega — por isso aparece “Preço a definir”.</p></li>
+      <li><i class="about-rule" aria-hidden="true"></i><span class="about-n display mono-num">02</span><b>Sem vínculo</b><p>Este é um site de fã, sem relação com Neymar Jr, clubes ou marcas. Nenhuma peça leva escudo, patrocínio ou logo de fornecedora.</p></li>
+      <li><i class="about-rule" aria-hidden="true"></i><span class="about-n display mono-num">03</span><b>Sua lista é local</b><p>O que você adiciona fica salvo só neste navegador. Nada é enviado, cobrado ou reservado, e dá para apagar a lista quando quiser.</p></li>
+    </ol>
+  </section>
+</main>
+
+<!-- ============ PRODUTO EM FOCO ============ -->
+<div class="detail" id="detail" hidden>
+  <div class="detail-scrim" data-close></div>
+  <div class="detail-sheet" id="detail-sheet" role="dialog" aria-modal="true" aria-labelledby="d-name" data-lenis-prevent>
+    <div class="d-top">
+      <button class="d-back" type="button" data-close><span aria-hidden="true">← </span>Voltar à vitrine</button>
+      <p class="d-seal"><i aria-hidden="true"></i>Vitrine demonstrativa</p>
+      <div class="d-nav" role="group" aria-label="Outros produtos">
+        <button type="button" class="d-arrow" id="d-prev" aria-label="Produto anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <span class="d-pos mono-num" id="d-pos">01 / 08</span>
+        <button type="button" class="d-arrow" id="d-next" aria-label="Próximo produto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="d-media">
+      <div class="d-stage" id="d-stage">
+        <div class="d-light" aria-hidden="true"></div>
+        <span class="bk tl" aria-hidden="true"></span><span class="bk tr" aria-hidden="true"></span><span class="bk bl" aria-hidden="true"></span><span class="bk br" aria-hidden="true"></span>
+        <div class="d-art" id="d-art"></div>
+        <p class="d-view" id="d-view" aria-live="polite"></p>
+      </div>
+      <div class="d-thumbs" id="d-thumbs" role="group" aria-label="Imagens do produto"></div>
+    </div>
+    <div class="d-info" id="d-info">
+      <p class="d-eyebrow" id="d-eyebrow"></p>
+      <h2 class="d-name display" id="d-name"></h2>
+      <p class="d-desc" id="d-desc"></p>
+      <div class="d-price" id="d-price">
+        <span class="d-price-v display">Preço a definir</span>
+        <span class="d-avail"><i aria-hidden="true"></i>Indisponível — vitrine demonstrativa</span>
+      </div>
+      <div class="d-opts" id="d-opts"></div>
+      <p class="d-hint" id="d-hint" aria-live="polite"></p>
+      <div class="d-actions" id="d-actions">
+        <button class="add" id="d-add" type="button">
+          <span class="add-flood" aria-hidden="true"></span>
+          <span class="add-label" id="d-add-label">Adicionar à lista</span>
+          <svg class="add-icon" viewBox="0 0 20 20" aria-hidden="true"><path class="plus" d="M10 4v12M4 10h12"/><path class="check" d="M4 10.5l4 4 8-9"/></svg>
+        </button>
+        <p class="d-note">A lista fica salva só neste navegador. Nada é cobrado, reservado ou enviado.</p>
+      </div>
+      <ul class="d-details" id="d-details"></ul>
+    </div>
+  </div>
+</div>
+
+<!-- ============ LISTA (carrinho de demonstração) ============ -->
+<button class="bag" id="bag" type="button" aria-haspopup="dialog" aria-controls="drawer">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8zM9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+  <span class="bag-label">Lista</span>
+  <span class="bag-n mono-num" id="bag-n"><span>0</span></span>
+  <span class="sr-only" id="bag-sr">itens</span>
+</button>
+
+<div class="drawer" id="drawer" hidden>
+  <div class="drawer-scrim" data-dclose></div>
+  <aside class="drawer-sheet" id="drawer-sheet" role="dialog" aria-modal="true" aria-labelledby="dr-h" data-lenis-prevent>
+    <header class="dr-head">
+      <div>
+        <p class="dr-eyebrow">Vitrine demonstrativa</p>
+        <h2 class="dr-h display" id="dr-h">Sua lista</h2>
+      </div>
+      <button class="dr-close" type="button" data-dclose aria-label="Fechar lista"><span></span><span></span></button>
+    </header>
+    <ul class="dr-items" id="dr-items"></ul>
+    <div class="dr-empty" id="dr-empty" hidden>
+      <p>Sua lista está vazia.</p>
+      <button class="link-btn" type="button" data-dclose data-goto="vitrine">Explorar a vitrine <span aria-hidden="true">→</span></button>
+    </div>
+    <footer class="dr-foot" id="dr-foot">
+      <dl class="dr-sum">
+        <div><dt>Itens</dt><dd class="mono-num" id="dr-count">0</dd></div>
+        <div><dt>Total</dt><dd>A definir</dd></div>
+      </dl>
+      <button class="dr-go" id="dr-go" type="button" aria-expanded="false" aria-controls="dr-why">Finalizar pedido</button>
+      <div class="dr-why" id="dr-why" hidden>
+        <p><b>Esta loja ainda não vende.</b> As peças são conceitos desenhados para um site de fã: não há catálogo licenciado, estoque, pagamento nem entrega. Nenhum pedido é criado e nada é cobrado.</p>
+        <p>Sua lista continua salva só neste navegador, para quando — e se — a loja existir.</p>
+        <button class="link-btn" type="button" id="dr-clear">Apagar a lista <span aria-hidden="true">→</span></button>
+      </div>
+    </footer>
+  </aside>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script type="module" src="loja.js"></script>
+</body>
+</html>

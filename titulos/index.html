@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Títulos · Neymar Jr</title>
+<meta name="description" content="A sala das conquistas de Neymar Jr: os 31 títulos coletivos por Santos, Barcelona, PSG, Al-Hilal e Seleção, e os principais prêmios individuais, com contexto, fontes e créditos.">
+<link rel="icon" href="/assets/ui/njr-logo.png">
+<script>try{if(sessionStorage.getItem("njr-plate"))document.documentElement.classList.add("njr-arriving")}catch(e){}</script>
+<link rel="stylesheet" href="/shared/njr.css">
+<link rel="stylesheet" href="titulos.css">
+<link rel="preload" as="image" href="/titulos/assets/confed-2013-taca.webp">
+</head>
+<body>
+<div class="njr-plate" aria-hidden="true"><i></i><b></b></div>
+<main id="main">
+
+  <!-- 1 — abertura: o número da sala -->
+  <section class="hero" id="hero" aria-labelledby="hero-h">
+    <div class="hero-pin" id="hero-pin">
+      <p class="eyebrow hero-eyebrow" id="hero-eyebrow">Títulos · 2010 — 2025</p>
+      <div class="hero-num-wrap" data-depth="0.35" aria-hidden="true">
+        <div class="hero-num" id="hero-num">31</div>
+      </div>
+      <div class="hero-legend" id="hero-legend">
+        <p class="hero-stat"><b class="mono-num" id="stat-titulos">31</b><span>títulos coletivos</span></p>
+        <i class="hero-rule" id="hero-rule"></i>
+        <p class="hero-stat"><b class="mono-num" id="stat-premios">23</b><span>prêmios individuais</span></p>
+      </div>
+      <div class="hero-copy">
+        <h1 class="hero-h display" id="hero-h" data-lines="a sala|das conquistas">A sala das conquistas.</h1>
+        <p class="hero-intro" id="hero-intro">Libertadores, Liga dos Campeões, Copa das Confederações e o ouro do Rio: cada taça em exposição, com o contexto da campanha e o que Neymar fez nela.</p>
+      </div>
+      <p class="hero-credit" id="hero-credit">Dentro do número: a Seleção recebe a taça da Copa das Confederações, 2013. Foto: Tânia Rêgo/Agência Brasil, CC BY 3.0 BR.</p>
+      <a class="hero-cue" href="#exposicao" id="hero-cue"><span>Entrar na exposição</span><svg viewBox="0 0 10 14" aria-hidden="true"><path d="M5 0v12M1 8l4 4 4-4"/></svg></a>
+    </div>
+  </section>
+
+  <!-- 2 — ano a ano -->
+  <section class="rhythm" id="ritmo" aria-labelledby="rhythm-h">
+    <div class="rhythm-head">
+      <h2 class="rhythm-h display" id="rhythm-h" data-lines="ano|a ano">Ano a ano.</h2>
+      <p class="rhythm-copy" id="rhythm-copy">Cada coluna é um ano. Em tinta, os títulos coletivos; em amarelo, os prêmios individuais. Toque numa coluna para abrir a sala daquele ano.</p>
+    </div>
+    <div class="rhythm-chart" id="rhythm-chart"></div>
+    <p class="rhythm-note">Temporadas europeias contam no ano em que terminaram.</p>
+  </section>
+
+  <!-- 3 — a exposição -->
+  <section class="expo" id="exposicao" aria-labelledby="expo-h">
+    <div class="expo-head">
+      <h2 class="expo-h display" id="expo-h" data-lines="a|exposição">A exposição.</h2>
+      <p class="expo-copy">Títulos coletivos e prêmios individuais aparecem separados por cor e por legenda. Escolha uma peça para vê-la de perto.</p>
+    </div>
+
+    <div class="filters" id="filters" role="group" aria-label="Filtros da exposição">
+      <div class="filter-row" role="radiogroup" aria-label="Categoria" id="f-cat">
+        <button type="button" role="radio" aria-checked="true" data-cat="todos">Tudo <sup data-n></sup></button>
+        <button type="button" role="radio" aria-checked="false" data-cat="clube">Títulos por clubes <sup data-n></sup></button>
+        <button type="button" role="radio" aria-checked="false" data-cat="selecao">Seleção <sup data-n></sup></button>
+        <button type="button" role="radio" aria-checked="false" data-cat="individual">Prêmios individuais <sup data-n></sup></button>
+      </div>
+      <div class="filter-row filter-ent" role="radiogroup" aria-label="Clube ou Seleção" id="f-ent">
+        <button type="button" role="radio" aria-checked="true" data-ent="todos">Todos</button>
+        <button type="button" role="radio" aria-checked="false" data-ent="santos">Santos 09–13 <sup data-n></sup></button>
+        <button type="button" role="radio" aria-checked="false" data-ent="barcelona">Barcelona <sup data-n></sup></button>
+        <button type="button" role="radio" aria-checked="false" data-ent="psg">PSG <sup data-n></sup></button>
+        <button type="button" role="radio" aria-checked="false" data-ent="al-hilal">Al-Hilal <sup data-n></sup></button>
+        <button type="button" role="radio" aria-checked="false" data-ent="santos-2025">Santos 25– <sup data-n></sup></button>
+        <button type="button" role="radio" aria-checked="false" data-ent="selecao">Seleção <sup data-n></sup></button>
+      </div>
+      <p class="filter-count" id="filter-count" aria-live="polite"><b id="fc-t">31</b> títulos · <b id="fc-p">23</b> prêmios em exposição</p>
+    </div>
+
+    <p class="expo-empty" id="expo-empty" hidden></p>
+
+    <div class="wall" id="wall">
+<!-- parede:inicio -->
+    <section class="room" data-year="2010" id="sala-2010" aria-labelledby="sala-2010-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2010-h">2010</h3><p class="room-count">2 títulos · 1 prêmio</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n2 pc--titulo pc--tipo" data-id="paulista-2010" data-cat="clube" data-ent="santos" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2010</span><span class="pc-ty-name">Campeonato Paulista</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 01</span>
+          <span class="pc-kind">Título · Santos 09–13</span>
+          <h4 class="pc-name">Campeonato Paulista</h4>
+          <span class="pc-year mono-num">2010</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2010</p><p><b>Contexto</b> O primeiro título profissional de Neymar, aos 18 anos. O Santos dos novos Meninos da Vila, com Paulo Henrique Ganso e Robinho, superou o Santo André na final.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2010_Campeonato_Paulista" rel="noopener" target="_blank">Wikipedia (en) — 2010 Campeonato Paulista</a> · <a href="https://pt.wikipedia.org/wiki/Neymar#T%C3%ADtulos" rel="noopener" target="_blank">Wikipedia (pt) — Neymar, Títulos</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Campeonato Paulista, 2010, Santos"></button>
+      </li>
+      <li class="pc pc--n2 pc--titulo pc--tipo" data-id="copa-do-brasil-2010" data-cat="clube" data-ent="santos" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2010</span><span class="pc-ty-name">Copa do Brasil</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 02</span>
+          <span class="pc-kind">Título · Santos 09–13</span>
+          <h4 class="pc-name">Copa do Brasil</h4>
+          <span class="pc-year mono-num">2010</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2010</p><p><b>Contexto</b> A primeira Copa do Brasil da história do Santos, decidida contra o Vitória.</p><p><b>Papel de Neymar</b> Artilheiro da competição, com 11 gols.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2010_Copa_do_Brasil" rel="noopener" target="_blank">Wikipedia (en) — 2010 Copa do Brasil</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Copa do Brasil, 2010, Santos"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--tipo" data-id="artilheiro-copa-do-brasil-2010" data-cat="individual" data-ent="santos" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2010</span><span class="pc-ty-name">Artilharia</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 03</span>
+          <span class="pc-kind">Prêmio individual · Santos 09–13</span>
+          <h4 class="pc-name">Artilheiro da Copa do Brasil</h4>
+          <span class="pc-year mono-num">2010</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2010</p><p><b>Contexto</b> 11 gols na campanha do primeiro título do Santos na competição.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2010_Copa_do_Brasil" rel="noopener" target="_blank">Wikipedia (en) — 2010 Copa do Brasil</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Artilheiro da Copa do Brasil, 2010, Santos"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2011" id="sala-2011" aria-labelledby="sala-2011-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2011-h">2011</h3><p class="room-count">3 títulos · 6 prêmios</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n1 pc--titulo pc--foto" data-id="libertadores-2011" data-cat="clube" data-ent="santos" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:0.750"><img src="/titulos/assets/trofeu-libertadores.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="A taça da Copa Libertadores: exemplar conquistado pelo Fluminense em 2023, em exposição. Foto: Alexandre M. B. Berwanger, CC0." style="object-position:50% 40%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 04</span>
+          <span class="pc-kind">Título · Santos 09–13</span>
+          <h4 class="pc-name">Copa Libertadores</h4>
+          <span class="pc-year mono-num">2011</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2011</p><p><b>Contexto</b> O terceiro título continental do Santos, o primeiro desde a era Pelé. Na final contra o Peñarol, 0 a 0 em Montevidéu e 2 a 1 no jogo de volta, em São Paulo.</p><p><b>Papel de Neymar</b> Abriu o placar no jogo decisivo, aos 2 minutos do segundo tempo, e foi eleito o melhor jogador da competição.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2011_Copa_Libertadores_finals" rel="noopener" target="_blank">Wikipedia (en) — 2011 Copa Libertadores finals</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p><p><b>Imagem</b> A taça da Copa Libertadores: exemplar conquistado pelo Fluminense em 2023, em exposição. <a href="https://commons.wikimedia.org/wiki/File:Trof%C3%A9u_da_Copa_Libertadores_da_Am%C3%A9rica_de_2023.jpg" rel="noopener" target="_blank">Alexandre M. B. Berwanger, CC0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Copa Libertadores, 2011, Santos"></button>
+      </li>
+      <li class="pc pc--n2 pc--titulo pc--tipo" data-id="paulista-2011" data-cat="clube" data-ent="santos" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2011</span><span class="pc-ty-name">Campeonato Paulista</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 05</span>
+          <span class="pc-kind">Título · Santos 09–13</span>
+          <h4 class="pc-name">Campeonato Paulista</h4>
+          <span class="pc-year mono-num">2011</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2011</p><p><b>Contexto</b> O bicampeonato estadual, com o Corinthians como adversário na final.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2011_Campeonato_Paulista" rel="noopener" target="_blank">Wikipedia (en) — 2011 Campeonato Paulista</a> · <a href="https://pt.wikipedia.org/wiki/Neymar#T%C3%ADtulos" rel="noopener" target="_blank">Wikipedia (pt) — Neymar, Títulos</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Campeonato Paulista, 2011, Santos"></button>
+      </li>
+      <li class="pc pc--n2 pc--titulo pc--tipo" data-id="sul-americano-sub20-2011" data-cat="selecao" data-ent="selecao" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2011</span><span class="pc-ty-name">Sul-Americano Sub-20</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 06</span>
+          <span class="pc-kind">Título · Seleção</span>
+          <h4 class="pc-name">Sul-Americano Sub-20</h4>
+          <span class="pc-year mono-num">2011</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2011, no Peru</p><p><b>Contexto</b> O título da base, que valeu vaga no Mundial Sub-20 e nos Jogos Olímpicos de Londres 2012.</p><p><b>Papel de Neymar</b> Artilheiro do torneio, com 9 gols.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2011_South_American_U-20_Championship" rel="noopener" target="_blank">Wikipedia (en) — 2011 South American U-20 Championship</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Sul-Americano Sub-20, 2011, Seleção Brasileira"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--foto" data-id="melhor-libertadores-2011" data-cat="individual" data-ent="santos" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:1.000"><img src="/vestiario/assets/historia/santos1-libertadores-2011.webp" width="1400" height="1186" loading="lazy" decoding="async" alt="Aquecimento antes da primeira final da Libertadores, contra o Peñarol, em Montevidéu, 2011. Foto: Jimmy Baikovicius, CC BY-SA 2.0." style="object-position:50% 30%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 07</span>
+          <span class="pc-kind">Prêmio individual · Santos 09–13</span>
+          <h4 class="pc-name">Melhor jogador da Libertadores</h4>
+          <span class="pc-year mono-num">2011</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2011</p><p><b>Contexto</b> Eleito o melhor da competição em que o Santos foi campeão. Também foi o líder de assistências da edição.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p><p><b>Imagem</b> Aquecimento antes da primeira final da Libertadores, contra o Peñarol, em Montevidéu, 2011. <a href="https://commons.wikimedia.org/wiki/File:Neymar_-_Copa_Libertadores_de_America_2011_-_Pe%C3%B1arol_-_Santos_-_110616-6925-jikatu.jpg" rel="noopener" target="_blank">Jimmy Baikovicius, CC BY-SA 2.0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Melhor jogador da Libertadores, 2011, Santos"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--foto" data-id="bola-de-bronze-mundial-2011" data-cat="individual" data-ent="santos" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:1.000"><img src="/vestiario/assets/historia/santos1-mundial-2011.webp" width="1420" height="1016" loading="lazy" decoding="async" alt="Final do Mundial de Clubes, em Yokohama, 2011. Foto: Christopher Johnson, CC BY-SA 2.0." style="object-position:50% 30%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 08</span>
+          <span class="pc-kind">Prêmio individual · Santos 09–13</span>
+          <h4 class="pc-name">Bola de Bronze do Mundial de Clubes</h4>
+          <span class="pc-year mono-num">2011</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2011, no Japão</p><p><b>Contexto</b> O terceiro melhor jogador do torneio em que o Santos foi vice-campeão, depois da derrota para o Barcelona na final. O vice não é título; o prêmio individual, sim.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2011_FIFA_Club_World_Cup" rel="noopener" target="_blank">Wikipedia (en) — 2011 FIFA Club World Cup</a></p><p><b>Imagem</b> Final do Mundial de Clubes, em Yokohama, 2011. <a href="https://commons.wikimedia.org/wiki/File:Neymar_2011_FIFA_Club_World_Cup_Final.jpg" rel="noopener" target="_blank">Christopher Johnson, CC BY-SA 2.0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Bola de Bronze do Mundial de Clubes, 2011, Santos"></button>
+      </li>
+      <li class="pc pc--n1 pc--premio pc--tipo" data-id="puskas-2011" data-cat="individual" data-ent="santos" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2011</span><span class="pc-ty-name">Gol</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 09</span>
+          <span class="pc-kind">Prêmio individual · Santos 09–13</span>
+          <h4 class="pc-name">Prêmio Puskás</h4>
+          <span class="pc-year mono-num">2011</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Prêmio da FIFA ao gol mais bonito de 2011</p><p><b>Contexto</b> O gol premiado foi marcado contra o Flamengo, na Vila Belmiro, em julho de 2011, num jogo que terminou 5 a 4 para os cariocas. Foi o primeiro Puskás de um jogador brasileiro.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/FIFA_Pusk%C3%A1s_Award" rel="noopener" target="_blank">Wikipedia (en) — FIFA Puskás Award</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Prêmio Puskás, 2011, Santos"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--tipo" data-id="bola-de-ouro-placar" data-cat="individual" data-ent="santos" data-tipo="premio" data-vezes="2">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2011</span><span class="pc-ty-name">Melhor jogador</span></div><span class="pc-times">2×</span></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 10</span>
+          <span class="pc-kind">Prêmio individual · Santos 09–13</span>
+          <h4 class="pc-name">Bola de Ouro da Placar</h4>
+          <span class="pc-year mono-num">2011 · 2012</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Campeonatos Brasileiros de 2011 e 2012</p><p><b>Contexto</b> O prêmio da revista Placar ao melhor jogador do Campeonato Brasileiro, conquistado em dois anos seguidos.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/Bola_de_Ouro" rel="noopener" target="_blank">Wikipedia (en) — Bola de Ouro</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Bola de Ouro da Placar, 2011 · 2012, Santos"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--tipo" data-id="artilheiro-sub20-2011" data-cat="individual" data-ent="selecao" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2011</span><span class="pc-ty-name">Artilharia</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 11</span>
+          <span class="pc-kind">Prêmio individual · Seleção</span>
+          <h4 class="pc-name">Artilheiro do Sul-Americano Sub-20</h4>
+          <span class="pc-year mono-num">2011</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2011, no Peru</p><p><b>Contexto</b> 9 gols no torneio vencido pelo Brasil.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2011_South_American_U-20_Championship" rel="noopener" target="_blank">Wikipedia (en) — 2011 South American U-20 Championship</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Artilheiro do Sul-Americano Sub-20, 2011, Seleção Brasileira"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2012" id="sala-2012" aria-labelledby="sala-2012-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2012-h">2012</h3><p class="room-count">2 títulos · 4 prêmios</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n2 pc--titulo pc--tipo" data-id="paulista-2012" data-cat="clube" data-ent="santos" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2012</span><span class="pc-ty-name">Campeonato Paulista</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 12</span>
+          <span class="pc-kind">Título · Santos 09–13</span>
+          <h4 class="pc-name">Campeonato Paulista</h4>
+          <span class="pc-year mono-num">2012</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2012</p><p><b>Contexto</b> O tricampeonato paulista, com o Guarani como adversário na final.</p><p><b>Papel de Neymar</b> Artilheiro do campeonato, com 20 gols, e eleito o melhor jogador.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2012_Campeonato_Paulista" rel="noopener" target="_blank">Wikipedia (en) — 2012 Campeonato Paulista</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Campeonato Paulista, 2012, Santos"></button>
+      </li>
+      <li class="pc pc--n2 pc--titulo pc--tipo" data-id="recopa-2012" data-cat="clube" data-ent="santos" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2012</span><span class="pc-ty-name">Recopa Sul-Americana</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 13</span>
+          <span class="pc-kind">Título · Santos 09–13</span>
+          <h4 class="pc-name">Recopa Sul-Americana</h4>
+          <span class="pc-year mono-num">2012</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2012</p><p><b>Contexto</b> O duelo entre o campeão da Libertadores e o da Sul-Americana, a Universidad de Chile: 0 a 0 na ida e 2 a 0 para o Santos na volta.</p><p><b>Papel de Neymar</b> Marcou o primeiro gol do jogo de volta e foi eleito o melhor jogador da Recopa.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2012_Recopa_Sudamericana" rel="noopener" target="_blank">Wikipedia (en) — 2012 Recopa Sudamericana</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Recopa Sul-Americana, 2012, Santos"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--tipo" data-id="rei-da-america" data-cat="individual" data-ent="santos" data-tipo="premio" data-vezes="2">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2011</span><span class="pc-ty-name">Melhor jogador</span></div><span class="pc-times">2×</span></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 14</span>
+          <span class="pc-kind">Prêmio individual · Santos 09–13</span>
+          <h4 class="pc-name">Rei da América</h4>
+          <span class="pc-year mono-num">2011 · 2012</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> 2011 e 2012</p><p><b>Contexto</b> O prêmio de melhor jogador sul-americano do ano, organizado pelo jornal uruguaio El País, conquistado em dois anos seguidos.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/South_American_Footballer_of_the_Year" rel="noopener" target="_blank">Wikipedia (en) — South American Footballer of the Year</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Rei da América, 2011 · 2012, Santos"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--tipo" data-id="artilheiro-paulista-2012" data-cat="individual" data-ent="santos" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2012</span><span class="pc-ty-name">Artilharia</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 15</span>
+          <span class="pc-kind">Prêmio individual · Santos 09–13</span>
+          <h4 class="pc-name">Artilheiro do Paulistão</h4>
+          <span class="pc-year mono-num">2012</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2012</p><p><b>Contexto</b> 20 gols na campanha do tricampeonato do Santos.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2012_Campeonato_Paulista" rel="noopener" target="_blank">Wikipedia (en) — 2012 Campeonato Paulista</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Artilheiro do Paulistão, 2012, Santos"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--tipo" data-id="artilheiro-libertadores-2012" data-cat="individual" data-ent="santos" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2012</span><span class="pc-ty-name">Artilharia</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 16</span>
+          <span class="pc-kind">Prêmio individual · Santos 09–13</span>
+          <h4 class="pc-name">Artilheiro da Libertadores</h4>
+          <span class="pc-year mono-num">2012</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2012</p><p><b>Contexto</b> Dividiu a artilharia com o argentino Matías Alustiza, com 8 gols cada.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a> · <a href="https://pt.wikipedia.org/wiki/Neymar#T%C3%ADtulos" rel="noopener" target="_blank">Wikipedia (pt) — Neymar, Artilharias</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Artilheiro da Libertadores, 2012, Santos"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2013" id="sala-2013" aria-labelledby="sala-2013-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2013-h">2013</h3><p class="room-count">2 títulos · 1 prêmio</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n1 pc--titulo pc--foto" data-id="confederacoes-2013" data-cat="selecao" data-ent="selecao" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:1.340"><img src="/titulos/assets/confed-2013-taca.webp" width="1600" height="1095" loading="lazy" decoding="async" alt="A Seleção recebe a taça da Copa das Confederações no pódio, 2013. Foto: Tânia Rêgo/Agência Brasil, CC BY 3.0 BR." style="object-position:50% 30%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 17</span>
+          <span class="pc-kind">Título · Seleção</span>
+          <h4 class="pc-name">Copa das Confederações</h4>
+          <span class="pc-year mono-num">2013</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2013, no Brasil</p><p><b>Contexto</b> Brasil 3 x 0 Espanha, no Maracanã. A vitória encerrou uma série de 29 jogos oficiais sem derrota da então campeã do mundo.</p><p><b>Papel de Neymar</b> Fez o segundo gol da final, foi eleito o melhor em campo e recebeu a Bola de Ouro do torneio.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2013_FIFA_Confederations_Cup_final" rel="noopener" target="_blank">Wikipedia (en) — 2013 FIFA Confederations Cup final</a></p><p><b>Imagem</b> A Seleção recebe a taça da Copa das Confederações no pódio, 2013. <a href="https://commons.wikimedia.org/wiki/File:Confed.Cup2013Champions.jpg" rel="noopener" target="_blank">Tânia Rêgo/Agência Brasil, CC BY 3.0 BR</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Copa das Confederações, 2013, Seleção Brasileira"></button>
+      </li>
+      <li class="pc pc--n2 pc--titulo pc--tipo" data-id="supercopa-espanha-2013" data-cat="clube" data-ent="barcelona" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2013</span><span class="pc-ty-name">Supercopa da Espanha</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 18</span>
+          <span class="pc-kind">Título · Barcelona</span>
+          <h4 class="pc-name">Supercopa da Espanha</h4>
+          <span class="pc-year mono-num">2013</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2013–14</p><p><b>Contexto</b> O primeiro título na Europa, semanas depois da chegada. Contra o Atlético de Madrid, 1 a 1 em Madri e 0 a 0 no Camp Nou: a taça ficou com o Barcelona pelo gol marcado fora de casa.</p><p><b>Papel de Neymar</b> Entrou no segundo tempo do jogo de ida e marcou de cabeça o gol do empate, o gol que valeu o título.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2013_Supercopa_de_Espa%C3%B1a" rel="noopener" target="_blank">Wikipedia (en) — 2013 Supercopa de España</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Supercopa da Espanha, 2013, Barcelona"></button>
+      </li>
+      <li class="pc pc--n1 pc--premio pc--foto" data-id="bola-de-ouro-confederacoes-2013" data-cat="individual" data-ent="selecao" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:1.000"><img src="/vestiario/assets/historia/selecao-confederacoes-2013.webp" width="1420" height="1016" loading="lazy" decoding="async" alt="Com a Bola de Ouro da Copa das Confederações, Maracanã, 2013. Foto: Tânia Rêgo/Agência Brasil, CC BY 3.0 BR." style="object-position:50% 30%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 19</span>
+          <span class="pc-kind">Prêmio individual · Seleção</span>
+          <h4 class="pc-name">Bola de Ouro da Copa das Confederações</h4>
+          <span class="pc-year mono-num">2013</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2013, no Brasil</p><p><b>Contexto</b> Eleito o melhor jogador do torneio vencido pelo Brasil. Também levou a Chuteira de Bronze e entrou na seleção do torneio.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2013_FIFA_Confederations_Cup" rel="noopener" target="_blank">Wikipedia (en) — 2013 FIFA Confederations Cup</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p><p><b>Imagem</b> Com a Bola de Ouro da Copa das Confederações, Maracanã, 2013. <a href="https://commons.wikimedia.org/wiki/File:ConfedCup2013Champions6.jpg" rel="noopener" target="_blank">Tânia Rêgo/Agência Brasil, CC BY 3.0 BR</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Bola de Ouro da Copa das Confederações, 2013, Seleção Brasileira"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2014" id="sala-2014" aria-labelledby="sala-2014-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2014-h">2014</h3><p class="room-count">1 prêmio</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n3 pc--premio pc--tipo" data-id="chuteira-de-bronze-copa-2014" data-cat="individual" data-ent="selecao" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2014</span><span class="pc-ty-name">Artilharia</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 20</span>
+          <span class="pc-kind">Prêmio individual · Seleção</span>
+          <h4 class="pc-name">Chuteira de Bronze da Copa do Mundo</h4>
+          <span class="pc-year mono-num">2014</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Copa do Mundo de 2014, no Brasil</p><p><b>Contexto</b> 4 gols e uma assistência antes da fratura na vértebra, sofrida nas quartas de final contra a Colômbia, que o tirou do resto da Copa.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2014_FIFA_World_Cup" rel="noopener" target="_blank">Wikipedia (en) — 2014 FIFA World Cup</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Chuteira de Bronze da Copa do Mundo, 2014, Seleção Brasileira"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2015" id="sala-2015" aria-labelledby="sala-2015-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2015-h">2015</h3><p class="room-count">4 títulos · 2 prêmios</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n1 pc--titulo pc--foto" data-id="champions-2015" data-cat="clube" data-ent="barcelona" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:0.620"><img src="/titulos/assets/trofeu-champions.webp" width="900" height="1600" loading="lazy" decoding="async" alt="A taça da Liga dos Campeões da UEFA: exemplar do Liverpool. Foto: Melon5541, CC BY-SA 4.0." style="object-position:50% 35%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 21</span>
+          <span class="pc-kind">Título · Barcelona</span>
+          <h4 class="pc-name">Liga dos Campeões</h4>
+          <span class="pc-year mono-num">2014–15</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2014–15</p><p><b>Contexto</b> Final em Berlim: 3 a 1 sobre a Juventus. O título fechou a tríplice coroa do Barcelona, com La Liga e Copa do Rei.</p><p><b>Papel de Neymar</b> Fez o terceiro gol, nos acréscimos da final, e terminou como artilheiro da competição, com 10 gols, empatado com Messi e Cristiano Ronaldo.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2015_UEFA_Champions_League_final" rel="noopener" target="_blank">Wikipedia (en) — 2015 UEFA Champions League final</a> · <a href="https://en.wikipedia.org/wiki/2014%E2%80%9315_UEFA_Champions_League" rel="noopener" target="_blank">Wikipedia (en) — 2014–15 UEFA Champions League</a></p><p><b>Imagem</b> A taça da Liga dos Campeões da UEFA: exemplar do Liverpool. <a href="https://commons.wikimedia.org/wiki/File:Champions_league_trophy.jpg" rel="noopener" target="_blank">Melon5541, CC BY-SA 4.0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Liga dos Campeões, 2014–15, Barcelona"></button>
+      </li>
+      <li class="pc pc--n2 pc--titulo pc--foto" data-id="la-liga-2015" data-cat="clube" data-ent="barcelona" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:1.340"><img src="/vestiario/assets/historia/barca-2015.webp" width="1420" height="1016" loading="lazy" decoding="async" alt="Com a camisa do Barcelona, 2015. Foto: Alex Fau, CC BY 2.0." style="object-position:50% 30%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 22</span>
+          <span class="pc-kind">Título · Barcelona</span>
+          <h4 class="pc-name">La Liga</h4>
+          <span class="pc-year mono-num">2014–15</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2014–15</p><p><b>Contexto</b> O primeiro título espanhol de Neymar, na temporada em que o trio MSN, com Messi e Suárez, somou 122 gols.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2014%E2%80%9315_La_Liga" rel="noopener" target="_blank">Wikipedia (en) — 2014–15 La Liga</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p><p><b>Imagem</b> Com a camisa do Barcelona, 2015. <a href="https://commons.wikimedia.org/wiki/File:Neymar_(16245492137).jpg" rel="noopener" target="_blank">Alex Fau, CC BY 2.0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: La Liga, 2014–15, Barcelona"></button>
+      </li>
+      <li class="pc pc--n2 pc--titulo pc--foto" data-id="copa-do-rei-2015" data-cat="clube" data-ent="barcelona" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:1.192"><img src="/titulos/assets/trofeu-copa-do-rei.webp" width="1600" height="1342" loading="lazy" decoding="async" alt="A taça da Copa do Rei: exemplar conquistado pelo Sevilla em 2010, no museu do estádio Ramón Sánchez-Pizjuán. Foto: CarlosVdeHabsburgo, CC BY-SA 4.0." style="object-position:50% 45%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 23</span>
+          <span class="pc-kind">Título · Barcelona</span>
+          <h4 class="pc-name">Copa do Rei</h4>
+          <span class="pc-year mono-num">2014–15</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2014–15</p><p><b>Contexto</b> Final contra o Athletic Bilbao, no Camp Nou: 3 a 1, com dois gols de Messi.</p><p><b>Papel de Neymar</b> Marcou na final e terminou como artilheiro da competição, com 7 gols.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2015_Copa_del_Rey_final" rel="noopener" target="_blank">Wikipedia (en) — 2015 Copa del Rey final</a> · <a href="https://pt.wikipedia.org/wiki/Neymar#T%C3%ADtulos" rel="noopener" target="_blank">Wikipedia (pt) — Neymar, Artilharias</a></p><p><b>Imagem</b> A taça da Copa do Rei: exemplar conquistado pelo Sevilla em 2010, no museu do estádio Ramón Sánchez-Pizjuán. <a href="https://commons.wikimedia.org/wiki/File:Copa_del_Rey_2010.jpg" rel="noopener" target="_blank">CarlosVdeHabsburgo, CC BY-SA 4.0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Copa do Rei, 2014–15, Barcelona"></button>
+      </li>
+      <li class="pc pc--n1 pc--titulo pc--tipo" data-id="mundial-2015" data-cat="clube" data-ent="barcelona" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2015</span><span class="pc-ty-name">Mundial de Clubes</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 24</span>
+          <span class="pc-kind">Título · Barcelona</span>
+          <h4 class="pc-name">Mundial de Clubes</h4>
+          <span class="pc-year mono-num">2015</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2015, no Japão</p><p><b>Contexto</b> O Barcelona venceu o Guangzhou Evergrande na semifinal e o River Plate na final, em Yokohama, por 3 a 0. Quatro anos antes, pelo Santos, Neymar tinha perdido a final para o próprio Barcelona.</p><p><b>Papel de Neymar</b> Titular na final e líder de assistências do torneio.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2015_FIFA_Club_World_Cup_final" rel="noopener" target="_blank">Wikipedia (en) — 2015 FIFA Club World Cup final</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Mundial de Clubes, 2015, Barcelona"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--tipo" data-id="artilheiro-champions-2015" data-cat="individual" data-ent="barcelona" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year long">2014–15</span><span class="pc-ty-name">Artilharia</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 25</span>
+          <span class="pc-kind">Prêmio individual · Barcelona</span>
+          <h4 class="pc-name">Artilheiro da Liga dos Campeões</h4>
+          <span class="pc-year mono-num">2014–15</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2014–15</p><p><b>Contexto</b> 10 gols, empatado com Messi e Cristiano Ronaldo, na campanha do título do Barcelona.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2014%E2%80%9315_UEFA_Champions_League" rel="noopener" target="_blank">Wikipedia (en) — 2014–15 UEFA Champions League</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Artilheiro da Liga dos Campeões, 2014–15, Barcelona"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--tipo" data-id="artilheiro-copa-do-rei-2015" data-cat="individual" data-ent="barcelona" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year long">2014–15</span><span class="pc-ty-name">Artilharia</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 26</span>
+          <span class="pc-kind">Prêmio individual · Barcelona</span>
+          <h4 class="pc-name">Artilheiro da Copa do Rei</h4>
+          <span class="pc-year mono-num">2014–15</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2014–15</p><p><b>Contexto</b> 7 gols, com um deles na final contra o Athletic Bilbao.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a> · <a href="https://pt.wikipedia.org/wiki/Neymar#T%C3%ADtulos" rel="noopener" target="_blank">Wikipedia (pt) — Neymar, Artilharias</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Artilheiro da Copa do Rei, 2014–15, Barcelona"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2016" id="sala-2016" aria-labelledby="sala-2016-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2016-h">2016</h3><p class="room-count">3 títulos</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n1 pc--titulo pc--foto" data-id="ouro-olimpico-2016" data-cat="selecao" data-ent="selecao" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:1.340"><img src="/vestiario/assets/historia/selecao-ouro-2016.webp" width="1420" height="1016" loading="lazy" decoding="async" alt="Depois do ouro olímpico, Maracanã, 2016. Foto: Fernando Frazão/Agência Brasil, CC BY 3.0 BR." style="object-position:50% 30%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 27</span>
+          <span class="pc-kind">Título · Seleção</span>
+          <h4 class="pc-name">Ouro olímpico</h4>
+          <span class="pc-year mono-num">2016</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Jogos Rio 2016</p><p><b>Contexto</b> O primeiro ouro olímpico do futebol masculino brasileiro: 1 a 1 com a Alemanha no Maracanã e vitória por 5 a 4 nos pênaltis.</p><p><b>Papel de Neymar</b> Capitão do time, abriu o placar de falta e converteu o pênalti decisivo.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/Football_at_the_2016_Summer_Olympics_%E2%80%93_Men%27s_tournament" rel="noopener" target="_blank">Wikipedia (en) — Football at the 2016 Summer Olympics, men&#x27;s tournament</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p><p><b>Imagem</b> Depois do ouro olímpico, Maracanã, 2016. <a href="https://commons.wikimedia.org/wiki/File:Brasil_conquista_primeiro_ouro_ol%C3%ADmpico_nos_penaltis_1039248-20082016-_mg_0015.jpg" rel="noopener" target="_blank">Fernando Frazão/Agência Brasil, CC BY 3.0 BR</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Ouro olímpico, 2016, Seleção Brasileira"></button>
+      </li>
+      <li class="pc pc--n2 pc--titulo pc--foto" data-id="copa-do-rei-2016" data-cat="clube" data-ent="barcelona" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:1.192"><img src="/titulos/assets/trofeu-copa-do-rei.webp" width="1600" height="1342" loading="lazy" decoding="async" alt="A taça da Copa do Rei: exemplar conquistado pelo Sevilla em 2010, no museu do estádio Ramón Sánchez-Pizjuán. Foto: CarlosVdeHabsburgo, CC BY-SA 4.0." style="object-position:50% 45%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 28</span>
+          <span class="pc-kind">Título · Barcelona</span>
+          <h4 class="pc-name">Copa do Rei</h4>
+          <span class="pc-year mono-num">2015–16</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2015–16</p><p><b>Contexto</b> Final contra o Sevilla, no Vicente Calderón: 0 a 0 no tempo normal e 2 a 0 na prorrogação, com o Barcelona jogando com um a menos desde o primeiro tempo.</p><p><b>Papel de Neymar</b> Fez o segundo gol, no último minuto da prorrogação.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2016_Copa_del_Rey_final" rel="noopener" target="_blank">Wikipedia (en) — 2016 Copa del Rey final</a></p><p><b>Imagem</b> A taça da Copa do Rei: exemplar conquistado pelo Sevilla em 2010, no museu do estádio Ramón Sánchez-Pizjuán. <a href="https://commons.wikimedia.org/wiki/File:Copa_del_Rey_2010.jpg" rel="noopener" target="_blank">CarlosVdeHabsburgo, CC BY-SA 4.0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Copa do Rei, 2015–16, Barcelona"></button>
+      </li>
+      <li class="pc pc--n2 pc--titulo pc--tipo" data-id="la-liga-2016" data-cat="clube" data-ent="barcelona" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year long">2015–16</span><span class="pc-ty-name">La Liga</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 29</span>
+          <span class="pc-kind">Título · Barcelona</span>
+          <h4 class="pc-name">La Liga</h4>
+          <span class="pc-year mono-num">2015–16</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2015–16</p><p><b>Contexto</b> O bicampeonato espanhol, garantido na última rodada, um ponto à frente do Real Madrid.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2015%E2%80%9316_La_Liga" rel="noopener" target="_blank">Wikipedia (en) — 2015–16 La Liga</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: La Liga, 2015–16, Barcelona"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2017" id="sala-2017" aria-labelledby="sala-2017-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2017-h">2017</h3><p class="room-count">1 título · 4 prêmios</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n2 pc--titulo pc--foto" data-id="copa-do-rei-2017" data-cat="clube" data-ent="barcelona" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:1.192"><img src="/titulos/assets/trofeu-copa-do-rei.webp" width="1600" height="1342" loading="lazy" decoding="async" alt="A taça da Copa do Rei: exemplar conquistado pelo Sevilla em 2010, no museu do estádio Ramón Sánchez-Pizjuán. Foto: CarlosVdeHabsburgo, CC BY-SA 4.0." style="object-position:50% 45%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 30</span>
+          <span class="pc-kind">Título · Barcelona</span>
+          <h4 class="pc-name">Copa do Rei</h4>
+          <span class="pc-year mono-num">2016–17</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2016–17</p><p><b>Contexto</b> Final contra o Alavés: 3 a 1. Foi o último título de Neymar pelo Barcelona.</p><p><b>Papel de Neymar</b> Marcou no fim do primeiro tempo e igualou um recorde de Puskás: gols em três finais seguidas da Copa do Rei.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2017_Copa_del_Rey_final" rel="noopener" target="_blank">Wikipedia (en) — 2017 Copa del Rey final</a></p><p><b>Imagem</b> A taça da Copa do Rei: exemplar conquistado pelo Sevilla em 2010, no museu do estádio Ramón Sánchez-Pizjuán. <a href="https://commons.wikimedia.org/wiki/File:Copa_del_Rey_2010.jpg" rel="noopener" target="_blank">CarlosVdeHabsburgo, CC BY-SA 4.0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Copa do Rei, 2016–17, Barcelona"></button>
+      </li>
+      <li class="pc pc--n2 pc--premio pc--tipo" data-id="podio-bola-de-ouro" data-cat="individual" data-ent="carreira" data-tipo="premio" data-vezes="2">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2015</span><span class="pc-ty-name">Colocação</span></div><span class="pc-times">2×</span></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 31</span>
+          <span class="pc-kind">Prêmio individual</span>
+          <h4 class="pc-name">3º lugar na Bola de Ouro</h4>
+          <span class="pc-year mono-num">2015 · 2017</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Bola de Ouro FIFA 2015 e Bola de Ouro 2017</p><p><b>Contexto</b> Terminou duas vezes no pódio do principal prêmio individual do futebol, atrás de Messi e Cristiano Ronaldo: em 2015, pelo Barcelona, e em 2017, ano da transferência para o PSG. É uma colocação, não a conquista do prêmio.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2015_FIFA_Ballon_d%27Or" rel="noopener" target="_blank">Wikipedia (en) — 2015 FIFA Ballon d&#x27;Or</a> · <a href="https://en.wikipedia.org/wiki/2017_Ballon_d%27Or" rel="noopener" target="_blank">Wikipedia (en) — 2017 Ballon d&#x27;Or</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: 3º lugar na Bola de Ouro, 2015 · 2017"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--tipo" data-id="fifpro-world-xi" data-cat="individual" data-ent="carreira" data-tipo="premio" data-vezes="2">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2015</span><span class="pc-ty-name">Seleção ideal</span></div><span class="pc-times">2×</span></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 32</span>
+          <span class="pc-kind">Prêmio individual</span>
+          <h4 class="pc-name">Seleção do ano FIFA FIFPro</h4>
+          <span class="pc-year mono-num">2015 · 2017</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> 2015 e 2017</p><p><b>Contexto</b> Escolhido duas vezes para o time ideal do ano, votado por jogadores profissionais do mundo todo.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/FIFA_FIFPRO_Men%27s_World_11" rel="noopener" target="_blank">Wikipedia (en) — FIFA FIFPRO Men&#x27;s World 11</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Seleção do ano FIFA FIFPro, 2015 · 2017"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2018" id="sala-2018" aria-labelledby="sala-2018-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2018-h">2018</h3><p class="room-count">4 títulos · 1 prêmio</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n2 pc--titulo pc--foto" data-id="ligue-1-2018" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:0.799"><img src="/vestiario/assets/historia/psg-apresentacao-2017.webp" width="1047" height="1311" loading="lazy" decoding="async" alt="Apresentação no Parque dos Príncipes, 4 de agosto de 2017. Foto: Antoine Dellenbach, CC BY-SA 2.0." style="object-position:50% 25%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 33</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Campeonato Francês</h4>
+          <span class="pc-year mono-num">2017–18</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2017–18</p><p><b>Contexto</b> O primeiro título francês, na temporada de estreia em Paris.</p><p><b>Papel de Neymar</b> Foi eleito o melhor jogador da Ligue 1 pela UNFP, mesmo sem jogar a reta final: fraturou o pé direito em fevereiro de 2018.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2017%E2%80%9318_Ligue_1" rel="noopener" target="_blank">Wikipedia (en) — 2017–18 Ligue 1</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p><p><b>Imagem</b> Apresentação no Parque dos Príncipes, 4 de agosto de 2017. <a href="https://commons.wikimedia.org/wiki/File:Neymar_Jr_presentation_-_Press_conference_for_PSG_001_(cropped).jpg" rel="noopener" target="_blank">Antoine Dellenbach, CC BY-SA 2.0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Campeonato Francês, 2017–18, Paris Saint-Germain"></button>
+      </li>
+      <li class="pc pc--n3 pc--titulo pc--tipo" data-id="copa-da-liga-2018" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year long">2017–18</span><span class="pc-ty-name">Copa da Liga Francesa</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 34</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Copa da Liga Francesa</h4>
+          <span class="pc-year mono-num">2017–18</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2017–18</p><p><b>Contexto</b> Final contra o Monaco, em Bordeaux: 3 a 0.</p><p><b>Papel de Neymar</b> Fazia parte do elenco, mas não jogou a final: estava se recuperando da fratura no pé direito.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2018_Coupe_de_la_Ligue_final" rel="noopener" target="_blank">Wikipedia (en) — 2018 Coupe de la Ligue final</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Copa da Liga Francesa, 2017–18, Paris Saint-Germain"></button>
+      </li>
+      <li class="pc pc--n3 pc--titulo pc--tipo" data-id="copa-da-franca-2018" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year long">2017–18</span><span class="pc-ty-name">Copa da França</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 35</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Copa da França</h4>
+          <span class="pc-year mono-num">2017–18</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2017–18</p><p><b>Contexto</b> Final contra o Les Herbiers, da terceira divisão, no Stade de France: 2 a 0.</p><p><b>Papel de Neymar</b> Fazia parte do elenco, mas não jogou a final: estava se recuperando da fratura no pé direito.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2018_Coupe_de_France_final" rel="noopener" target="_blank">Wikipedia (en) — 2018 Coupe de France final</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Copa da França, 2017–18, Paris Saint-Germain"></button>
+      </li>
+      <li class="pc pc--n3 pc--titulo pc--tipo" data-id="supercopa-franca-2018" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2018</span><span class="pc-ty-name">Supercopa da França</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 36</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Supercopa da França</h4>
+          <span class="pc-year mono-num">2018</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2018–19</p><p><b>Contexto</b> O Troféu dos Campeões disputado em Shenzhen, na China: 4 a 0 sobre o Monaco.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2018_Troph%C3%A9e_des_Champions" rel="noopener" target="_blank">Wikipedia (en) — 2018 Trophée des Champions</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Supercopa da França, 2018, Paris Saint-Germain"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--foto" data-id="melhor-ligue-1-2018" data-cat="individual" data-ent="psg" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:1.000"><img src="/vestiario/assets/historia/psg-aquecimento-2018.webp" width="1420" height="1016" loading="lazy" decoding="async" alt="Aquecimento pelo PSG, 2018. Foto: Balkan Photos, CC BY-SA 2.0." style="object-position:50% 30%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 37</span>
+          <span class="pc-kind">Prêmio individual · PSG</span>
+          <h4 class="pc-name">Melhor jogador da Ligue 1</h4>
+          <span class="pc-year mono-num">2017–18</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2017–18</p><p><b>Contexto</b> O prêmio da UNFP, o sindicato dos jogadores profissionais da França, na primeira temporada em Paris.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/Troph%C3%A9es_UNFP_du_football" rel="noopener" target="_blank">Wikipedia (en) — Trophées UNFP du football</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p><p><b>Imagem</b> Aquecimento pelo PSG, 2018. <a href="https://commons.wikimedia.org/wiki/File:Neymar_2018.jpg" rel="noopener" target="_blank">Balkan Photos, CC BY-SA 2.0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Melhor jogador da Ligue 1, 2017–18, Paris Saint-Germain"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2019" id="sala-2019" aria-labelledby="sala-2019-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2019-h">2019</h3><p class="room-count">1 título</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n2 pc--titulo pc--tipo" data-id="ligue-1-2019" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year long">2018–19</span><span class="pc-ty-name">Campeonato Francês</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 38</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Campeonato Francês</h4>
+          <span class="pc-year mono-num">2018–19</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2018–19</p><p><b>Contexto</b> O bicampeonato francês. Uma nova lesão no pé direito, em janeiro de 2019, tirou Neymar de boa parte da temporada.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2018%E2%80%9319_Ligue_1" rel="noopener" target="_blank">Wikipedia (en) — 2018–19 Ligue 1</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Campeonato Francês, 2018–19, Paris Saint-Germain"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2020" id="sala-2020" aria-labelledby="sala-2020-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2020-h">2020</h3><p class="room-count">3 títulos</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n2 pc--titulo pc--tipo" data-id="ligue-1-2020" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year long">2019–20</span><span class="pc-ty-name">Campeonato Francês</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 39</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Campeonato Francês</h4>
+          <span class="pc-year mono-num">2019–20</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2019–20</p><p><b>Contexto</b> Um título decidido fora de campo: a liga foi encerrada em abril de 2020 por causa da pandemia de covid-19, com o PSG na liderança.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_Ligue_1" rel="noopener" target="_blank">Wikipedia (en) — 2019–20 Ligue 1</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Campeonato Francês, 2019–20, Paris Saint-Germain"></button>
+      </li>
+      <li class="pc pc--n2 pc--titulo pc--tipo" data-id="copa-da-franca-2020" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year long">2019–20</span><span class="pc-ty-name">Copa da França</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 40</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Copa da França</h4>
+          <span class="pc-year mono-num">2019–20</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2019–20</p><p><b>Contexto</b> Final contra o Saint-Étienne, no Stade de France, em julho de 2020: 1 a 0.</p><p><b>Papel de Neymar</b> Fez o único gol da final, no rebote de um chute de Mbappé.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2020_Coupe_de_France_final" rel="noopener" target="_blank">Wikipedia (en) — 2020 Coupe de France final</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Copa da França, 2019–20, Paris Saint-Germain"></button>
+      </li>
+      <li class="pc pc--n3 pc--titulo pc--tipo" data-id="copa-da-liga-2020" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year long">2019–20</span><span class="pc-ty-name">Copa da Liga Francesa</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 41</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Copa da Liga Francesa</h4>
+          <span class="pc-year mono-num">2019–20</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2019–20</p><p><b>Contexto</b> A última edição da competição: 0 a 0 com o Lyon e título nos pênaltis.</p><p><b>Papel de Neymar</b> Converteu a sua cobrança na disputa de pênaltis.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2020_Coupe_de_la_Ligue_final" rel="noopener" target="_blank">Wikipedia (en) — 2020 Coupe de la Ligue final</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Copa da Liga Francesa, 2019–20, Paris Saint-Germain"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2021" id="sala-2021" aria-labelledby="sala-2021-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2021-h">2021</h3><p class="room-count">2 títulos · 1 prêmio</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n3 pc--titulo pc--tipo" data-id="supercopa-franca-2020" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2020</span><span class="pc-ty-name">Supercopa da França</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 42</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Supercopa da França</h4>
+          <span class="pc-year mono-num">2020</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2020, disputada em janeiro de 2021</p><p><b>Contexto</b> Contra o Olympique de Marseille, em Lens: 2 a 1.</p><p><b>Papel de Neymar</b> Marcou o segundo gol, de pênalti.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2020_Troph%C3%A9e_des_Champions" rel="noopener" target="_blank">Wikipedia (en) — 2020 Trophée des Champions</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Supercopa da França, 2020, Paris Saint-Germain"></button>
+      </li>
+      <li class="pc pc--n3 pc--titulo pc--tipo" data-id="copa-da-franca-2021" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year long">2020–21</span><span class="pc-ty-name">Copa da França</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 43</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Copa da França</h4>
+          <span class="pc-year mono-num">2020–21</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2020–21</p><p><b>Contexto</b> Final contra o Monaco, no Stade de France: 2 a 0, com gols de Icardi e Mbappé.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2021_Coupe_de_France_final" rel="noopener" target="_blank">Wikipedia (en) — 2021 Coupe de France final</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Copa da França, 2020–21, Paris Saint-Germain"></button>
+      </li>
+      <li class="pc pc--n2 pc--premio pc--tipo" data-id="melhor-copa-america-2021" data-cat="individual" data-ent="selecao" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2021</span><span class="pc-ty-name">Melhor jogador</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 44</span>
+          <span class="pc-kind">Prêmio individual · Seleção</span>
+          <h4 class="pc-name">Melhor jogador da Copa América</h4>
+          <span class="pc-year mono-num">2021</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Copa América de 2021, no Brasil</p><p><b>Contexto</b> Dividiu o prêmio com Messi. O Brasil perdeu a final para a Argentina, no Maracanã: o vice-campeonato não entra entre os títulos.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica" rel="noopener" target="_blank">Wikipedia (en) — 2021 Copa América</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Melhor jogador da Copa América, 2021, Seleção Brasileira"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2022" id="sala-2022" aria-labelledby="sala-2022-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2022-h">2022</h3><p class="room-count">2 títulos</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n2 pc--titulo pc--tipo" data-id="ligue-1-2022" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year long">2021–22</span><span class="pc-ty-name">Campeonato Francês</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 45</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Campeonato Francês</h4>
+          <span class="pc-year mono-num">2021–22</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2021–22</p><p><b>Contexto</b> A primeira temporada do ataque com Messi e Mbappé, e o décimo título francês do PSG.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2021%E2%80%9322_Ligue_1" rel="noopener" target="_blank">Wikipedia (en) — 2021–22 Ligue 1</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Campeonato Francês, 2021–22, Paris Saint-Germain"></button>
+      </li>
+      <li class="pc pc--n3 pc--titulo pc--tipo" data-id="supercopa-franca-2022" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2022</span><span class="pc-ty-name">Supercopa da França</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 46</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Supercopa da França</h4>
+          <span class="pc-year mono-num">2022</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2022–23</p><p><b>Contexto</b> Contra o Nantes, em Tel Aviv: 4 a 0.</p><p><b>Papel de Neymar</b> Marcou dois gols, um deles de pênalti.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2022_Troph%C3%A9e_des_Champions" rel="noopener" target="_blank">Wikipedia (en) — 2022 Trophée des Champions</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Supercopa da França, 2022, Paris Saint-Germain"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2023" id="sala-2023" aria-labelledby="sala-2023-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2023-h">2023</h3><p class="room-count">1 título</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n2 pc--titulo pc--foto" data-id="ligue-1-2023" data-cat="clube" data-ent="psg" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:0.799"><img src="/titulos/assets/psg-2022.webp" width="1279" height="1600" loading="lazy" decoding="async" alt="Neymar e Mbappé pelo PSG, agosto de 2022. Foto: Liondartois, CC BY-SA 4.0." style="object-position:50% 30%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 47</span>
+          <span class="pc-kind">Título · PSG</span>
+          <h4 class="pc-name">Campeonato Francês</h4>
+          <span class="pc-year mono-num">2022–23</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2022–23</p><p><b>Contexto</b> O último título de Neymar em Paris. Uma lesão no tornozelo direito, em fevereiro de 2023, encerrou a temporada dele antes da hora.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2022%E2%80%9323_Ligue_1" rel="noopener" target="_blank">Wikipedia (en) — 2022–23 Ligue 1</a></p><p><b>Imagem</b> Neymar e Mbappé pelo PSG, agosto de 2022. <a href="https://commons.wikimedia.org/wiki/File:Messi_Neymar_Mbapp%C3%A9_PSG_2022_(cropped).jpg" rel="noopener" target="_blank">Liondartois, CC BY-SA 4.0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Campeonato Francês, 2022–23, Paris Saint-Germain"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2024" id="sala-2024" aria-labelledby="sala-2024-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2024-h">2024</h3><p class="room-count">1 título · 1 prêmio</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n2 pc--titulo pc--foto" data-id="saudita-2024" data-cat="clube" data-ent="al-hilal" data-tipo="titulo" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:1.340"><img src="/vestiario/assets/historia/hilal-2023-a.webp" width="1420" height="1016" loading="lazy" decoding="async" alt="Comemoração pelo Al-Hilal, 3 de outubro de 2023. Foto: Meghdad Madadi, CC BY 4.0." style="object-position:50% 30%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 48</span>
+          <span class="pc-kind">Título · Al-Hilal</span>
+          <h4 class="pc-name">Campeonato Saudita</h4>
+          <span class="pc-year mono-num">2023–24</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Temporada 2023–24</p><p><b>Contexto</b> O Al-Hilal foi campeão sem perder nenhum jogo na liga.</p><p><b>Papel de Neymar</b> Fez parte do elenco campeão, mas jogou pouco: em outubro de 2023 rompeu o ligamento cruzado do joelho esquerdo, defendendo a Seleção, e ficou fora o resto da temporada.</p><p><b>Fontes</b> <a href="https://en.wikipedia.org/wiki/2023%E2%80%9324_Saudi_Pro_League" rel="noopener" target="_blank">Wikipedia (en) — 2023–24 Saudi Pro League</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p><p><b>Imagem</b> Comemoração pelo Al-Hilal, 3 de outubro de 2023. <a href="https://commons.wikimedia.org/wiki/File:Neymar_Jr._with_Al_Hilal,_3_October_2023_-_08.jpg" rel="noopener" target="_blank">Meghdad Madadi, CC BY 4.0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Campeonato Saudita, 2023–24, Al-Hilal"></button>
+      </li>
+      <li class="pc pc--n3 pc--premio pc--tipo" data-id="globe-soccer-carreira-2024" data-cat="individual" data-ent="carreira" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame pc-frame--tipo" aria-hidden="true"><span class="pc-ty-year">2024</span><span class="pc-ty-name">Homenagem</span></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 49</span>
+          <span class="pc-kind">Prêmio individual</span>
+          <h4 class="pc-name">Prêmio de Carreira Globe Soccer</h4>
+          <span class="pc-year mono-num">2024</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Globe Soccer Awards 2024, em Dubai</p><p><b>Contexto</b> Homenagem pelo conjunto da carreira, entregue em dezembro de 2024.</p><p><b>Fontes</b> <a href="https://spl.com.sa/en/news/515628/ronaldo-neymar-and-jesus-win-in-dubais-globe-soccer-awards" rel="noopener" target="_blank">Saudi Pro League — Ronaldo, Neymar and Jesus win in Dubai&#x27;s Globe Soccer Awards</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Prêmio de Carreira Globe Soccer, 2024"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+    <section class="room" data-year="2025" id="sala-2025" aria-labelledby="sala-2025-h">
+      <header class="room-head"><h3 class="room-year mono-num" id="sala-2025-h">2025</h3><p class="room-count">1 prêmio</p></header>
+      <ul class="room-items">
+      <li class="pc pc--n3 pc--premio pc--foto" data-id="gol-mais-bonito-paulistao-2025" data-cat="individual" data-ent="santos-2025" data-tipo="premio" data-vezes="1">
+        <div class="pc-obj"><div class="pc-frame" style="aspect-ratio:1.000"><img src="/vestiario/assets/historia/santos2-fortaleza-2025.webp" width="512" height="702" loading="lazy" decoding="async" alt="Pelo Santos, contra o Fortaleza, 2 de novembro de 2025. Foto: BrazilianDude70, CC0." style="object-position:50% 25%"></div></div>
+        <div class="pc-cap">
+          <span class="pc-no mono-num">№ 50</span>
+          <span class="pc-kind">Prêmio individual · Santos 25–</span>
+          <h4 class="pc-name">Gol mais bonito do Paulistão</h4>
+          <span class="pc-year mono-num">2025</span>
+        </div>
+        <div class="pc-more"><p><b>Temporada</b> Edição de 2025</p><p><b>Contexto</b> Um gol olímpico contra a Inter de Limeira, na volta ao Santos. O prêmio, escolhido em votação, foi entregue na festa do campeonato.</p><p><b>Fontes</b> <a href="https://maquinadoesporte.com.br/?p=217994" rel="noopener" target="_blank">Máquina do Esporte — Betano renova patrocínio ao Paulistão (08/01/2026)</a> · <a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, Honours</a></p><p><b>Imagem</b> Pelo Santos, contra o Fortaleza, 2 de novembro de 2025. <a href="https://commons.wikimedia.org/wiki/File:Santos_x_Fortaleza_-_02-11-2025_24_-_Neymar.jpg" rel="noopener" target="_blank">BrazilianDude70, CC0</a></p></div>
+        <button class="pc-hit" type="button" aria-haspopup="dialog" aria-label="Ver de perto: Gol mais bonito do Paulistão, 2025, Santos"></button>
+      </li>
+      </ul>
+      <i class="room-floor" aria-hidden="true"></i>
+    </section>
+<!-- parede:fim -->
+    </div>
+  </section>
+
+  <!-- 4 — curadoria, fontes e créditos -->
+  <section class="notes" id="notas" aria-labelledby="notes-h">
+    <h2 class="notes-h display" id="notes-h" data-lines="nota de|curadoria">Nota de curadoria.</h2>
+    <div class="notes-grid">
+<!-- notas:inicio -->
+      <div class="note" data-reveal="up"><h3>Vices não são títulos</h3><p>Ficam fora da contagem a prata olímpica de 2012, o vice do Mundial de Clubes de 2011, o vice da Liga dos Campeões de 2019–20 e o vice da Copa América de 2021.</p></div>
+      <div class="note" data-reveal="up"><h3>Supercopa da UEFA de 2015</h3><p>O Barcelona venceu o Sevilla, mas Neymar não jogou: estava com caxumba. As listas de referência não a contam como título dele. A Supercopa da Espanha de 2016, disputada durante os Jogos do Rio, também não entra.</p></div>
+      <div class="note" data-reveal="up"><h3>Recordes e números ficam de fora</h3><p>Marcas como a de maior artilheiro da Seleção, os 222 milhões de euros da transferência ou os gols em quatro Copas aparecem em Jogador, Carreira e no Vestiário. Aqui só entram títulos e prêmios.</p></div>
+      <div class="note" data-reveal="up"><h3>Temporadas europeias</h3><p>No gráfico ano a ano, cada temporada conta no ano em que terminou: a Liga dos Campeões de 2014–15 aparece em 2015.</p></div>
+      <div class="note note--wide" data-reveal="up"><h3>Fontes gerais</h3><ul class="note-list"><li><a href="https://en.wikipedia.org/wiki/Neymar#Honours" rel="noopener" target="_blank">Wikipedia (en) — Neymar, seção Honours (consultada em 22/10/2026)</a></li><li><a href="https://pt.wikipedia.org/wiki/Neymar#T%C3%ADtulos" rel="noopener" target="_blank">Wikipedia (pt) — Neymar, seção Títulos (consultada em 22/10/2026)</a></li><li><a href="https://pt.wikipedia.org/wiki/Lista_de_t%C3%ADtulos_e_pr%C3%AAmios_recebidos_por_Neymar" rel="noopener" target="_blank">Wikipedia (pt) — Lista de títulos e prêmios recebidos por Neymar</a></li></ul><p>Cada peça traz as suas fontes específicas. Dados conferidos em 22/10/2026.</p></div>
+      <div class="note note--wide" data-reveal="up"><h3>Créditos das imagens</h3><ul class="note-list note-credits"><li>A taça da Copa Libertadores: exemplar conquistado pelo Fluminense em 2023, em exposição. <a href="https://commons.wikimedia.org/wiki/File:Trof%C3%A9u_da_Copa_Libertadores_da_Am%C3%A9rica_de_2023.jpg" rel="noopener" target="_blank">Alexandre M. B. Berwanger · CC0</a></li><li>Aquecimento antes da primeira final da Libertadores, contra o Peñarol, em Montevidéu, 2011. <a href="https://commons.wikimedia.org/wiki/File:Neymar_-_Copa_Libertadores_de_America_2011_-_Pe%C3%B1arol_-_Santos_-_110616-6925-jikatu.jpg" rel="noopener" target="_blank">Jimmy Baikovicius · CC BY-SA 2.0</a></li><li>Final do Mundial de Clubes, em Yokohama, 2011. <a href="https://commons.wikimedia.org/wiki/File:Neymar_2011_FIFA_Club_World_Cup_Final.jpg" rel="noopener" target="_blank">Christopher Johnson · CC BY-SA 2.0</a></li><li>A Seleção recebe a taça da Copa das Confederações no pódio, 2013. <a href="https://commons.wikimedia.org/wiki/File:Confed.Cup2013Champions.jpg" rel="noopener" target="_blank">Tânia Rêgo/Agência Brasil · CC BY 3.0 BR</a></li><li>Com a Bola de Ouro da Copa das Confederações, Maracanã, 2013. <a href="https://commons.wikimedia.org/wiki/File:ConfedCup2013Champions6.jpg" rel="noopener" target="_blank">Tânia Rêgo/Agência Brasil · CC BY 3.0 BR</a></li><li>A taça da Liga dos Campeões da UEFA: exemplar do Liverpool. <a href="https://commons.wikimedia.org/wiki/File:Champions_league_trophy.jpg" rel="noopener" target="_blank">Melon5541 · CC BY-SA 4.0</a></li><li>Com a camisa do Barcelona, 2015. <a href="https://commons.wikimedia.org/wiki/File:Neymar_(16245492137).jpg" rel="noopener" target="_blank">Alex Fau · CC BY 2.0</a></li><li>A taça da Copa do Rei: exemplar conquistado pelo Sevilla em 2010, no museu do estádio Ramón Sánchez-Pizjuán. <a href="https://commons.wikimedia.org/wiki/File:Copa_del_Rey_2010.jpg" rel="noopener" target="_blank">CarlosVdeHabsburgo · CC BY-SA 4.0</a></li><li>Depois do ouro olímpico, Maracanã, 2016. <a href="https://commons.wikimedia.org/wiki/File:Brasil_conquista_primeiro_ouro_ol%C3%ADmpico_nos_penaltis_1039248-20082016-_mg_0015.jpg" rel="noopener" target="_blank">Fernando Frazão/Agência Brasil · CC BY 3.0 BR</a></li><li>Apresentação no Parque dos Príncipes, 4 de agosto de 2017. <a href="https://commons.wikimedia.org/wiki/File:Neymar_Jr_presentation_-_Press_conference_for_PSG_001_(cropped).jpg" rel="noopener" target="_blank">Antoine Dellenbach · CC BY-SA 2.0</a></li><li>Aquecimento pelo PSG, 2018. <a href="https://commons.wikimedia.org/wiki/File:Neymar_2018.jpg" rel="noopener" target="_blank">Balkan Photos · CC BY-SA 2.0</a></li><li>Neymar e Mbappé pelo PSG, agosto de 2022. <a href="https://commons.wikimedia.org/wiki/File:Messi_Neymar_Mbapp%C3%A9_PSG_2022_(cropped).jpg" rel="noopener" target="_blank">Liondartois · CC BY-SA 4.0</a></li><li>Comemoração pelo Al-Hilal, 3 de outubro de 2023. <a href="https://commons.wikimedia.org/wiki/File:Neymar_Jr._with_Al_Hilal,_3_October_2023_-_08.jpg" rel="noopener" target="_blank">Meghdad Madadi · CC BY 4.0</a></li><li>Pelo Santos, contra o Fortaleza, 2 de novembro de 2025. <a href="https://commons.wikimedia.org/wiki/File:Santos_x_Fortaleza_-_02-11-2025_24_-_Neymar.jpg" rel="noopener" target="_blank">BrazilianDude70 · CC0</a></li><li>Abertura: a Seleção recebe a taça da Copa das Confederações, 2013. <a href="https://commons.wikimedia.org/wiki/File:Confed.Cup2013Champions.jpg" rel="noopener" target="_blank">Tânia Rêgo/Agência Brasil · CC BY 3.0 BR</a></li></ul><p>Todas do Wikimedia Commons. Quando não há fotografia adequada, a peça usa uma composição tipográfica.</p></div>
+<!-- notas:fim -->
+    </div>
+  </section>
+</main>
+
+<!-- o foco: a peça escolhida, de perto -->
+<div class="focus" id="focus" role="dialog" aria-modal="true" aria-labelledby="fx-name" hidden>
+  <div class="fx-bg" aria-hidden="true"><i class="fx-spot"></i><i class="fx-grain"></i></div>
+  <div class="fx-year" id="fx-year" aria-hidden="true"></div>
+  <div class="fx-stage" id="fx-stage">
+    <figure class="fx-fig" id="fx-fig">
+      <div class="fx-frame" id="fx-frame"></div>
+      <figcaption class="fx-cap" id="fx-cap"></figcaption>
+    </figure>
+  </div>
+  <article class="fx-info" id="fx-info" tabindex="-1">
+    <p class="fx-kind fx-rv" id="fx-kind"></p>
+    <h2 class="fx-name display" id="fx-name"></h2>
+    <dl class="fx-meta" id="fx-meta"></dl>
+  </article>
+  <div class="fx-bar">
+    <button class="fx-btn fx-prev" id="fx-prev" type="button" aria-label="Peça anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <p class="fx-count mono-num" aria-live="polite"><span id="fx-now">01</span><i>/</i><span id="fx-all">31</span></p>
+    <button class="fx-btn fx-next" id="fx-next" type="button" aria-label="Próxima peça"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    <ol class="fx-rail" id="fx-rail" aria-label="Peças do filtro atual"></ol>
+  </div>
+  <button class="fx-close" id="fx-close" type="button"><span>Fechar</span><kbd>Esc</kbd></button>
+  <p class="fx-hint" aria-hidden="true">← → para navegar</p>
+</div>
+
+<script type="module" src="titulos.js"></script>
+</body>
+</html>

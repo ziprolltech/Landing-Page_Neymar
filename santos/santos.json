@@ -1,0 +1,35 @@
+{
+  "atualizado": "2026-10-22",
+  "fotos": [
+    { "arquivo": "assets/vila-noite.webp", "uso": "Abertura (recorte)", "legenda": "Vila Belmiro à noite, Santos x Remo, 2 de abril de 2026.", "autor": "ManuYS, via BrazilianDude70", "licenca": "CC BY 4.0", "url": "https://commons.wikimedia.org/wiki/File:Santos_x_Remo_-_02-04-2026_10.jpg" },
+    { "arquivo": "assets/vila-noite-torcida.webp", "uso": "Galeria", "legenda": "Vila Belmiro à noite, Santos x Remo, 2 de abril de 2026.", "autor": "ManuYS, via BrazilianDude70", "licenca": "CC BY 4.0", "url": "https://commons.wikimedia.org/wiki/File:Santos_x_Remo_-_02-04-2026_07.jpg" },
+    { "arquivo": "assets/vila-2009.webp", "uso": "Galeria", "legenda": "Vista interna da Vila Belmiro, janeiro de 2009.", "autor": "Nikolas Maciel Fabrício", "licenca": "Domínio público", "url": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_Urbano_Caldeira_(Vila_Belmiro)_-_vista_interna.jpg" },
+    { "arquivo": "assets/jovem-2011.webp", "uso": "Abertura e galeria", "legenda": "Final da Libertadores, jogo de ida, Montevidéu, junho de 2011.", "autor": "Jimmy Baikovicius", "licenca": "CC BY-SA 2.0", "url": "https://commons.wikimedia.org/wiki/File:Neymar_-_Santos_b%26w.jpg" },
+    { "arquivo": "assets/tempo-2011.webp", "uso": "O tempo (recorte alinhado da foto acima)", "legenda": "Montevidéu, junho de 2011.", "autor": "Jimmy Baikovicius", "licenca": "CC BY-SA 2.0", "url": "https://commons.wikimedia.org/wiki/File:Neymar_-_Santos_b%26w.jpg" },
+    { "arquivo": "assets/tempo-2025.webp", "uso": "O tempo (recorte alinhado)", "legenda": "Retrato pintado com a camisa do Santos.", "autor": "Arte do site original (assets/paddock/portrait.webp)", "licenca": "Asset do projeto", "url": "/" },
+    { "arquivo": "assets/aquecimento-2011.webp", "uso": "Capítulo 01", "legenda": "Aquecimento antes da primeira final da Libertadores, Centenário, junho de 2011.", "autor": "jikatu", "licenca": "CC BY-SA 2.0", "url": "https://commons.wikimedia.org/wiki/File:Neymar_vs_Pe%C3%B1arol.jpg" },
+    { "arquivo": "assets/montevideu-2011.webp", "uso": "Galeria", "legenda": "Antes da primeira final contra o Peñarol, junho de 2011.", "autor": "Jimmy Baikovicius", "licenca": "CC BY-SA 2.0", "url": "https://commons.wikimedia.org/wiki/File:Neymar_Santos_2011.jpg" },
+    { "arquivo": "assets/mundial-2011.webp", "uso": "Galeria e uniformes (recorte)", "legenda": "Com Messi, final do Mundial de Clubes, Yokohama, 18 de dezembro de 2011.", "autor": "Christopher Johnson", "licenca": "CC BY-SA 2.0", "url": "https://commons.wikimedia.org/wiki/File:Messi_with_Neymar_Junior_the_Future_of_Brazil.jpg" },
+    { "arquivo": "/vestiario/assets/historia/santos1-mundial-2011.webp", "uso": "Galeria (do Vestiário)", "legenda": "Final do Mundial de Clubes, Yokohama, 2011.", "autor": "Christopher Johnson", "licenca": "CC BY-SA 2.0", "url": "https://commons.wikimedia.org/wiki/File:Neymar_2011_FIFA_Club_World_Cup_Final.jpg" },
+    { "arquivo": "assets/vila-2025.webp", "uso": "Galeria", "legenda": "Santos x Fortaleza, Vila Belmiro, 2 de novembro de 2025.", "autor": "BrazilianDude70", "licenca": "CC0", "url": "https://commons.wikimedia.org/wiki/File:Santos_x_Fortaleza_-_02-11-2025_01.jpg" },
+    { "arquivo": "assets/retorno-2025.webp", "uso": "Capítulo 02 e galeria", "legenda": "Santos x Fortaleza, Vila Belmiro, 2 de novembro de 2025.", "autor": "BrazilianDude70", "licenca": "CC0", "url": "https://commons.wikimedia.org/wiki/File:Santos_x_Fortaleza_-_02-11-2025_25_(cropped).jpg" }
+  ],
+  "fontes": [
+    { "nome": "Wikipédia — Neymar", "url": "https://pt.wikipedia.org/wiki/Neymar" },
+    { "nome": "Lance — os números da primeira passagem", "url": "https://www.lance.com.br/lancepedia/neymar-no-santos-numeros-primeira-passagem.html" },
+    { "nome": "Olympics.com — histórico e estatísticas", "url": "https://www.olympics.com/pt/noticias/neymar-historico-completo-estatisticas-clubes-selecao" },
+    { "nome": "CNN Brasil — o último jogo da primeira passagem (26/05/2013)", "url": "https://www.cnnbrasil.com.br/esportes/futebol/santos/relembre-como-foi-ultimo-jogo-de-neymar-com-a-camisa-do-santos/" },
+    { "nome": "Puskas.com — Neymar, vencedor do Prêmio Puskás 2011", "url": "https://www.puskas.com/en/fifa-puskas-award/3-neymar.html" },
+    { "nome": "CNN Brasil — Al-Hilal rescinde contrato (jan/2025)", "url": "https://www.cnnbrasil.com.br/esportes/futebol/santos/al-hilal-rescinde-contrato-de-neymar-e-abre-caminho-para-o-santos/" },
+    { "nome": "Santos FC — Neymar está de volta (31/01/2025)", "url": "https://www.santosfc.com.br/assumindo-a-10-de-rei-pele-idolo-neymar-jr-esta-de-volta-ao-santos-fc/" },
+    { "nome": "Santos FC — a reestreia contra o Botafogo-SP (05/02/2025)", "url": "https://www.santosfc.com.br/em-reestreia-de-neymar-santos-fc-empata-com-o-botafogo-sp/" },
+    { "nome": "Gazeta Esportiva — primeiro gol da volta (16/02/2025)", "url": "https://www.gazetaesportiva.com/times/santos/neymar-volta-a-marcar-santos-vence-o-agua-santa-e-lidera-grupo-do-paulistao/" },
+    { "nome": "Lance — gol olímpico contra a Inter de Limeira (23/02/2025)", "url": "https://www.lance.com.br/santos/neymar-faz-gol-olimpico-santos-faz-3-a-0-e-rebaixa-a-inter-de-limeira.html" },
+    { "nome": "Band — cirurgia no joelho (22/12/2025)", "url": "https://www.band.com.br/esportes/futebol/noticias/neymar-passa-por-cirurgia-no-joelho-e-inicia-processo-de-recuperacao-202512221244" },
+    { "nome": "ESPN — renovação até o fim de 2026", "url": "https://www.espn.com.br/futebol/santos/artigo/_/id/16135471/neymar-renova-contrato-com-o-santos-ate-o-final-de-2026-veja-os-detalhes" },
+    { "nome": "Jovem Pan — renovação até dezembro de 2026", "url": "https://jovempan.com.br/esportes/futebol/santos/neymar-renova-com-santos-ate-dezembro-de-2026.html" },
+    { "nome": "Band — dois gols contra a Chapecoense (25/07/2026)", "url": "https://www.band.com.br/esportes/neymar-faz-dois-mas-o-santos-so-empata-com-a-chapecoense-202607252035" },
+    { "nome": "Gazeta Esportiva — dois gols contra o Flamengo (08/10/2026)", "url": "https://www.gazetaesportiva.com/times/santos/neymar-santos-flamengo-dois-melhores-times-brasil/" },
+    { "nome": "ESPN — partidas de Neymar (números de 2026)", "url": "https://www.espn.com/soccer/player/matches/_/id/132948/neymar" }
+  ]
+}

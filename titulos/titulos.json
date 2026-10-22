@@ -1,0 +1,625 @@
+{
+  "_como_editar": "Cada item é uma peça da exposição. tipo: 'titulo' (coletivo) ou 'premio' (individual). categoria: clube | selecao | individual. entidade: santos | barcelona | psg | al-hilal | santos-2025 | selecao | carreira. 'vezes' = quantas vezes o item foi conquistado (só prêmios agrupam anos). 'img' aponta para uma chave de 'imagens'; sem img, a peça usa a composição tipográfica. 'ordem' = ano usado na ordenação e no gráfico (temporadas europeias contam no ano em que terminaram). Depois de editar, rode titulos/_ferramentas/gerar.py para atualizar o HTML estático da parede.",
+  "atualizado": "2026-10-22",
+  "entidades": {
+    "santos": { "nome": "Santos", "periodo": "2009–2013", "rotulo": "Santos 09–13" },
+    "barcelona": { "nome": "Barcelona", "periodo": "2013–2017", "rotulo": "Barcelona" },
+    "psg": { "nome": "Paris Saint-Germain", "periodo": "2017–2023", "rotulo": "PSG" },
+    "al-hilal": { "nome": "Al-Hilal", "periodo": "2023–2025", "rotulo": "Al-Hilal" },
+    "santos-2025": { "nome": "Santos", "periodo": "2025–hoje", "rotulo": "Santos 25–" },
+    "selecao": { "nome": "Seleção Brasileira", "periodo": "2010–2026", "rotulo": "Seleção" },
+    "carreira": { "nome": "Carreira", "periodo": "", "rotulo": "Carreira" }
+  },
+  "vazios": {
+    "santos-2025": "Nenhum título coletivo na volta ao Santos até 22 de outubro de 2026. O capítulo segue aberto."
+  },
+  "imagens": {
+    "libertadores-taca": {
+      "src": "/titulos/assets/trofeu-libertadores.webp", "w": 1050, "h": 1400, "pos": "50% 40%",
+      "legenda": "A taça da Copa Libertadores: exemplar conquistado pelo Fluminense em 2023, em exposição.",
+      "autor": "Alexandre M. B. Berwanger", "licenca": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Trof%C3%A9u_da_Copa_Libertadores_da_Am%C3%A9rica_de_2023.jpg"
+    },
+    "champions-taca": {
+      "src": "/titulos/assets/trofeu-champions.webp", "w": 900, "h": 1600, "pos": "50% 35%",
+      "legenda": "A taça da Liga dos Campeões da UEFA: exemplar do Liverpool.",
+      "autor": "Melon5541", "licenca": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Champions_league_trophy.jpg"
+    },
+    "confed-taca": {
+      "src": "/titulos/assets/confed-2013-taca.webp", "w": 1600, "h": 1095, "pos": "50% 30%",
+      "legenda": "A Seleção recebe a taça da Copa das Confederações no pódio, 2013.",
+      "autor": "Tânia Rêgo/Agência Brasil", "licenca": "CC BY 3.0 BR",
+      "url": "https://commons.wikimedia.org/wiki/File:Confed.Cup2013Champions.jpg"
+    },
+    "rei-taca": {
+      "src": "/titulos/assets/trofeu-copa-do-rei.webp", "w": 1600, "h": 1342, "pos": "50% 45%",
+      "legenda": "A taça da Copa do Rei: exemplar conquistado pelo Sevilla em 2010, no museu do estádio Ramón Sánchez-Pizjuán.",
+      "autor": "CarlosVdeHabsburgo", "licenca": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Copa_del_Rey_2010.jpg"
+    },
+    "psg-2022": {
+      "src": "/titulos/assets/psg-2022.webp", "w": 1279, "h": 1600, "pos": "50% 30%",
+      "legenda": "Neymar e Mbappé pelo PSG, agosto de 2022.",
+      "autor": "Liondartois", "licenca": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Messi_Neymar_Mbapp%C3%A9_PSG_2022_(cropped).jpg"
+    },
+    "santos-final-2011": {
+      "src": "/vestiario/assets/historia/santos1-libertadores-2011.webp", "w": 1400, "h": 1186, "pos": "50% 30%",
+      "legenda": "Aquecimento antes da primeira final da Libertadores, contra o Peñarol, em Montevidéu, 2011.",
+      "autor": "Jimmy Baikovicius", "licenca": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Neymar_-_Copa_Libertadores_de_America_2011_-_Pe%C3%B1arol_-_Santos_-_110616-6925-jikatu.jpg"
+    },
+    "santos-mundial-2011": {
+      "src": "/vestiario/assets/historia/santos1-mundial-2011.webp", "w": 1420, "h": 1016, "pos": "50% 30%",
+      "legenda": "Final do Mundial de Clubes, em Yokohama, 2011.",
+      "autor": "Christopher Johnson", "licenca": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Neymar_2011_FIFA_Club_World_Cup_Final.jpg"
+    },
+    "barca-2015": {
+      "src": "/vestiario/assets/historia/barca-2015.webp", "w": 1420, "h": 1016, "pos": "50% 30%",
+      "legenda": "Com a camisa do Barcelona, 2015.",
+      "autor": "Alex Fau", "licenca": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Neymar_(16245492137).jpg"
+    },
+    "psg-2017": {
+      "src": "/vestiario/assets/historia/psg-apresentacao-2017.webp", "w": 1047, "h": 1311, "pos": "50% 25%",
+      "legenda": "Apresentação no Parque dos Príncipes, 4 de agosto de 2017.",
+      "autor": "Antoine Dellenbach", "licenca": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Neymar_Jr_presentation_-_Press_conference_for_PSG_001_(cropped).jpg"
+    },
+    "psg-2018": {
+      "src": "/vestiario/assets/historia/psg-aquecimento-2018.webp", "w": 1420, "h": 1016, "pos": "50% 30%",
+      "legenda": "Aquecimento pelo PSG, 2018.",
+      "autor": "Balkan Photos", "licenca": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Neymar_2018.jpg"
+    },
+    "hilal-2023": {
+      "src": "/vestiario/assets/historia/hilal-2023-a.webp", "w": 1420, "h": 1016, "pos": "50% 30%",
+      "legenda": "Comemoração pelo Al-Hilal, 3 de outubro de 2023.",
+      "autor": "Meghdad Madadi", "licenca": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Neymar_Jr._with_Al_Hilal,_3_October_2023_-_08.jpg"
+    },
+    "confed-bola-de-ouro": {
+      "src": "/vestiario/assets/historia/selecao-confederacoes-2013.webp", "w": 1420, "h": 1016, "pos": "50% 30%",
+      "legenda": "Com a Bola de Ouro da Copa das Confederações, Maracanã, 2013.",
+      "autor": "Tânia Rêgo/Agência Brasil", "licenca": "CC BY 3.0 BR",
+      "url": "https://commons.wikimedia.org/wiki/File:ConfedCup2013Champions6.jpg"
+    },
+    "ouro-2016": {
+      "src": "/vestiario/assets/historia/selecao-ouro-2016.webp", "w": 1420, "h": 1016, "pos": "50% 30%",
+      "legenda": "Depois do ouro olímpico, Maracanã, 2016.",
+      "autor": "Fernando Frazão/Agência Brasil", "licenca": "CC BY 3.0 BR",
+      "url": "https://commons.wikimedia.org/wiki/File:Brasil_conquista_primeiro_ouro_ol%C3%ADmpico_nos_penaltis_1039248-20082016-_mg_0015.jpg"
+    },
+    "santos-2025": {
+      "src": "/vestiario/assets/historia/santos2-fortaleza-2025.webp", "w": 512, "h": 702, "pos": "50% 25%",
+      "legenda": "Pelo Santos, contra o Fortaleza, 2 de novembro de 2025.",
+      "autor": "BrazilianDude70", "licenca": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Santos_x_Fortaleza_-_02-11-2025_24_-_Neymar.jpg"
+    }
+  },
+  "itens": [
+    {
+      "id": "paulista-2010", "tipo": "titulo", "categoria": "clube", "entidade": "santos", "nivel": 2,
+      "competicao": "Campeonato Paulista", "ano": "2010", "ordem": 2010,
+      "temporada": "Edição de 2010",
+      "contexto": "O primeiro título profissional de Neymar, aos 18 anos. O Santos dos novos Meninos da Vila, com Paulo Henrique Ganso e Robinho, superou o Santo André na final.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2010 Campeonato Paulista", "url": "https://en.wikipedia.org/wiki/2010_Campeonato_Paulista" },
+        { "nome": "Wikipedia (pt) — Neymar, Títulos", "url": "https://pt.wikipedia.org/wiki/Neymar#T%C3%ADtulos" }
+      ]
+    },
+    {
+      "id": "copa-do-brasil-2010", "tipo": "titulo", "categoria": "clube", "entidade": "santos", "nivel": 2,
+      "competicao": "Copa do Brasil", "ano": "2010", "ordem": 2010,
+      "temporada": "Edição de 2010",
+      "contexto": "A primeira Copa do Brasil da história do Santos, decidida contra o Vitória.",
+      "papel": "Artilheiro da competição, com 11 gols.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2010 Copa do Brasil", "url": "https://en.wikipedia.org/wiki/2010_Copa_do_Brasil" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "paulista-2011", "tipo": "titulo", "categoria": "clube", "entidade": "santos", "nivel": 2,
+      "competicao": "Campeonato Paulista", "ano": "2011", "ordem": 2011,
+      "temporada": "Edição de 2011",
+      "contexto": "O bicampeonato estadual, com o Corinthians como adversário na final.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2011 Campeonato Paulista", "url": "https://en.wikipedia.org/wiki/2011_Campeonato_Paulista" },
+        { "nome": "Wikipedia (pt) — Neymar, Títulos", "url": "https://pt.wikipedia.org/wiki/Neymar#T%C3%ADtulos" }
+      ]
+    },
+    {
+      "id": "libertadores-2011", "tipo": "titulo", "categoria": "clube", "entidade": "santos", "nivel": 1,
+      "competicao": "Copa Libertadores", "ano": "2011", "ordem": 2011,
+      "temporada": "Edição de 2011",
+      "contexto": "O terceiro título continental do Santos, o primeiro desde a era Pelé. Na final contra o Peñarol, 0 a 0 em Montevidéu e 2 a 1 no jogo de volta, em São Paulo.",
+      "papel": "Abriu o placar no jogo decisivo, aos 2 minutos do segundo tempo, e foi eleito o melhor jogador da competição.",
+      "img": "libertadores-taca",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2011 Copa Libertadores finals", "url": "https://en.wikipedia.org/wiki/2011_Copa_Libertadores_finals" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "paulista-2012", "tipo": "titulo", "categoria": "clube", "entidade": "santos", "nivel": 2,
+      "competicao": "Campeonato Paulista", "ano": "2012", "ordem": 2012,
+      "temporada": "Edição de 2012",
+      "contexto": "O tricampeonato paulista, com o Guarani como adversário na final.",
+      "papel": "Artilheiro do campeonato, com 20 gols, e eleito o melhor jogador.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2012 Campeonato Paulista", "url": "https://en.wikipedia.org/wiki/2012_Campeonato_Paulista" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "recopa-2012", "tipo": "titulo", "categoria": "clube", "entidade": "santos", "nivel": 2,
+      "competicao": "Recopa Sul-Americana", "ano": "2012", "ordem": 2012,
+      "temporada": "Edição de 2012",
+      "contexto": "O duelo entre o campeão da Libertadores e o da Sul-Americana, a Universidad de Chile: 0 a 0 na ida e 2 a 0 para o Santos na volta.",
+      "papel": "Marcou o primeiro gol do jogo de volta e foi eleito o melhor jogador da Recopa.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2012 Recopa Sudamericana", "url": "https://en.wikipedia.org/wiki/2012_Recopa_Sudamericana" }
+      ]
+    },
+    {
+      "id": "supercopa-espanha-2013", "tipo": "titulo", "categoria": "clube", "entidade": "barcelona", "nivel": 2,
+      "competicao": "Supercopa da Espanha", "ano": "2013", "ordem": 2013,
+      "temporada": "Temporada 2013–14",
+      "contexto": "O primeiro título na Europa, semanas depois da chegada. Contra o Atlético de Madrid, 1 a 1 em Madri e 0 a 0 no Camp Nou: a taça ficou com o Barcelona pelo gol marcado fora de casa.",
+      "papel": "Entrou no segundo tempo do jogo de ida e marcou de cabeça o gol do empate, o gol que valeu o título.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2013 Supercopa de España", "url": "https://en.wikipedia.org/wiki/2013_Supercopa_de_Espa%C3%B1a" }
+      ]
+    },
+    {
+      "id": "la-liga-2015", "tipo": "titulo", "categoria": "clube", "entidade": "barcelona", "nivel": 2,
+      "competicao": "La Liga", "ano": "2014–15", "ordem": 2015,
+      "temporada": "Temporada 2014–15",
+      "contexto": "O primeiro título espanhol de Neymar, na temporada em que o trio MSN, com Messi e Suárez, somou 122 gols.",
+      "img": "barca-2015",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2014–15 La Liga", "url": "https://en.wikipedia.org/wiki/2014%E2%80%9315_La_Liga" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "copa-do-rei-2015", "tipo": "titulo", "categoria": "clube", "entidade": "barcelona", "nivel": 2,
+      "competicao": "Copa do Rei", "ano": "2014–15", "ordem": 2015,
+      "temporada": "Temporada 2014–15",
+      "contexto": "Final contra o Athletic Bilbao, no Camp Nou: 3 a 1, com dois gols de Messi.",
+      "papel": "Marcou na final e terminou como artilheiro da competição, com 7 gols.",
+      "img": "rei-taca",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2015 Copa del Rey final", "url": "https://en.wikipedia.org/wiki/2015_Copa_del_Rey_final" },
+        { "nome": "Wikipedia (pt) — Neymar, Artilharias", "url": "https://pt.wikipedia.org/wiki/Neymar#T%C3%ADtulos" }
+      ]
+    },
+    {
+      "id": "champions-2015", "tipo": "titulo", "categoria": "clube", "entidade": "barcelona", "nivel": 1,
+      "competicao": "Liga dos Campeões", "ano": "2014–15", "ordem": 2015,
+      "temporada": "Temporada 2014–15",
+      "contexto": "Final em Berlim: 3 a 1 sobre a Juventus. O título fechou a tríplice coroa do Barcelona, com La Liga e Copa do Rei.",
+      "papel": "Fez o terceiro gol, nos acréscimos da final, e terminou como artilheiro da competição, com 10 gols, empatado com Messi e Cristiano Ronaldo.",
+      "img": "champions-taca",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2015 UEFA Champions League final", "url": "https://en.wikipedia.org/wiki/2015_UEFA_Champions_League_final" },
+        { "nome": "Wikipedia (en) — 2014–15 UEFA Champions League", "url": "https://en.wikipedia.org/wiki/2014%E2%80%9315_UEFA_Champions_League" }
+      ]
+    },
+    {
+      "id": "mundial-2015", "tipo": "titulo", "categoria": "clube", "entidade": "barcelona", "nivel": 1,
+      "competicao": "Mundial de Clubes", "ano": "2015", "ordem": 2015,
+      "temporada": "Edição de 2015, no Japão",
+      "contexto": "O Barcelona venceu o Guangzhou Evergrande na semifinal e o River Plate na final, em Yokohama, por 3 a 0. Quatro anos antes, pelo Santos, Neymar tinha perdido a final para o próprio Barcelona.",
+      "papel": "Titular na final e líder de assistências do torneio.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2015 FIFA Club World Cup final", "url": "https://en.wikipedia.org/wiki/2015_FIFA_Club_World_Cup_final" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "la-liga-2016", "tipo": "titulo", "categoria": "clube", "entidade": "barcelona", "nivel": 2,
+      "competicao": "La Liga", "ano": "2015–16", "ordem": 2016,
+      "temporada": "Temporada 2015–16",
+      "contexto": "O bicampeonato espanhol, garantido na última rodada, um ponto à frente do Real Madrid.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2015–16 La Liga", "url": "https://en.wikipedia.org/wiki/2015%E2%80%9316_La_Liga" }
+      ]
+    },
+    {
+      "id": "copa-do-rei-2016", "tipo": "titulo", "categoria": "clube", "entidade": "barcelona", "nivel": 2,
+      "competicao": "Copa do Rei", "ano": "2015–16", "ordem": 2016,
+      "temporada": "Temporada 2015–16",
+      "contexto": "Final contra o Sevilla, no Vicente Calderón: 0 a 0 no tempo normal e 2 a 0 na prorrogação, com o Barcelona jogando com um a menos desde o primeiro tempo.",
+      "papel": "Fez o segundo gol, no último minuto da prorrogação.",
+      "img": "rei-taca",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2016 Copa del Rey final", "url": "https://en.wikipedia.org/wiki/2016_Copa_del_Rey_final" }
+      ]
+    },
+    {
+      "id": "copa-do-rei-2017", "tipo": "titulo", "categoria": "clube", "entidade": "barcelona", "nivel": 2,
+      "competicao": "Copa do Rei", "ano": "2016–17", "ordem": 2017,
+      "temporada": "Temporada 2016–17",
+      "contexto": "Final contra o Alavés: 3 a 1. Foi o último título de Neymar pelo Barcelona.",
+      "papel": "Marcou no fim do primeiro tempo e igualou um recorde de Puskás: gols em três finais seguidas da Copa do Rei.",
+      "img": "rei-taca",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2017 Copa del Rey final", "url": "https://en.wikipedia.org/wiki/2017_Copa_del_Rey_final" }
+      ]
+    },
+    {
+      "id": "ligue-1-2018", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 2,
+      "competicao": "Campeonato Francês", "ano": "2017–18", "ordem": 2018,
+      "temporada": "Temporada 2017–18",
+      "contexto": "O primeiro título francês, na temporada de estreia em Paris.",
+      "papel": "Foi eleito o melhor jogador da Ligue 1 pela UNFP, mesmo sem jogar a reta final: fraturou o pé direito em fevereiro de 2018.",
+      "img": "psg-2017",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2017–18 Ligue 1", "url": "https://en.wikipedia.org/wiki/2017%E2%80%9318_Ligue_1" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "copa-da-liga-2018", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 3,
+      "competicao": "Copa da Liga Francesa", "ano": "2017–18", "ordem": 2018,
+      "temporada": "Temporada 2017–18",
+      "contexto": "Final contra o Monaco, em Bordeaux: 3 a 0.",
+      "papel": "Fazia parte do elenco, mas não jogou a final: estava se recuperando da fratura no pé direito.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2018 Coupe de la Ligue final", "url": "https://en.wikipedia.org/wiki/2018_Coupe_de_la_Ligue_final" }
+      ]
+    },
+    {
+      "id": "copa-da-franca-2018", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 3,
+      "competicao": "Copa da França", "ano": "2017–18", "ordem": 2018,
+      "temporada": "Temporada 2017–18",
+      "contexto": "Final contra o Les Herbiers, da terceira divisão, no Stade de France: 2 a 0.",
+      "papel": "Fazia parte do elenco, mas não jogou a final: estava se recuperando da fratura no pé direito.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2018 Coupe de France final", "url": "https://en.wikipedia.org/wiki/2018_Coupe_de_France_final" }
+      ]
+    },
+    {
+      "id": "supercopa-franca-2018", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 3,
+      "competicao": "Supercopa da França", "ano": "2018", "ordem": 2018,
+      "temporada": "Temporada 2018–19",
+      "contexto": "O Troféu dos Campeões disputado em Shenzhen, na China: 4 a 0 sobre o Monaco.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2018 Trophée des Champions", "url": "https://en.wikipedia.org/wiki/2018_Troph%C3%A9e_des_Champions" }
+      ]
+    },
+    {
+      "id": "ligue-1-2019", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 2,
+      "competicao": "Campeonato Francês", "ano": "2018–19", "ordem": 2019,
+      "temporada": "Temporada 2018–19",
+      "contexto": "O bicampeonato francês. Uma nova lesão no pé direito, em janeiro de 2019, tirou Neymar de boa parte da temporada.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2018–19 Ligue 1", "url": "https://en.wikipedia.org/wiki/2018%E2%80%9319_Ligue_1" }
+      ]
+    },
+    {
+      "id": "ligue-1-2020", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 2,
+      "competicao": "Campeonato Francês", "ano": "2019–20", "ordem": 2020,
+      "temporada": "Temporada 2019–20",
+      "contexto": "Um título decidido fora de campo: a liga foi encerrada em abril de 2020 por causa da pandemia de covid-19, com o PSG na liderança.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2019–20 Ligue 1", "url": "https://en.wikipedia.org/wiki/2019%E2%80%9320_Ligue_1" }
+      ]
+    },
+    {
+      "id": "copa-da-franca-2020", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 2,
+      "competicao": "Copa da França", "ano": "2019–20", "ordem": 2020,
+      "temporada": "Temporada 2019–20",
+      "contexto": "Final contra o Saint-Étienne, no Stade de France, em julho de 2020: 1 a 0.",
+      "papel": "Fez o único gol da final, no rebote de um chute de Mbappé.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2020 Coupe de France final", "url": "https://en.wikipedia.org/wiki/2020_Coupe_de_France_final" }
+      ]
+    },
+    {
+      "id": "copa-da-liga-2020", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 3,
+      "competicao": "Copa da Liga Francesa", "ano": "2019–20", "ordem": 2020,
+      "temporada": "Temporada 2019–20",
+      "contexto": "A última edição da competição: 0 a 0 com o Lyon e título nos pênaltis.",
+      "papel": "Converteu a sua cobrança na disputa de pênaltis.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2020 Coupe de la Ligue final", "url": "https://en.wikipedia.org/wiki/2020_Coupe_de_la_Ligue_final" }
+      ]
+    },
+    {
+      "id": "supercopa-franca-2020", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 3,
+      "competicao": "Supercopa da França", "ano": "2020", "ordem": 2021,
+      "temporada": "Edição de 2020, disputada em janeiro de 2021",
+      "contexto": "Contra o Olympique de Marseille, em Lens: 2 a 1.",
+      "papel": "Marcou o segundo gol, de pênalti.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2020 Trophée des Champions", "url": "https://en.wikipedia.org/wiki/2020_Troph%C3%A9e_des_Champions" }
+      ]
+    },
+    {
+      "id": "copa-da-franca-2021", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 3,
+      "competicao": "Copa da França", "ano": "2020–21", "ordem": 2021,
+      "temporada": "Temporada 2020–21",
+      "contexto": "Final contra o Monaco, no Stade de France: 2 a 0, com gols de Icardi e Mbappé.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2021 Coupe de France final", "url": "https://en.wikipedia.org/wiki/2021_Coupe_de_France_final" }
+      ]
+    },
+    {
+      "id": "ligue-1-2022", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 2,
+      "competicao": "Campeonato Francês", "ano": "2021–22", "ordem": 2022,
+      "temporada": "Temporada 2021–22",
+      "contexto": "A primeira temporada do ataque com Messi e Mbappé, e o décimo título francês do PSG.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2021–22 Ligue 1", "url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Ligue_1" }
+      ]
+    },
+    {
+      "id": "supercopa-franca-2022", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 3,
+      "competicao": "Supercopa da França", "ano": "2022", "ordem": 2022,
+      "temporada": "Temporada 2022–23",
+      "contexto": "Contra o Nantes, em Tel Aviv: 4 a 0.",
+      "papel": "Marcou dois gols, um deles de pênalti.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2022 Trophée des Champions", "url": "https://en.wikipedia.org/wiki/2022_Troph%C3%A9e_des_Champions" }
+      ]
+    },
+    {
+      "id": "ligue-1-2023", "tipo": "titulo", "categoria": "clube", "entidade": "psg", "nivel": 2,
+      "competicao": "Campeonato Francês", "ano": "2022–23", "ordem": 2023,
+      "temporada": "Temporada 2022–23",
+      "contexto": "O último título de Neymar em Paris. Uma lesão no tornozelo direito, em fevereiro de 2023, encerrou a temporada dele antes da hora.",
+      "img": "psg-2022",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2022–23 Ligue 1", "url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Ligue_1" }
+      ]
+    },
+    {
+      "id": "saudita-2024", "tipo": "titulo", "categoria": "clube", "entidade": "al-hilal", "nivel": 2,
+      "competicao": "Campeonato Saudita", "ano": "2023–24", "ordem": 2024,
+      "temporada": "Temporada 2023–24",
+      "contexto": "O Al-Hilal foi campeão sem perder nenhum jogo na liga.",
+      "papel": "Fez parte do elenco campeão, mas jogou pouco: em outubro de 2023 rompeu o ligamento cruzado do joelho esquerdo, defendendo a Seleção, e ficou fora o resto da temporada.",
+      "img": "hilal-2023",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2023–24 Saudi Pro League", "url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Saudi_Pro_League" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "sul-americano-sub20-2011", "tipo": "titulo", "categoria": "selecao", "entidade": "selecao", "nivel": 2,
+      "competicao": "Sul-Americano Sub-20", "ano": "2011", "ordem": 2011,
+      "temporada": "Edição de 2011, no Peru",
+      "contexto": "O título da base, que valeu vaga no Mundial Sub-20 e nos Jogos Olímpicos de Londres 2012.",
+      "papel": "Artilheiro do torneio, com 9 gols.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2011 South American U-20 Championship", "url": "https://en.wikipedia.org/wiki/2011_South_American_U-20_Championship" }
+      ]
+    },
+    {
+      "id": "confederacoes-2013", "tipo": "titulo", "categoria": "selecao", "entidade": "selecao", "nivel": 1,
+      "competicao": "Copa das Confederações", "ano": "2013", "ordem": 2013,
+      "temporada": "Edição de 2013, no Brasil",
+      "contexto": "Brasil 3 x 0 Espanha, no Maracanã. A vitória encerrou uma série de 29 jogos oficiais sem derrota da então campeã do mundo.",
+      "papel": "Fez o segundo gol da final, foi eleito o melhor em campo e recebeu a Bola de Ouro do torneio.",
+      "img": "confed-taca",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2013 FIFA Confederations Cup final", "url": "https://en.wikipedia.org/wiki/2013_FIFA_Confederations_Cup_final" }
+      ]
+    },
+    {
+      "id": "ouro-olimpico-2016", "tipo": "titulo", "categoria": "selecao", "entidade": "selecao", "nivel": 1,
+      "competicao": "Ouro olímpico", "ano": "2016", "ordem": 2016,
+      "temporada": "Jogos Rio 2016",
+      "contexto": "O primeiro ouro olímpico do futebol masculino brasileiro: 1 a 1 com a Alemanha no Maracanã e vitória por 5 a 4 nos pênaltis.",
+      "papel": "Capitão do time, abriu o placar de falta e converteu o pênalti decisivo.",
+      "img": "ouro-2016",
+      "fontes": [
+        { "nome": "Wikipedia (en) — Football at the 2016 Summer Olympics, men's tournament", "url": "https://en.wikipedia.org/wiki/Football_at_the_2016_Summer_Olympics_%E2%80%93_Men%27s_tournament" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+
+    {
+      "id": "artilheiro-copa-do-brasil-2010", "tipo": "premio", "categoria": "individual", "entidade": "santos", "nivel": 3,
+      "classe": "Artilharia", "competicao": "Artilheiro da Copa do Brasil", "ano": "2010", "ordem": 2010,
+      "temporada": "Edição de 2010",
+      "contexto": "11 gols na campanha do primeiro título do Santos na competição.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2010 Copa do Brasil", "url": "https://en.wikipedia.org/wiki/2010_Copa_do_Brasil" }
+      ]
+    },
+    {
+      "id": "bola-de-ouro-placar", "tipo": "premio", "categoria": "individual", "entidade": "santos", "nivel": 3,
+      "classe": "Melhor jogador", "competicao": "Bola de Ouro da Placar", "ano": "2011 · 2012", "vezes": 2, "ordem": 2011,
+      "temporada": "Campeonatos Brasileiros de 2011 e 2012",
+      "contexto": "O prêmio da revista Placar ao melhor jogador do Campeonato Brasileiro, conquistado em dois anos seguidos.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — Bola de Ouro", "url": "https://en.wikipedia.org/wiki/Bola_de_Ouro" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "melhor-libertadores-2011", "tipo": "premio", "categoria": "individual", "entidade": "santos", "nivel": 3,
+      "classe": "Melhor jogador", "competicao": "Melhor jogador da Libertadores", "ano": "2011", "ordem": 2011,
+      "temporada": "Edição de 2011",
+      "contexto": "Eleito o melhor da competição em que o Santos foi campeão. Também foi o líder de assistências da edição.",
+      "img": "santos-final-2011",
+      "fontes": [
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "artilheiro-sub20-2011", "tipo": "premio", "categoria": "individual", "entidade": "selecao", "nivel": 3,
+      "classe": "Artilharia", "competicao": "Artilheiro do Sul-Americano Sub-20", "ano": "2011", "ordem": 2011,
+      "temporada": "Edição de 2011, no Peru",
+      "contexto": "9 gols no torneio vencido pelo Brasil.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2011 South American U-20 Championship", "url": "https://en.wikipedia.org/wiki/2011_South_American_U-20_Championship" }
+      ]
+    },
+    {
+      "id": "rei-da-america", "tipo": "premio", "categoria": "individual", "entidade": "santos", "nivel": 3,
+      "classe": "Melhor jogador", "competicao": "Rei da América", "ano": "2011 · 2012", "vezes": 2, "ordem": 2012,
+      "temporada": "2011 e 2012",
+      "contexto": "O prêmio de melhor jogador sul-americano do ano, organizado pelo jornal uruguaio El País, conquistado em dois anos seguidos.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — South American Footballer of the Year", "url": "https://en.wikipedia.org/wiki/South_American_Footballer_of_the_Year" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "puskas-2011", "tipo": "premio", "categoria": "individual", "entidade": "santos", "nivel": 1,
+      "classe": "Gol", "competicao": "Prêmio Puskás", "ano": "2011", "ordem": 2011,
+      "temporada": "Prêmio da FIFA ao gol mais bonito de 2011",
+      "contexto": "O gol premiado foi marcado contra o Flamengo, na Vila Belmiro, em julho de 2011, num jogo que terminou 5 a 4 para os cariocas. Foi o primeiro Puskás de um jogador brasileiro.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — FIFA Puskás Award", "url": "https://en.wikipedia.org/wiki/FIFA_Pusk%C3%A1s_Award" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "bola-de-bronze-mundial-2011", "tipo": "premio", "categoria": "individual", "entidade": "santos", "nivel": 3,
+      "classe": "Melhor jogador", "competicao": "Bola de Bronze do Mundial de Clubes", "ano": "2011", "ordem": 2011,
+      "temporada": "Edição de 2011, no Japão",
+      "contexto": "O terceiro melhor jogador do torneio em que o Santos foi vice-campeão, depois da derrota para o Barcelona na final. O vice não é título; o prêmio individual, sim.",
+      "img": "santos-mundial-2011",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2011 FIFA Club World Cup", "url": "https://en.wikipedia.org/wiki/2011_FIFA_Club_World_Cup" }
+      ]
+    },
+    {
+      "id": "artilheiro-paulista-2012", "tipo": "premio", "categoria": "individual", "entidade": "santos", "nivel": 3,
+      "classe": "Artilharia", "competicao": "Artilheiro do Paulistão", "ano": "2012", "ordem": 2012,
+      "temporada": "Edição de 2012",
+      "contexto": "20 gols na campanha do tricampeonato do Santos.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2012 Campeonato Paulista", "url": "https://en.wikipedia.org/wiki/2012_Campeonato_Paulista" }
+      ]
+    },
+    {
+      "id": "artilheiro-libertadores-2012", "tipo": "premio", "categoria": "individual", "entidade": "santos", "nivel": 3,
+      "classe": "Artilharia", "competicao": "Artilheiro da Libertadores", "ano": "2012", "ordem": 2012,
+      "temporada": "Edição de 2012",
+      "contexto": "Dividiu a artilharia com o argentino Matías Alustiza, com 8 gols cada.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" },
+        { "nome": "Wikipedia (pt) — Neymar, Artilharias", "url": "https://pt.wikipedia.org/wiki/Neymar#T%C3%ADtulos" }
+      ]
+    },
+    {
+      "id": "bola-de-ouro-confederacoes-2013", "tipo": "premio", "categoria": "individual", "entidade": "selecao", "nivel": 1,
+      "classe": "Melhor jogador", "competicao": "Bola de Ouro da Copa das Confederações", "ano": "2013", "ordem": 2013,
+      "temporada": "Edição de 2013, no Brasil",
+      "contexto": "Eleito o melhor jogador do torneio vencido pelo Brasil. Também levou a Chuteira de Bronze e entrou na seleção do torneio.",
+      "img": "confed-bola-de-ouro",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2013 FIFA Confederations Cup", "url": "https://en.wikipedia.org/wiki/2013_FIFA_Confederations_Cup" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "chuteira-de-bronze-copa-2014", "tipo": "premio", "categoria": "individual", "entidade": "selecao", "nivel": 3,
+      "classe": "Artilharia", "competicao": "Chuteira de Bronze da Copa do Mundo", "ano": "2014", "ordem": 2014,
+      "temporada": "Copa do Mundo de 2014, no Brasil",
+      "contexto": "4 gols e uma assistência antes da fratura na vértebra, sofrida nas quartas de final contra a Colômbia, que o tirou do resto da Copa.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2014 FIFA World Cup", "url": "https://en.wikipedia.org/wiki/2014_FIFA_World_Cup" }
+      ]
+    },
+    {
+      "id": "artilheiro-champions-2015", "tipo": "premio", "categoria": "individual", "entidade": "barcelona", "nivel": 3,
+      "classe": "Artilharia", "competicao": "Artilheiro da Liga dos Campeões", "ano": "2014–15", "ordem": 2015,
+      "temporada": "Temporada 2014–15",
+      "contexto": "10 gols, empatado com Messi e Cristiano Ronaldo, na campanha do título do Barcelona.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2014–15 UEFA Champions League", "url": "https://en.wikipedia.org/wiki/2014%E2%80%9315_UEFA_Champions_League" }
+      ]
+    },
+    {
+      "id": "artilheiro-copa-do-rei-2015", "tipo": "premio", "categoria": "individual", "entidade": "barcelona", "nivel": 3,
+      "classe": "Artilharia", "competicao": "Artilheiro da Copa do Rei", "ano": "2014–15", "ordem": 2015,
+      "temporada": "Temporada 2014–15",
+      "contexto": "7 gols, com um deles na final contra o Athletic Bilbao.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" },
+        { "nome": "Wikipedia (pt) — Neymar, Artilharias", "url": "https://pt.wikipedia.org/wiki/Neymar#T%C3%ADtulos" }
+      ]
+    },
+    {
+      "id": "podio-bola-de-ouro", "tipo": "premio", "categoria": "individual", "entidade": "carreira", "nivel": 2,
+      "classe": "Colocação", "competicao": "3º lugar na Bola de Ouro", "ano": "2015 · 2017", "vezes": 2, "ordem": 2017,
+      "temporada": "Bola de Ouro FIFA 2015 e Bola de Ouro 2017",
+      "contexto": "Terminou duas vezes no pódio do principal prêmio individual do futebol, atrás de Messi e Cristiano Ronaldo: em 2015, pelo Barcelona, e em 2017, ano da transferência para o PSG. É uma colocação, não a conquista do prêmio.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2015 FIFA Ballon d'Or", "url": "https://en.wikipedia.org/wiki/2015_FIFA_Ballon_d%27Or" },
+        { "nome": "Wikipedia (en) — 2017 Ballon d'Or", "url": "https://en.wikipedia.org/wiki/2017_Ballon_d%27Or" }
+      ]
+    },
+    {
+      "id": "fifpro-world-xi", "tipo": "premio", "categoria": "individual", "entidade": "carreira", "nivel": 3,
+      "classe": "Seleção ideal", "competicao": "Seleção do ano FIFA FIFPro", "ano": "2015 · 2017", "vezes": 2, "ordem": 2017,
+      "temporada": "2015 e 2017",
+      "contexto": "Escolhido duas vezes para o time ideal do ano, votado por jogadores profissionais do mundo todo.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — FIFA FIFPRO Men's World 11", "url": "https://en.wikipedia.org/wiki/FIFA_FIFPRO_Men%27s_World_11" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "melhor-ligue-1-2018", "tipo": "premio", "categoria": "individual", "entidade": "psg", "nivel": 3,
+      "classe": "Melhor jogador", "competicao": "Melhor jogador da Ligue 1", "ano": "2017–18", "ordem": 2018,
+      "temporada": "Temporada 2017–18",
+      "contexto": "O prêmio da UNFP, o sindicato dos jogadores profissionais da França, na primeira temporada em Paris.",
+      "img": "psg-2018",
+      "fontes": [
+        { "nome": "Wikipedia (en) — Trophées UNFP du football", "url": "https://en.wikipedia.org/wiki/Troph%C3%A9es_UNFP_du_football" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    },
+    {
+      "id": "melhor-copa-america-2021", "tipo": "premio", "categoria": "individual", "entidade": "selecao", "nivel": 2,
+      "classe": "Melhor jogador", "competicao": "Melhor jogador da Copa América", "ano": "2021", "ordem": 2021,
+      "temporada": "Copa América de 2021, no Brasil",
+      "contexto": "Dividiu o prêmio com Messi. O Brasil perdeu a final para a Argentina, no Maracanã: o vice-campeonato não entra entre os títulos.",
+      "fontes": [
+        { "nome": "Wikipedia (en) — 2021 Copa América", "url": "https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica" }
+      ]
+    },
+    {
+      "id": "globe-soccer-carreira-2024", "tipo": "premio", "categoria": "individual", "entidade": "carreira", "nivel": 3,
+      "classe": "Homenagem", "competicao": "Prêmio de Carreira Globe Soccer", "ano": "2024", "ordem": 2024,
+      "temporada": "Globe Soccer Awards 2024, em Dubai",
+      "contexto": "Homenagem pelo conjunto da carreira, entregue em dezembro de 2024.",
+      "fontes": [
+        { "nome": "Saudi Pro League — Ronaldo, Neymar and Jesus win in Dubai's Globe Soccer Awards", "url": "https://spl.com.sa/en/news/515628/ronaldo-neymar-and-jesus-win-in-dubais-globe-soccer-awards" }
+      ]
+    },
+    {
+      "id": "gol-mais-bonito-paulistao-2025", "tipo": "premio", "categoria": "individual", "entidade": "santos-2025", "nivel": 3,
+      "classe": "Gol", "competicao": "Gol mais bonito do Paulistão", "ano": "2025", "ordem": 2025,
+      "temporada": "Edição de 2025",
+      "contexto": "Um gol olímpico contra a Inter de Limeira, na volta ao Santos. O prêmio, escolhido em votação, foi entregue na festa do campeonato.",
+      "img": "santos-2025",
+      "fontes": [
+        { "nome": "Máquina do Esporte — Betano renova patrocínio ao Paulistão (08/01/2026)", "url": "https://maquinadoesporte.com.br/?p=217994" },
+        { "nome": "Wikipedia (en) — Neymar, Honours", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" }
+      ]
+    }
+  ],
+  "curadoria": [
+    { "titulo": "Vices não são títulos", "texto": "Ficam fora da contagem a prata olímpica de 2012, o vice do Mundial de Clubes de 2011, o vice da Liga dos Campeões de 2019–20 e o vice da Copa América de 2021." },
+    { "titulo": "Supercopa da UEFA de 2015", "texto": "O Barcelona venceu o Sevilla, mas Neymar não jogou: estava com caxumba. As listas de referência não a contam como título dele. A Supercopa da Espanha de 2016, disputada durante os Jogos do Rio, também não entra." },
+    { "titulo": "Recordes e números ficam de fora", "texto": "Marcas como a de maior artilheiro da Seleção, os 222 milhões de euros da transferência ou os gols em quatro Copas aparecem em Jogador, Carreira e no Vestiário. Aqui só entram títulos e prêmios." },
+    { "titulo": "Temporadas europeias", "texto": "No gráfico ano a ano, cada temporada conta no ano em que terminou: a Liga dos Campeões de 2014–15 aparece em 2015." }
+  ],
+  "fontes": [
+    { "nome": "Wikipedia (en) — Neymar, seção Honours (consultada em 22/10/2026)", "url": "https://en.wikipedia.org/wiki/Neymar#Honours" },
+    { "nome": "Wikipedia (pt) — Neymar, seção Títulos (consultada em 22/10/2026)", "url": "https://pt.wikipedia.org/wiki/Neymar#T%C3%ADtulos" },
+    { "nome": "Wikipedia (pt) — Lista de títulos e prêmios recebidos por Neymar", "url": "https://pt.wikipedia.org/wiki/Lista_de_t%C3%ADtulos_e_pr%C3%AAmios_recebidos_por_Neymar" }
+  ]
+}

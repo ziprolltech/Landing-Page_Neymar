@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Neymar: The Experience</title>
+<meta name="description" content="Uma experiência audiovisual em quatro atos: a entrada, o protagonista, a identidade e o legado de Neymar Jr.">
+<link rel="icon" href="/assets/ui/njr-logo.png">
+<script>try{if(sessionStorage.getItem("njr-plate"))document.documentElement.classList.add("njr-arriving")}catch(e){}</script>
+<link rel="stylesheet" href="/shared/njr.css">
+<link rel="stylesheet" href="/experiencia/experiencia.css">
+<style>body { background: #000; }</style>
+</head>
+<body>
+<div class="njr-plate" aria-hidden="true"><i></i><b></b></div>
+<noscript>
+  <main style="padding:2rem;color:#fff;font-family:system-ui">
+    <h1>Neymar: The Experience</h1>
+    <p>Esta experiência precisa de JavaScript. Continue pelo site: <a href="/carreira/">Carreira</a>, <a href="/titulos/">Títulos</a>, <a href="/santos/">Santos</a>, <a href="/vestiario/">Vestiário</a> ou <a href="/">início</a>.</p>
+  </main>
+</noscript>
+<script type="module">
+import { bindLinks, arrive, leaveTo } from "/shared/njr.js";
+import { openExperience } from "/experiencia/experiencia.js";
+document.documentElement.classList.remove("no-js");
+bindLinks();
+arrive();
+openExperience({ origin: "direct", onExit: () => leaveTo("/", "Início") });
+</script>
+</body>
+</html>
